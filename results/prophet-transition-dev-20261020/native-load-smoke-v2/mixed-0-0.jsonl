@@ -1,0 +1,13 @@
+{"type":"load_ready","index":0,"periodic":0,"pid":8}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14339843841692,"planned_end_ns":14340843841692,"observed_start_ns":14339843925627,"observed_end_ns":14340843944453,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":1,"active":true,"planned_start_ns":14340843841692,"planned_end_ns":14341843841692,"observed_start_ns":14340843947910,"observed_end_ns":14341846147075,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":2,"active":true,"planned_start_ns":14341843841692,"planned_end_ns":14342843841692,"observed_start_ns":14341846151233,"observed_end_ns":14342845219254,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":3,"active":true,"planned_start_ns":14342843841692,"planned_end_ns":14343843841692,"observed_start_ns":14342845222751,"observed_end_ns":14343845798293,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14343843841692,"planned_end_ns":14344843841692,"observed_start_ns":14343845801950,"observed_end_ns":14344844203435,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":0,"start_ns":14339843841692,"end_ns":14340843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":1,"start_ns":14340843841692,"end_ns":14341843841692,"iterations":492000000,"cpu_ns":998353747,"max_progress_gap_ns":3620063,"first_ns":14340843947950,"last_ns":14341846146404}
+{"type":"load_bin","index":0,"periodic":0,"phase":2,"start_ns":14341843841692,"end_ns":14342843841692,"iterations":227000000,"cpu_ns":459361898,"max_progress_gap_ns":10059109,"first_ns":14341846151253,"last_ns":14342845218402}
+{"type":"load_bin","index":0,"periodic":0,"phase":3,"start_ns":14342843841692,"end_ns":14343843841692,"iterations":429000000,"cpu_ns":889946351,"max_progress_gap_ns":5757973,"first_ns":14342845223181,"last_ns":14343845796720}
+{"type":"load_bin","index":0,"periodic":0,"phase":4,"start_ns":14343843841692,"end_ns":14344843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":1148000000,"wall_ns":5000367033,"cpu_ns":2349466971,"max_batch_gap_ns":10059109}
+{"type":"load_exit","complete":true,"process_cpu_ns":2349468854}

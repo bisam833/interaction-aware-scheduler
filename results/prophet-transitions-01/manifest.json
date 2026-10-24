@@ -1,0 +1,776 @@
+{
+  "version": 1,
+  "seed": 20261020,
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "kernel": "7.2.10-1-cachyos",
+  "modes": [
+    "linux",
+    "lavd",
+    "rusty",
+    "pulse-off",
+    "prophet-observe",
+    "prophet-static-1",
+    "prophet-static-2",
+    "prophet-adaptive"
+  ],
+  "plans": {
+    "steps": {
+      "phases": [
+        {
+          "label": "idle",
+          "start_ns": 0,
+          "duration_ns": 12000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "moderate-up",
+          "start_ns": 12000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "saturated",
+          "start_ns": 24000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 32,
+          "periodic_workers": 0
+        },
+        {
+          "label": "moderate-down",
+          "start_ns": 36000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "idle-final",
+          "start_ns": 48000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        }
+      ],
+      "duration_ns": 60000000000,
+      "interval_ms": 500,
+      "first_input_ns": 250000000,
+      "trials": 120,
+      "work_ms": 20,
+      "feedback_timeout_ms": 1000
+    },
+    "bursts": {
+      "phases": [
+        {
+          "label": "idle",
+          "start_ns": 0,
+          "duration_ns": 4000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-0",
+          "start_ns": 4000000000,
+          "duration_ns": 6000000000,
+          "batch_workers": 32,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-0",
+          "start_ns": 10000000000,
+          "duration_ns": 4000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-1",
+          "start_ns": 14000000000,
+          "duration_ns": 5000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-1",
+          "start_ns": 19000000000,
+          "duration_ns": 2000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-2",
+          "start_ns": 21000000000,
+          "duration_ns": 6000000000,
+          "batch_workers": 32,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-2",
+          "start_ns": 27000000000,
+          "duration_ns": 2000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-3",
+          "start_ns": 29000000000,
+          "duration_ns": 6000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-3",
+          "start_ns": 35000000000,
+          "duration_ns": 2000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-4",
+          "start_ns": 37000000000,
+          "duration_ns": 4000000000,
+          "batch_workers": 32,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-4",
+          "start_ns": 41000000000,
+          "duration_ns": 2000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "burst-5",
+          "start_ns": 43000000000,
+          "duration_ns": 5000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "gap-5",
+          "start_ns": 48000000000,
+          "duration_ns": 4000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        }
+      ],
+      "duration_ns": 52000000000,
+      "interval_ms": 500,
+      "first_input_ns": 250000000,
+      "trials": 104,
+      "work_ms": 20,
+      "feedback_timeout_ms": 1000
+    },
+    "mixed": {
+      "phases": [
+        {
+          "label": "idle",
+          "start_ns": 0,
+          "duration_ns": 6000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "batch",
+          "start_ns": 6000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 8,
+          "periodic_workers": 0
+        },
+        {
+          "label": "batch-plus-periodic",
+          "start_ns": 18000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 32,
+          "periodic_workers": 8
+        },
+        {
+          "label": "moderate-plus-periodic",
+          "start_ns": 30000000000,
+          "duration_ns": 12000000000,
+          "batch_workers": 8,
+          "periodic_workers": 8
+        },
+        {
+          "label": "idle-final",
+          "start_ns": 42000000000,
+          "duration_ns": 6000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        }
+      ],
+      "duration_ns": 48000000000,
+      "interval_ms": 500,
+      "first_input_ns": 250000000,
+      "trials": 96,
+      "work_ms": 20,
+      "feedback_timeout_ms": 1000
+    },
+    "preflight": {
+      "phases": [
+        {
+          "label": "idle",
+          "start_ns": 0,
+          "duration_ns": 1000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        },
+        {
+          "label": "busy",
+          "start_ns": 1000000000,
+          "duration_ns": 1000000000,
+          "batch_workers": 2,
+          "periodic_workers": 1
+        },
+        {
+          "label": "idle-final",
+          "start_ns": 2000000000,
+          "duration_ns": 1000000000,
+          "batch_workers": 0,
+          "periodic_workers": 0
+        }
+      ],
+      "duration_ns": 3000000000,
+      "interval_ms": 500,
+      "first_input_ns": 250000000,
+      "trials": 6,
+      "work_ms": 20,
+      "feedback_timeout_ms": 1000
+    }
+  },
+  "schedule": [
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "linux"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "lavd"
+    },
+    {
+      "block": 0,
+      "scenario": "bursts",
+      "mode": "rusty"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "linux"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "lavd"
+    },
+    {
+      "block": 0,
+      "scenario": "mixed",
+      "mode": "rusty"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "linux"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "lavd"
+    },
+    {
+      "block": 0,
+      "scenario": "steps",
+      "mode": "rusty"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "rusty"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "linux"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 1,
+      "scenario": "mixed",
+      "mode": "lavd"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "rusty"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "linux"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 1,
+      "scenario": "steps",
+      "mode": "lavd"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "rusty"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "linux"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 1,
+      "scenario": "bursts",
+      "mode": "lavd"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "lavd"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "rusty"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "linux"
+    },
+    {
+      "block": 2,
+      "scenario": "bursts",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "lavd"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "rusty"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "linux"
+    },
+    {
+      "block": 2,
+      "scenario": "steps",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "lavd"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "rusty"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "linux"
+    },
+    {
+      "block": 2,
+      "scenario": "mixed",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "lavd"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "rusty"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 3,
+      "scenario": "bursts",
+      "mode": "linux"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "lavd"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "rusty"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 3,
+      "scenario": "steps",
+      "mode": "linux"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "lavd"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "rusty"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 3,
+      "scenario": "mixed",
+      "mode": "linux"
+    }
+  ],
+  "blocks": 4,
+  "sha256": {
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/prophet-transition-bench": "1671d89caa3ca8085876f621e1e6e80ee50a0d3a97f683f19aed6ae8321ff0ea",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/transition-load": "5965d5116bb71b46ceb8b70c17804e0a7b028e4d57c230bc269de14ebb3113fa",
+    "/home/bisam/osproject/src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+    "/home/bisam/osproject/src/pulsesched/build/pulsesched": "665287720f9a8d65c520a374b876910ec50000fd21792b8028ea3ad115f594bf",
+    "/usr/bin/scx_lavd": "e6d54eebde3d59c198be75548b51c673012e3b5499b4414886b88beb2526a954",
+    "/usr/bin/scx_rusty": "0f8f76dcd9d1a94cfdf9e9e541a6959f132090d78c2c9c78f80f3939b2c22872",
+    "/home/bisam/osproject/scripts/prophet_transitions.py": "98ec76948a624e7bb2e05fbcbf40d73ba0a64e4663cb40827c1976d799b86762",
+    "/home/bisam/osproject/scripts/prophet_matrix.py": "635023df2fbb9ddefd3ab73b27e55232a5b2cdeb993d0682e81ac4feff83a6a5",
+    "/home/bisam/osproject/scripts/audit_latency.py": "85266618759785d9efbf68a67a8150bbdc07a3ca9d5d5f4e19aed6e5db33719e",
+    "/home/bisam/osproject/scripts/analyze_prophet_transitions.py": "c11b4664fb054666c20df51c974fc32ee07289c8fdf3b0a40b87f8c6e295e157",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/benchmark.c": "2ed20d97159f19c388c20309e473c102bf67bc826c863bb421d2ac0d3e2a4a2e",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/transition_load.c": "af27e3e7e63cab0d57b539990b952462c10e707e8c70cad5f3d48ad32da14702",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/external_scheduler.h": "a59785629187f7e78a70a052bb7f67e551bbf09542122f8385abbd7aa2eef57b",
+    "/home/bisam/osproject/scripts/prophet_smoke.py": "3029efe421660b4df62e4890060a03e182a3cdd56f4f191916a55b9971d4f14c",
+    "/home/bisam/osproject/scripts/summarize_latency_audit.py": "a07900a76212f522ad43d3a9150fb6392ebc94a4461b4843f550dc0f18362664",
+    "/home/bisam/osproject/scripts/summarize_prophet.py": "a49882928b0e7aca2d81d021979351c073e89d5dacaa880edea941adddabfdb7",
+    "/home/bisam/osproject/src/scx_prophet/control.h": "a811f2ae151053ac5da3758b96a11deae0ec0666a42996503e0e4ee60a97210e",
+    "/home/bisam/osproject/src/scx_prophet/prophet.c": "003bd1aa6106404c447bca5b52e5fd5cc705cbbc79402a8306a52c6a14d375f1",
+    "/home/bisam/osproject/src/scx_prophet/prophet.bpf.c": "1efc11502ef4b4650ebc4039947d6a445ee5aff18e083a7e317d07d5d28cb325",
+    "/home/bisam/osproject/src/scx_prophet/prophet.h": "9462903f655d2c3cd898a16ae21dbbccf4fd8a2c1ea03e66f8b7839b40f000f9"
+  },
+  "analysis": {
+    "transition_window_ns": 2000000000,
+    "recovery_threshold_ms": 200,
+    "recovery_consecutive_trials": 3,
+    "p95_candidate_reduction": 0.05,
+    "throughput_loss_limit": 0.03,
+    "bootstrap_seed": 20261020,
+    "uncertainty_unit": "paired complete blocks; descriptive with few blocks",
+    "timing_gate": "adaptive must beat both static profiles; occupancy-matched intervention still required before claiming timing causality"
+  },
+  "periodic_eligibility": {
+    "period_ns": 100000000,
+    "active_ns": 20000000
+  }
+}

@@ -1,0 +1,16 @@
+registered pid=25174 policy=SCHED_EXT
+stale_record deadline_ns=7492479810907
+stale_result active=0 reason=2 end_ns=7492479810907
+metric[0]=21
+metric[1]=0
+metric[2]=1
+metric[3]=0
+metric[4]=0
+metric[5]=0
+metric[6]=0
+metric[7]=0
+metric[8]=0
+metric[9]=0
+metric[10]=0
+metric[11]=0
+EXIT: unregistered from user space

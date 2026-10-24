@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "trials": 104,
+  "workers": 32,
+  "maximum_input_dispatch_lag_ms": 10.021748
+}

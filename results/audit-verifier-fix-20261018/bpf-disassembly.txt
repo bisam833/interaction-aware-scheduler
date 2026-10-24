@@ -1,0 +1,1081 @@
+
+src/pulsesched/build/pulsesched.bpf.o:	file format elf64-bpf
+
+Disassembly of section .text:
+
+0000000000000000 <urgent_now>:
+; {
+       0:	r7 = r2
+       1:	r9 = r1
+; 	__u32 pid = p->pid;
+       2:	w1 = *(u32 *)(r9 + 0xa88)
+       3:	*(u32 *)(r10 - 0x4) = w1
+       4:	r2 = r10
+       5:	r2 += -0x4
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+       6:	r1 = 0x0 ll
+       8:	call 0x1
+       9:	r8 = r0
+      10:	w6 = 0x0
+; 	if (!state || expire_if_needed(p, now) || !pulse_epoch_live(state, now))
+      11:	if r8 == 0x0 goto +0x54 <L7>
+; 	__u32 pid = p->pid;
+      12:	w1 = *(u32 *)(r9 + 0xa88)
+      13:	*(u32 *)(r10 - 0x4) = w1
+      14:	r2 = r10
+      15:	r2 += -0x4
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      16:	r1 = 0x0 ll
+      18:	call 0x1
+; 	if (!state || !state->active)
+      19:	if r0 == 0x0 goto +0x20 <L3>
+      20:	w1 = *(u32 *)(r0 + 0x48)
+      21:	if w1 == 0x0 goto +0x1e <L3>
+      22:	r1 = *(u64 *)(r0 + 0x8)
+; 	if (state->deadline_ns == 0 ||
+      23:	r2 = *(u64 *)(r0 + 0x18)
+      24:	if r2 == 0x0 goto +0x6 <L0>
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      25:	if r7 >= r2 goto +0x5 <L0>
+      26:	r3 = r2
+      27:	r3 -= r1
+      28:	r4 = 0x2540be401 ll
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      30:	if r3 < r4 goto +0x15 <L3>
+<L0>:
+      31:	r3 = r2
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      32:	if r2 < r7 goto +0x1 <L1>
+      33:	r3 = r7
+<L1>:
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      34:	if r2 > r1 goto +0x1 <L2>
+      35:	r3 = r7
+<L2>:
+; 		state->active = 0;
+      36:	r1 = 0x200000000 ll
+      38:	*(u64 *)(r0 + 0x48) = r1
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      39:	*(u64 *)(r0 + 0x10) = r3
+; 		state->termination_reason = PULSE_REASON_TIMEOUT;
+      40:	w1 = 0x2
+      41:	*(u32 *)(r10 - 0x4) = w1
+      42:	r2 = r10
+      43:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      44:	r1 = 0x0 ll
+      46:	call 0x1
+; 	if (value)
+      47:	if r0 == 0x0 goto +0x30 <L7>
+; 		(*value)++;
+      48:	r1 = *(u64 *)(r0 + 0x0)
+      49:	r1 += 0x1
+      50:	*(u64 *)(r0 + 0x0) = r1
+      51:	goto +0x2c <L7>
+<L3>:
+; 	return s && s->active && s->epoch_id && s->start_ns <= now &&
+      52:	w1 = *(u32 *)(r8 + 0x48)
+      53:	if w1 == 0x0 goto +0x2a <L7>
+      54:	r1 = *(u64 *)(r8 + 0x0)
+      55:	if r1 == 0x0 goto +0x28 <L7>
+      56:	r1 = *(u64 *)(r8 + 0x8)
+      57:	if r1 > r7 goto +0x26 <L7>
+; 		s->deadline_ns > s->start_ns &&
+      58:	r2 = *(u64 *)(r8 + 0x18)
+      59:	if r7 >= r2 goto +0x24 <L7>
+      60:	if r2 <= r1 goto +0x23 <L7>
+      61:	r2 -= r1
+; 		s->deadline_ns > s->start_ns &&
+      62:	r1 = 0x2540be400 ll
+      64:	if r2 > r1 goto +0x1f <L7>
+; 	if (state->inherited) {
+      65:	w1 = *(u32 *)(r8 + 0x50)
+      66:	if w1 == 0x0 goto +0x1c <L6>
+; 		__u32 root_pid = state->root_pid;
+      67:	w1 = *(u32 *)(r8 + 0x60)
+      68:	*(u32 *)(r10 - 0x4) = w1
+      69:	r2 = r10
+      70:	r2 += -0x4
+; 		struct pulse_task_state *root = bpf_map_lookup_elem(&task_state, &root_pid);
+      71:	r1 = 0x0 ll
+      73:	call 0x1
+; 	return s && s->active && s->epoch_id && s->start_ns <= now &&
+      74:	if r0 == 0x0 goto +0x11 <L4>
+      75:	w1 = *(u32 *)(r0 + 0x48)
+      76:	if w1 == 0x0 goto +0xf <L4>
+      77:	r2 = *(u64 *)(r0 + 0x0)
+      78:	if r2 == 0x0 goto +0xd <L4>
+      79:	r1 = *(u64 *)(r0 + 0x8)
+      80:	if r1 > r7 goto +0xb <L4>
+; 		s->deadline_ns > s->start_ns &&
+      81:	r3 = *(u64 *)(r0 + 0x18)
+      82:	if r7 >= r3 goto +0x9 <L4>
+      83:	if r3 <= r1 goto +0x8 <L4>
+      84:	r3 -= r1
+; 		s->deadline_ns > s->start_ns &&
+      85:	r4 = 0x2540be400 ll
+      87:	if r3 > r4 goto +0x4 <L4>
+; 	return pulse_epoch_live(root, now) && root->direct &&
+      88:	w3 = *(u32 *)(r0 + 0x5c)
+      89:	if w3 == 0x0 goto +0x2 <L4>
+; 		root->epoch_id == child->epoch_id && root->start_ns == child->start_ns;
+      90:	r3 = *(u64 *)(r8 + 0x0)
+      91:	if r2 == r3 goto +0x1 <L5>
+<L4>:
+      92:	goto +0x3 <L7>
+<L5>:
+; 		root->epoch_id == child->epoch_id && root->start_ns == child->start_ns;
+      93:	r2 = *(u64 *)(r8 + 0x8)
+      94:	if r1 != r2 goto +0x1 <L7>
+<L6>:
+      95:	w6 = 0x1
+<L7>:
+; }
+      96:	w0 = w6
+      97:	exit
+
+Disassembly of section struct_ops/pulse_select_cpu:
+
+0000000000000000 <pulse_select_cpu>:
+; s32 BPF_STRUCT_OPS(pulse_select_cpu, struct task_struct *p, s32 prev_cpu,
+       0:	r2 = *(u64 *)(r1 + 0x10)
+       1:	*(u64 *)(r10 - 0x80) = r2
+       2:	r8 = *(u64 *)(r1 + 0x8)
+       3:	r6 = *(u64 *)(r1 + 0x0)
+; 	bool is_idle = false;
+       4:	w1 = 0x0
+       5:	*(u8 *)(r10 - 0x75) = w1
+; 	__u64 now = bpf_ktime_get_ns();
+       6:	call 0x5
+       7:	r9 = r0
+       8:	r1 = 0x0
+; 	struct pulse_task_state inherited = {};
+       9:	*(u64 *)(r10 - 0x10) = r1
+      10:	*(u64 *)(r10 - 0x18) = r1
+      11:	*(u64 *)(r10 - 0x20) = r1
+      12:	*(u64 *)(r10 - 0x28) = r1
+      13:	*(u64 *)(r10 - 0x30) = r1
+      14:	*(u64 *)(r10 - 0x38) = r1
+      15:	*(u64 *)(r10 - 0x40) = r1
+      16:	*(u64 *)(r10 - 0x48) = r1
+      17:	*(u64 *)(r10 - 0x50) = r1
+      18:	*(u64 *)(r10 - 0x58) = r1
+      19:	*(u64 *)(r10 - 0x60) = r1
+      20:	*(u64 *)(r10 - 0x68) = r1
+      21:	*(u64 *)(r10 - 0x70) = r1
+; 	__u32 child_pid = p->pid;
+      22:	w1 = *(u32 *)(r6 + 0xa88)
+      23:	*(u32 *)(r10 - 0x74) = w1
+; 	if (!pulse_propagation_enabled)
+      24:	r1 = 0x0 ll
+      26:	w1 = *(u8 *)(r1 + 0x0)
+      27:	if w1 != 0x1 goto +0x74 <L8>
+      28:	w1 = 0x6
+      29:	*(u32 *)(r10 - 0x4) = w1
+      30:	r2 = r10
+      31:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      32:	r1 = 0x0 ll
+      34:	call 0x1
+; 	if (value)
+      35:	if r0 == 0x0 goto +0x3 <L0>
+; 		(*value)++;
+      36:	r1 = *(u64 *)(r0 + 0x0)
+      37:	r1 += 0x1
+      38:	*(u64 *)(r0 + 0x0) = r1
+<L0>:
+; 	waker = (struct task_struct *)bpf_get_current_task_btf();
+      39:	call 0x9e
+      40:	r7 = r0
+; 	if (!waker || waker == p) {
+      41:	if r7 == 0x0 goto +0x1 <L1>
+      42:	if r7 != r6 goto +0x9 <L2>
+<L1>:
+      43:	w1 = 0x9
+      44:	*(u32 *)(r10 - 0x4) = w1
+      45:	r2 = r10
+      46:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      47:	r1 = 0x0 ll
+      49:	call 0x1
+; 	if (value)
+      50:	if r0 == 0x0 goto +0x5d <L8>
+; 		(*value)++;
+      51:	goto +0x59 <L7>
+<L2>:
+; 	__u32 pid = p->pid;
+      52:	w1 = *(u32 *)(r7 + 0xa88)
+      53:	*(u32 *)(r10 - 0x4) = w1
+      54:	r2 = r10
+      55:	r2 += -0x4
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      56:	r1 = 0x0 ll
+      58:	call 0x1
+; 	if (!parent || !urgent_now(waker, now)) {
+      59:	if r0 == 0x0 goto +0x7 <L3>
+      60:	r1 = r7
+      61:	r2 = r9
+      62:	*(u64 *)(r10 - 0x88) = r0
+      63:	call -0x1
+      64:	r1 = *(u64 *)(r10 - 0x88)
+; 	if (!parent || !urgent_now(waker, now)) {
+      65:	w0 &= 0x1
+      66:	if w0 != 0x0 goto +0x9 <L4>
+<L3>:
+      67:	w1 = 0x9
+      68:	*(u32 *)(r10 - 0x4) = w1
+      69:	r2 = r10
+      70:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      71:	r1 = 0x0 ll
+      73:	call 0x1
+; 	if (value)
+      74:	if r0 == 0x0 goto +0x45 <L8>
+; 		(*value)++;
+      75:	goto +0x41 <L7>
+<L4>:
+; 	if (parent->depth >= pulse_max_propagation_depth) {
+      76:	w1 = *(u32 *)(r1 + 0x54)
+      77:	r2 = 0x0 ll
+      79:	w2 = *(u32 *)(r2 + 0x0)
+      80:	if w1 < w2 goto +0x9 <L5>
+      81:	w1 = 0x8
+      82:	*(u32 *)(r10 - 0x4) = w1
+      83:	r2 = r10
+      84:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      85:	r1 = 0x0 ll
+      87:	call 0x1
+; 	if (value)
+      88:	if r0 == 0x0 goto +0x37 <L8>
+; 		(*value)++;
+      89:	goto +0x33 <L7>
+<L5>:
+      90:	r2 = r10
+      91:	r2 += -0x74
+; 	child = bpf_map_lookup_elem(&task_state, &child_pid);
+      92:	r1 = 0x0 ll
+      94:	call 0x1
+; 	if (!child || child->direct || urgent_now(p, now))
+      95:	if r0 == 0x0 goto +0x30 <L8>
+      96:	w1 = *(u32 *)(r0 + 0x5c)
+      97:	if w1 != 0x0 goto +0x2e <L8>
+      98:	r1 = r6
+      99:	r2 = r9
+     100:	call -0x1
+     101:	w0 &= 0x1
+     102:	if w0 != 0x0 goto +0x29 <L8>
+     103:	r3 = *(u64 *)(r10 - 0x88)
+; 	inherited.epoch_id = parent->epoch_id;
+     104:	r1 = *(u64 *)(r3 + 0x0)
+     105:	*(u64 *)(r10 - 0x70) = r1
+; 	inherited.start_ns = parent->start_ns;
+     106:	r1 = *(u64 *)(r3 + 0x8)
+     107:	*(u64 *)(r10 - 0x68) = r1
+; 	inherited.deadline_ns = parent->deadline_ns;
+     108:	r1 = *(u64 *)(r3 + 0x18)
+; 	inherited.active = 1;
+     109:	w2 = 0x1
+; 	inherited.inherited = 1;
+     110:	*(u32 *)(r10 - 0x20) = w2
+; 	inherited.active = 1;
+     111:	*(u32 *)(r10 - 0x28) = w2
+; 	inherited.deadline_ns = parent->deadline_ns;
+     112:	*(u64 *)(r10 - 0x58) = r1
+; 	inherited.depth = parent->depth + 1;
+     113:	w1 = *(u32 *)(r3 + 0x54)
+     114:	w1 += 0x1
+     115:	*(u32 *)(r10 - 0x1c) = w1
+; 	case 4: *(__u32_alias_t *) res = *(volatile __u32_alias_t *) p; break;
+     116:	w1 = *(u32 *)(r7 + 0xa88)
+; 	inherited.direct = 0;
+     117:	w2 = 0x0
+     118:	*(u32 *)(r10 - 0x14) = w2
+; 	inherited.parent_pid = waker_pid;
+     119:	*(u32 *)(r10 - 0x18) = w1
+; 	inherited.root_pid = parent->inherited ? parent->root_pid : waker_pid;
+     120:	w2 = *(u32 *)(r3 + 0x50)
+     121:	if w2 == 0x0 goto +0x1 <L6>
+     122:	w1 = *(u32 *)(r3 + 0x60)
+<L6>:
+     123:	*(u32 *)(r10 - 0x10) = w1
+     124:	r2 = r10
+     125:	r2 += -0x74
+     126:	r3 = r10
+     127:	r3 += -0x70
+; 	if (!bpf_map_update_elem(&task_state, &child_pid, &inherited, BPF_EXIST))
+     128:	r1 = 0x0 ll
+     130:	r4 = 0x2
+     131:	call 0x2
+     132:	if r0 != 0x0 goto +0xb <L8>
+     133:	w1 = 0x7
+     134:	*(u32 *)(r10 - 0x4) = w1
+     135:	r2 = r10
+     136:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+     137:	r1 = 0x0 ll
+     139:	call 0x1
+; 	if (value)
+     140:	if r0 == 0x0 goto +0x3 <L8>
+<L7>:
+; 		(*value)++;
+     141:	r1 = *(u64 *)(r0 + 0x0)
+     142:	r1 += 0x1
+     143:	*(u64 *)(r0 + 0x0) = r1
+<L8>:
+     144:	r4 = r10
+     145:	r4 += -0x75
+; 	s32 cpu = scx_bpf_select_cpu_dfl(p, prev_cpu, wake_flags, &is_idle);
+     146:	r1 = r6
+     147:	w2 = w8
+     148:	r3 = *(u64 *)(r10 - 0x80)
+     149:	call -0x1
+; 	if (is_idle) {
+     150:	w1 = *(u8 *)(r10 - 0x75)
+     151:	if w1 != 0x1 goto +0x53 <L16>
+     152:	*(u32 *)(r10 - 0x80) = w0
+; 		__u64 now = bpf_ktime_get_ns();
+     153:	call 0x5
+     154:	r7 = r0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+     155:	r1 = 0x0 ll
+     157:	r2 = r6
+     158:	r3 = 0x0
+     159:	r4 = 0x0
+     160:	call 0x9c
+; 		if (sched)
+     161:	if r0 == 0x0 goto +0xa <L10>
+; 			sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+     162:	r1 = 0x0 ll
+     164:	r1 = *(u64 *)(r1 + 0x0)
+; 	return pulse_before(base, now - PULSE_SLICE_NS) ? now - PULSE_SLICE_NS : base;
+     165:	r1 += -0x1312d00
+; 			sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+     166:	r2 = *(u64 *)(r0 + 0x0)
+; 	return (__s64)(a - b) < 0;
+     167:	r3 = r2
+     168:	r3 -= r1
+; 	return pulse_before(base, now - PULSE_SLICE_NS) ? now - PULSE_SLICE_NS : base;
+     169:	if r3 s< 0x0 goto +0x1 <L9>
+     170:	r1 = r2
+<L9>:
+; 			sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+     171:	*(u64 *)(r0 + 0x0) = r1
+<L10>:
+; 		record_enqueue(p, urgent_now(p, now), now);
+     172:	r1 = r6
+     173:	r2 = r7
+     174:	call -0x1
+     175:	w9 = w0
+; 	__u32 pid = p->pid;
+     176:	w1 = *(u32 *)(r6 + 0xa88)
+     177:	*(u32 *)(r10 - 0x70) = w1
+     178:	r2 = r10
+     179:	r2 += -0x70
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+     180:	r1 = 0x0 ll
+     182:	call 0x1
+     183:	r8 = r0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+     184:	r1 = 0x0 ll
+     186:	r2 = r6
+     187:	r3 = 0x0
+     188:	r4 = 0x0
+     189:	call 0x9c
+; 	if (sched && pulse_trace_delay)
+     190:	if r0 == 0x0 goto +0x5 <L11>
+     191:	r1 = 0x0 ll
+     193:	w1 = *(u8 *)(r1 + 0x0)
+     194:	if w1 != 0x1 goto +0x1 <L11>
+; 		sched->queued_ns = now;
+     195:	*(u64 *)(r0 + 0x10) = r7
+<L11>:
+; 	if (!state)
+     196:	if r8 == 0x0 goto +0x16 <L13>
+; 	if (urgent) {
+     197:	w9 &= 0x1
+     198:	if w9 == 0x0 goto +0x11 <L12>
+; 		state->urgent_enqueues++;
+     199:	r1 = *(u64 *)(r8 + 0x38)
+     200:	r1 += 0x1
+     201:	*(u64 *)(r8 + 0x38) = r1
+; 		if (state->inherited)
+     202:	w1 = *(u32 *)(r8 + 0x50)
+     203:	if w1 == 0x0 goto +0xf <L13>
+     204:	w1 = 0xa
+     205:	*(u32 *)(r10 - 0x70) = w1
+     206:	r2 = r10
+     207:	r2 += -0x70
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+     208:	r1 = 0x0 ll
+     210:	call 0x1
+; 	if (value)
+     211:	if r0 == 0x0 goto +0x7 <L13>
+; 		(*value)++;
+     212:	r1 = *(u64 *)(r0 + 0x0)
+     213:	r1 += 0x1
+     214:	*(u64 *)(r0 + 0x0) = r1
+     215:	goto +0x3 <L13>
+<L12>:
+; 		state->normal_enqueues++;
+     216:	r1 = *(u64 *)(r8 + 0x30)
+     217:	r1 += 0x1
+     218:	*(u64 *)(r8 + 0x30) = r1
+<L13>:
+; 		scx_bpf_dsq_insert(p, SCX_DSQ_LOCAL, PULSE_SLICE_NS, 0);
+     219:	r1 = 0x0 ll
+     221:	r2 = *(u64 *)(r1 + 0x0)
+     222:	r1 = 0x0 ll
+     224:	if r1 == 0x0 goto +0x5 <L14>
+     225:	r1 = r6
+     226:	r3 = 0x1312d00
+     227:	r4 = 0x0
+     228:	call -0x1
+     229:	goto +0x4 <L15>
+<L14>:
+; 		scx_bpf_dsq_insert(p, SCX_DSQ_LOCAL, PULSE_SLICE_NS, 0);
+     230:	r1 = r6
+     231:	r3 = 0x1312d00
+     232:	r4 = 0x0
+     233:	call -0x1
+<L15>:
+     234:	w0 = *(u32 *)(r10 - 0x80)
+<L16>:
+; s32 BPF_STRUCT_OPS(pulse_select_cpu, struct task_struct *p, s32 prev_cpu,
+     235:	exit
+
+Disassembly of section struct_ops/pulse_enqueue:
+
+0000000000000000 <pulse_enqueue>:
+; void BPF_STRUCT_OPS(pulse_enqueue, struct task_struct *p, u64 enq_flags)
+       0:	r2 = *(u64 *)(r1 + 0x8)
+       1:	*(u64 *)(r10 - 0x10) = r2
+       2:	r7 = *(u64 *)(r1 + 0x0)
+; 	__u64 now = bpf_ktime_get_ns();
+       3:	call 0x5
+; 	bool urgent = urgent_now(p, now);
+       4:	r1 = r7
+       5:	*(u64 *)(r10 - 0x18) = r0
+       6:	r2 = r0
+       7:	call -0x1
+       8:	w8 = w0
+       9:	r6 = 0x0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+      10:	r1 = 0x0 ll
+      12:	r2 = r7
+      13:	r3 = 0x0
+      14:	r4 = 0x0
+      15:	call 0x9c
+      16:	r9 = r0
+; 	if (!sched) {
+      17:	if r9 != 0x0 goto +0x12 <L0>
+; 		scx_bpf_error("missing task accounting");
+      18:	*(u64 *)(r10 - 0x8) = r6
+      19:	r2 = r10
+      20:	r2 += -0x8
+      21:	r1 = 0x490 ll
+      23:	w3 = 0x8
+      24:	call -0x1
+; 		scx_bpf_dsq_insert(p, SCX_DSQ_GLOBAL, PULSE_SLICE_NS, enq_flags);
+      25:	r1 = 0x0 ll
+      27:	r2 = *(u64 *)(r1 + 0x0)
+      28:	r1 = 0x0 ll
+      30:	if r1 == 0x0 goto +0x51 <L7>
+      31:	r1 = r7
+      32:	r3 = 0x1312d00
+      33:	r4 = *(u64 *)(r10 - 0x10)
+      34:	call -0x1
+      35:	goto +0x50 <L8>
+<L0>:
+; 	sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+      36:	r1 = 0x0 ll
+      38:	r1 = *(u64 *)(r1 + 0x0)
+; 	return pulse_before(base, now - PULSE_SLICE_NS) ? now - PULSE_SLICE_NS : base;
+      39:	r1 += -0x1312d00
+; 	sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+      40:	r2 = *(u64 *)(r9 + 0x0)
+; 	return (__s64)(a - b) < 0;
+      41:	r3 = r2
+      42:	r3 -= r1
+; 	return pulse_before(base, now - PULSE_SLICE_NS) ? now - PULSE_SLICE_NS : base;
+      43:	if r3 s< 0x0 goto +0x1 <L1>
+      44:	r1 = r2
+<L1>:
+; 	sched->vtime = pulse_base_vtime(sched->vtime, vtime_now);
+      45:	*(u64 *)(r9 + 0x0) = r1
+; 	__u32 pid = p->pid;
+      46:	w1 = *(u32 *)(r7 + 0xa88)
+      47:	*(u32 *)(r10 - 0x8) = w1
+      48:	r2 = r10
+      49:	r2 += -0x8
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      50:	r1 = 0x0 ll
+      52:	call 0x1
+      53:	r6 = r0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+      54:	r1 = 0x0 ll
+      56:	r2 = r7
+      57:	r3 = 0x0
+      58:	r4 = 0x0
+      59:	call 0x9c
+; 	if (sched && pulse_trace_delay)
+      60:	if r0 == 0x0 goto +0x6 <L2>
+      61:	r1 = 0x0 ll
+      63:	w1 = *(u8 *)(r1 + 0x0)
+      64:	if w1 != 0x1 goto +0x2 <L2>
+; 		sched->queued_ns = now;
+      65:	r1 = *(u64 *)(r10 - 0x18)
+      66:	*(u64 *)(r0 + 0x10) = r1
+<L2>:
+; 	if (!state)
+      67:	if r6 == 0x0 goto +0x17 <L4>
+; 	if (urgent) {
+      68:	w1 = w8
+      69:	w1 &= 0x1
+      70:	if w1 == 0x0 goto +0x11 <L3>
+; 		state->urgent_enqueues++;
+      71:	r1 = *(u64 *)(r6 + 0x38)
+      72:	r1 += 0x1
+      73:	*(u64 *)(r6 + 0x38) = r1
+; 		if (state->inherited)
+      74:	w1 = *(u32 *)(r6 + 0x50)
+      75:	if w1 == 0x0 goto +0xf <L4>
+      76:	w1 = 0xa
+      77:	*(u32 *)(r10 - 0x8) = w1
+      78:	r2 = r10
+      79:	r2 += -0x8
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      80:	r1 = 0x0 ll
+      82:	call 0x1
+; 	if (value)
+      83:	if r0 == 0x0 goto +0x7 <L4>
+; 		(*value)++;
+      84:	r1 = *(u64 *)(r0 + 0x0)
+      85:	r1 += 0x1
+      86:	*(u64 *)(r0 + 0x0) = r1
+      87:	goto +0x3 <L4>
+<L3>:
+; 		state->normal_enqueues++;
+      88:	r1 = *(u64 *)(r6 + 0x30)
+      89:	r1 += 0x1
+      90:	*(u64 *)(r6 + 0x30) = r1
+<L4>:
+; 	return base - (urgent ? PULSE_SLICE_NS : 0);
+      91:	w8 &= 0x1
+      92:	r1 = -0x1312d00
+      93:	if w8 != 0x0 goto +0x1 <L5>
+      94:	r1 = 0x0
+<L5>:
+; 				 pulse_queue_key(sched->vtime, urgent), enq_flags);
+      95:	r4 = *(u64 *)(r9 + 0x0)
+; 	return base - (urgent ? PULSE_SLICE_NS : 0);
+      96:	r4 += r1
+; 	scx_bpf_dsq_insert_vtime(p, SHARED_DSQ, PULSE_SLICE_NS,
+      97:	r1 = 0x0 ll
+      99:	if r1 == 0x0 goto +0x6 <L6>
+     100:	r1 = r7
+     101:	r2 = 0x0
+     102:	r3 = 0x1312d00
+     103:	r5 = *(u64 *)(r10 - 0x10)
+     104:	call -0x1
+     105:	goto +0xa <L8>
+<L6>:
+; 	scx_bpf_dsq_insert_vtime(p, SHARED_DSQ, PULSE_SLICE_NS,
+     106:	r1 = r7
+     107:	r2 = 0x0
+     108:	r3 = 0x1312d00
+     109:	r5 = *(u64 *)(r10 - 0x10)
+     110:	call -0x1
+     111:	goto +0x4 <L8>
+<L7>:
+; 		scx_bpf_dsq_insert(p, SCX_DSQ_GLOBAL, PULSE_SLICE_NS, enq_flags);
+     112:	r1 = r7
+     113:	r3 = 0x1312d00
+     114:	r4 = *(u64 *)(r10 - 0x10)
+     115:	call -0x1
+<L8>:
+; void BPF_STRUCT_OPS(pulse_enqueue, struct task_struct *p, u64 enq_flags)
+     116:	exit
+
+Disassembly of section struct_ops/pulse_dispatch:
+
+0000000000000000 <pulse_dispatch>:
+; 	scx_bpf_dsq_move_to_local(SHARED_DSQ);
+       0:	r1 = 0x0 ll
+       2:	if r1 == 0x0 goto +0x3 <L0>
+       3:	r1 = 0x0
+       4:	call -0x1
+       5:	goto +0x2 <L1>
+<L0>:
+; 	scx_bpf_dsq_move_to_local(SHARED_DSQ);
+       6:	r1 = 0x0
+       7:	call -0x1
+<L1>:
+; void BPF_STRUCT_OPS(pulse_dispatch, s32 cpu, struct task_struct *prev)
+       8:	exit
+
+Disassembly of section struct_ops/pulse_running:
+
+0000000000000000 <pulse_running>:
+; void BPF_STRUCT_OPS(pulse_running, struct task_struct *p)
+       0:	r8 = *(u64 *)(r1 + 0x0)
+; 	__u64 now = bpf_ktime_get_ns();
+       1:	call 0x5
+       2:	r7 = r0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+       3:	r1 = 0x0 ll
+       5:	r2 = r8
+       6:	r3 = 0x0
+       7:	r4 = 0x0
+       8:	call 0x9c
+       9:	r9 = r0
+; 	__u32 pid = p->pid;
+      10:	w1 = *(u32 *)(r8 + 0xa88)
+      11:	*(u32 *)(r10 - 0x10) = w1
+      12:	r2 = r10
+      13:	r2 += -0x10
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      14:	r1 = 0x0 ll
+      16:	call 0x1
+      17:	*(u64 *)(r10 - 0x18) = r0
+; 	if (sched) {
+      18:	if r9 == 0x0 goto +0x36 <L4>
+; 		if (pulse_before(vtime_now, sched->vtime))
+      19:	r1 = *(u64 *)(r9 + 0x0)
+      20:	r2 = 0x0 ll
+      22:	r3 = *(u64 *)(r2 + 0x0)
+; 	return (__s64)(a - b) < 0;
+      23:	r3 -= r1
+; 		if (pulse_before(vtime_now, sched->vtime))
+      24:	if r3 s> -0x1 goto +0x1 <L0>
+; 			vtime_now = sched->vtime;
+      25:	*(u64 *)(r2 + 0x0) = r1
+<L0>:
+; 		sched->run_start_ns = now;
+      26:	*(u64 *)(r9 + 0x8) = r7
+; 		if (pulse_trace_delay && sched->queued_ns) {
+      27:	r1 = 0x0 ll
+      29:	w1 = *(u8 *)(r1 + 0x0)
+      30:	if w1 != 0x1 goto +0x2a <L4>
+      31:	r6 = *(u64 *)(r9 + 0x10)
+      32:	if r6 == 0x0 goto +0x28 <L4>
+      33:	*(u64 *)(r10 - 0x20) = r7
+; 			__u32 bucket = 0;
+      34:	w1 = 0x0
+      35:	*(u32 *)(r10 - 0x4) = w1
+      36:	r7 = r10
+      37:	r7 += -0x10
+; 			bpf_for(i, 0, 63) {
+      38:	r1 = r7
+      39:	w2 = 0x0
+      40:	w3 = 0x3f
+      41:	call -0x1
+      42:	r1 = r7
+      43:	call -0x1
+      44:	if r0 == 0x0 goto +0xd <L2>
+; 			__u64 delay = now - sched->queued_ns;
+      45:	r7 = *(u64 *)(r10 - 0x20)
+      46:	r7 -= r6
+      47:	w6 = 0x1
+<L1>:
+; 			bpf_for(i, 0, 63) {
+      48:	w1 = *(u32 *)(r0 + 0x0)
+      49:	if w1 > 0x3e goto +0x8 <L2>
+      50:	if r7 < 0x2 goto +0x7 <L2>
+; 				bucket++;
+      51:	*(u32 *)(r10 - 0x4) = w6
+      52:	r1 = r10
+      53:	r1 += -0x10
+; 			bpf_for(i, 0, 63) {
+      54:	call -0x1
+      55:	w6 += 0x1
+; 				delay >>= 1;
+      56:	r7 >>= 0x1
+; 			bpf_for(i, 0, 63) {
+      57:	if r0 != 0x0 goto -0xa <L1>
+<L2>:
+      58:	r1 = r10
+      59:	r1 += -0x10
+; 			bpf_for(i, 0, 63) {
+      60:	call -0x1
+      61:	r2 = r10
+      62:	r2 += -0x4
+; 			__u64 *count = bpf_map_lookup_elem(&delay_hist, &bucket);
+      63:	r1 = 0x0 ll
+      65:	call 0x1
+; 			if (count)
+      66:	if r0 == 0x0 goto +0x3 <L3>
+; 				(*count)++;
+      67:	r1 = *(u64 *)(r0 + 0x0)
+      68:	r1 += 0x1
+      69:	*(u64 *)(r0 + 0x0) = r1
+<L3>:
+; 			sched->queued_ns = 0;
+      70:	r1 = 0x0
+      71:	*(u64 *)(r9 + 0x10) = r1
+      72:	r7 = *(u64 *)(r10 - 0x20)
+<L4>:
+; 	if (urgent_now(p, now)) {
+      73:	r1 = r8
+      74:	r2 = r7
+      75:	call -0x1
+      76:	w0 &= 0x1
+      77:	if w0 == 0x0 goto +0x1c <L6>
+      78:	w1 = 0x1
+      79:	*(u32 *)(r10 - 0x10) = w1
+      80:	r2 = r10
+      81:	r2 += -0x10
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      82:	r1 = 0x0 ll
+      84:	call 0x1
+; 	if (value)
+      85:	if r0 == 0x0 goto +0x3 <L5>
+; 		(*value)++;
+      86:	r1 = *(u64 *)(r0 + 0x0)
+      87:	r1 += 0x1
+      88:	*(u64 *)(r0 + 0x0) = r1
+<L5>:
+      89:	r2 = *(u64 *)(r10 - 0x18)
+; 		if (state) {
+      90:	if r2 == 0x0 goto +0x1a <L8>
+; 			state->last_run_start_ns = now;
+      91:	*(u64 *)(r2 + 0x28) = r7
+; 			state->urgent_dispatches++;
+      92:	r1 = *(u64 *)(r2 + 0x40)
+      93:	r1 += 0x1
+      94:	*(u64 *)(r2 + 0x40) = r1
+; 			if (state->inherited)
+      95:	w1 = *(u32 *)(r2 + 0x50)
+      96:	if w1 == 0x0 goto +0x14 <L8>
+      97:	w1 = 0xb
+      98:	*(u32 *)(r10 - 0x10) = w1
+      99:	r2 = r10
+     100:	r2 += -0x10
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+     101:	r1 = 0x0 ll
+     103:	call 0x1
+; 	if (value)
+     104:	if r0 == 0x0 goto +0xc <L8>
+; 		(*value)++;
+     105:	goto +0x8 <L7>
+<L6>:
+     106:	w1 = 0x0
+     107:	*(u32 *)(r10 - 0x10) = w1
+     108:	r2 = r10
+     109:	r2 += -0x10
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+     110:	r1 = 0x0 ll
+     112:	call 0x1
+; 	if (value)
+     113:	if r0 == 0x0 goto +0x3 <L8>
+<L7>:
+; 		(*value)++;
+     114:	r1 = *(u64 *)(r0 + 0x0)
+     115:	r1 += 0x1
+     116:	*(u64 *)(r0 + 0x0) = r1
+<L8>:
+; void BPF_STRUCT_OPS(pulse_running, struct task_struct *p)
+     117:	exit
+
+Disassembly of section struct_ops/pulse_stopping:
+
+0000000000000000 <pulse_stopping>:
+; void BPF_STRUCT_OPS(pulse_stopping, struct task_struct *p, bool runnable)
+       0:	r6 = *(u64 *)(r1 + 0x0)
+; 	__u64 now = bpf_ktime_get_ns();
+       1:	call 0x5
+       2:	r8 = r0
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+       3:	r1 = 0x0 ll
+       5:	r2 = r6
+       6:	r3 = 0x0
+       7:	r4 = 0x0
+       8:	call 0x9c
+       9:	r7 = r0
+; 	__u32 pid = p->pid;
+      10:	w1 = *(u32 *)(r6 + 0xa88)
+      11:	*(u32 *)(r10 - 0xc) = w1
+      12:	r2 = r10
+      13:	r2 += -0xc
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      14:	r1 = 0x0 ll
+      16:	call 0x1
+; 	__u64 now = bpf_ktime_get_ns();
+      17:	r9 = r8
+; 	if (sched && sched->run_start_ns) {
+      18:	if r7 == 0x0 goto +0x24 <L7>
+      19:	r1 = *(u64 *)(r7 + 0x8)
+      20:	if r1 == 0x0 goto +0x22 <L7>
+; 		sched->vtime += pulse_runtime_charge(now - sched->run_start_ns, p->scx.weight);
+      21:	w2 = *(u32 *)(r6 + 0x2ec)
+; 	return runtime * 100 / (weight ? weight : 1);
+      22:	if w2 > 0x1 goto +0x1 <L0>
+      23:	w2 = 0x1
+<L0>:
+; 		sched->vtime += pulse_runtime_charge(now - sched->run_start_ns, p->scx.weight);
+      24:	r8 -= r1
+; 	return runtime * 100 / (weight ? weight : 1);
+      25:	r8 *= 0x64
+      26:	r8 /= r2
+; 		sched->vtime += pulse_runtime_charge(now - sched->run_start_ns, p->scx.weight);
+      27:	r2 = *(u64 *)(r7 + 0x0)
+      28:	r2 += r8
+      29:	*(u64 *)(r7 + 0x0) = r2
+; 		if (state && state->epoch_id) {
+      30:	if r0 == 0x0 goto +0x16 <L6>
+      31:	r2 = *(u64 *)(r0 + 0x0)
+      32:	if r2 == 0x0 goto +0x14 <L6>
+; 			__u64 end = now < state->deadline_ns ? now : state->deadline_ns;
+      33:	r3 = *(u64 *)(r0 + 0x18)
+      34:	r2 = r9
+      35:	if r9 < r3 goto +0x1 <L1>
+      36:	r2 = r3
+<L1>:
+; 			if (state->end_ns && state->end_ns < end)
+      37:	r3 = *(u64 *)(r0 + 0x10)
+      38:	r4 = r3
+      39:	if r3 < r2 goto +0x1 <L2>
+      40:	r4 = r2
+<L2>:
+; 			if (state->end_ns && state->end_ns < end)
+      41:	if r3 == 0x0 goto +0x1 <L3>
+      42:	r2 = r4
+<L3>:
+; 			__u64 start = sched->run_start_ns > state->start_ns ?
+      43:	r3 = *(u64 *)(r0 + 0x8)
+      44:	if r1 > r3 goto +0x1 <L4>
+      45:	r1 = r3
+<L4>:
+; 			if (end > start)
+      46:	if r2 <= r1 goto +0x4 <L5>
+; 				state->boosted_runtime_ns += end - start;
+      47:	r2 -= r1
+      48:	r1 = *(u64 *)(r0 + 0x20)
+      49:	r2 += r1
+      50:	*(u64 *)(r0 + 0x20) = r2
+<L5>:
+; 			state->last_run_start_ns = 0;
+      51:	r1 = 0x0
+      52:	*(u64 *)(r0 + 0x28) = r1
+<L6>:
+; 		sched->run_start_ns = 0;
+      53:	r1 = 0x0
+      54:	*(u64 *)(r7 + 0x8) = r1
+<L7>:
+; 	__u32 pid = p->pid;
+      55:	w1 = *(u32 *)(r6 + 0xa88)
+      56:	*(u32 *)(r10 - 0x8) = w1
+      57:	r2 = r10
+      58:	r2 += -0x8
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+      59:	r1 = 0x0 ll
+      61:	call 0x1
+; 	if (!state || !state->active)
+      62:	if r0 == 0x0 goto +0x1f <L11>
+      63:	w1 = *(u32 *)(r0 + 0x48)
+      64:	if w1 == 0x0 goto +0x1d <L11>
+      65:	r1 = *(u64 *)(r0 + 0x8)
+; 	if (state->deadline_ns == 0 ||
+      66:	r2 = *(u64 *)(r0 + 0x18)
+      67:	if r2 == 0x0 goto +0x6 <L8>
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      68:	if r9 >= r2 goto +0x5 <L8>
+      69:	r3 = r2
+      70:	r3 -= r1
+      71:	r4 = 0x2540be401 ll
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      73:	if r3 < r4 goto +0x14 <L11>
+<L8>:
+      74:	r3 = r2
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      75:	if r2 < r9 goto +0x1 <L9>
+      76:	r3 = r9
+<L9>:
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      77:	if r2 > r1 goto +0x1 <L10>
+      78:	r3 = r9
+<L10>:
+; 		state->active = 0;
+      79:	r1 = 0x200000000 ll
+      81:	*(u64 *)(r0 + 0x48) = r1
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      82:	*(u64 *)(r0 + 0x10) = r3
+; 		state->termination_reason = PULSE_REASON_TIMEOUT;
+      83:	w1 = 0x2
+      84:	*(u32 *)(r10 - 0x4) = w1
+      85:	r2 = r10
+      86:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      87:	r1 = 0x0 ll
+      89:	call 0x1
+; 	if (value)
+      90:	if r0 == 0x0 goto +0x3 <L11>
+; 		(*value)++;
+      91:	r1 = *(u64 *)(r0 + 0x0)
+      92:	r1 += 0x1
+      93:	*(u64 *)(r0 + 0x0) = r1
+<L11>:
+; void BPF_STRUCT_OPS(pulse_stopping, struct task_struct *p, bool runnable)
+      94:	exit
+
+Disassembly of section struct_ops/pulse_tick:
+
+0000000000000000 <pulse_tick>:
+; void BPF_STRUCT_OPS(pulse_tick, struct task_struct *p)
+       0:	r7 = *(u64 *)(r1 + 0x0)
+; 	expire_if_needed(p, bpf_ktime_get_ns());
+       1:	call 0x5
+       2:	r6 = r0
+; 	__u32 pid = p->pid;
+       3:	w1 = *(u32 *)(r7 + 0xa88)
+       4:	*(u32 *)(r10 - 0x8) = w1
+       5:	r2 = r10
+       6:	r2 += -0x8
+; 	return bpf_map_lookup_elem(&task_state, &pid);
+       7:	r1 = 0x0 ll
+       9:	call 0x1
+; 	if (!state || !state->active)
+      10:	if r0 == 0x0 goto +0x1f <L3>
+      11:	w1 = *(u32 *)(r0 + 0x48)
+      12:	if w1 == 0x0 goto +0x1d <L3>
+      13:	r1 = *(u64 *)(r0 + 0x8)
+; 	if (state->deadline_ns == 0 ||
+      14:	r2 = *(u64 *)(r0 + 0x18)
+      15:	if r2 == 0x0 goto +0x6 <L0>
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      16:	if r6 >= r2 goto +0x5 <L0>
+      17:	r3 = r2
+      18:	r3 -= r1
+      19:	r4 = 0x2540be401 ll
+; 	    state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS ||
+      21:	if r3 < r4 goto +0x14 <L3>
+<L0>:
+      22:	r3 = r2
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      23:	if r2 < r6 goto +0x1 <L1>
+      24:	r3 = r6
+<L1>:
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      25:	if r2 > r1 goto +0x1 <L2>
+      26:	r3 = r6
+<L2>:
+; 		state->active = 0;
+      27:	r1 = 0x200000000 ll
+      29:	*(u64 *)(r0 + 0x48) = r1
+; 		state->end_ns = state->deadline_ns > state->start_ns &&
+      30:	*(u64 *)(r0 + 0x10) = r3
+; 		state->termination_reason = PULSE_REASON_TIMEOUT;
+      31:	w1 = 0x2
+      32:	*(u32 *)(r10 - 0x4) = w1
+      33:	r2 = r10
+      34:	r2 += -0x4
+; 	__u64 *value = bpf_map_lookup_elem(&metrics, &index);
+      35:	r1 = 0x0 ll
+      37:	call 0x1
+; 	if (value)
+      38:	if r0 == 0x0 goto +0x3 <L3>
+; 		(*value)++;
+      39:	r1 = *(u64 *)(r0 + 0x0)
+      40:	r1 += 0x1
+      41:	*(u64 *)(r0 + 0x0) = r1
+<L3>:
+; void BPF_STRUCT_OPS(pulse_tick, struct task_struct *p)
+      42:	exit
+
+Disassembly of section struct_ops/pulse_init_task:
+
+0000000000000000 <pulse_init_task>:
+; s32 BPF_STRUCT_OPS(pulse_init_task, struct task_struct *p,
+       0:	r2 = *(u64 *)(r1 + 0x0)
+; 	return bpf_task_storage_get(&sched_state, p, 0,
+       1:	r1 = 0x0 ll
+       3:	r3 = 0x0
+       4:	r4 = 0x1
+       5:	call 0x9c
+       6:	r1 = r0
+       7:	w0 = -0xc
+       8:	if r1 == 0x0 goto +0x1 <L0>
+       9:	w0 = 0x0
+<L0>:
+; s32 BPF_STRUCT_OPS(pulse_init_task, struct task_struct *p,
+      10:	exit
+
+Disassembly of section struct_ops/pulse_exit_task:
+
+0000000000000000 <pulse_exit_task>:
+; void BPF_STRUCT_OPS(pulse_exit_task, struct task_struct *p,
+       0:	r1 = *(u64 *)(r1 + 0x0)
+; 	__u32 pid = p->pid;
+       1:	w1 = *(u32 *)(r1 + 0xa88)
+       2:	*(u32 *)(r10 - 0x4) = w1
+       3:	r2 = r10
+       4:	r2 += -0x4
+; 	bpf_map_delete_elem(&task_state, &pid);
+       5:	r1 = 0x0 ll
+       7:	call 0x3
+; void BPF_STRUCT_OPS(pulse_exit_task, struct task_struct *p,
+       8:	exit
+
+Disassembly of section struct_ops/pulse_enable:
+
+0000000000000000 <pulse_enable>:
+; void BPF_STRUCT_OPS(pulse_enable, struct task_struct *p)
+       0:	r2 = *(u64 *)(r1 + 0x0)
+; 	return bpf_task_storage_get(&sched_state, p, 0, 0);
+       1:	r1 = 0x0 ll
+       3:	r3 = 0x0
+       4:	r4 = 0x0
+       5:	call 0x9c
+; 	if (sched)
+       6:	if r0 == 0x0 goto +0x4 <L0>
+; 		sched->vtime = vtime_now;
+       7:	r1 = 0x0 ll
+       9:	r1 = *(u64 *)(r1 + 0x0)
+      10:	*(u64 *)(r0 + 0x0) = r1
+<L0>:
+; void BPF_STRUCT_OPS(pulse_enable, struct task_struct *p)
+      11:	exit
+
+Disassembly of section struct_ops.s/pulse_init:
+
+0000000000000000 <pulse_init>:
+; 	return scx_bpf_create_dsq(SHARED_DSQ, -1);
+       0:	r1 = 0x0
+       1:	w2 = -0x1
+       2:	call -0x1
+; s32 BPF_STRUCT_OPS_SLEEPABLE(pulse_init)
+       3:	exit
+
+Disassembly of section struct_ops/pulse_exit:
+
+0000000000000000 <pulse_exit>:
+; void BPF_STRUCT_OPS(pulse_exit, struct scx_exit_info *ei)
+       0:	r6 = *(u64 *)(r1 + 0x0)
+; 	UEI_RECORD(uei, ei);
+       1:	r3 = *(u64 *)(r6 + 0x18)
+       2:	r7 = 0x0 ll
+       4:	r1 = 0x0 ll
+       6:	r1 += 0x10
+       7:	w2 = 0x80
+       8:	call 0x73
+       9:	r1 = 0x0 ll
+      11:	r1 += 0x90
+      12:	r3 = *(u64 *)(r6 + 0x30)
+      13:	w2 = 0x400
+      14:	call 0x73
+      15:	r1 = 0x0 ll
+      17:	w2 = *(u32 *)(r1 + 0x0)
+      18:	r3 = *(u64 *)(r6 + 0x38)
+      19:	r1 = 0x0 ll
+      21:	call 0x73
+      22:	r1 = 0x1
+; 	UEI_RECORD(uei, ei);
+      23:	if w1 == 0x0 goto +0x2 <L0>
+      24:	r1 = *(u64 *)(r6 + 0x8)
+      25:	*(u64 *)(r7 + 0x8) = r1
+<L0>:
+      26:	w1 = *(u32 *)(r6 + 0x0)
+      27:	w0 = *(u32 *)(r7 + 0x0)
+      28:	w0 = cmpxchg32_32(r7 + 0x0, w0, w1)
+; void BPF_STRUCT_OPS(pulse_exit, struct scx_exit_info *ei)
+      29:	exit

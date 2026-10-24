@@ -1,0 +1,45 @@
+{
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "order": [
+    "linux",
+    "lavd",
+    "pulse-off",
+    "prophet-static-2",
+    "prophet-adaptive"
+  ],
+  "trials_per_arm": 32,
+  "warmup_seconds": 1,
+  "work_ms_per_stage": 20,
+  "stages": 4,
+  "interval_ms": 200,
+  "worker_deadline_s": 105,
+  "total_budget_s": 120,
+  "cleanup_may_exceed_budget": true,
+  "sha256": {
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": "dc6ba0bd0940537ccba7f5b3e0691b0d6ee69eb7b1e0b322a1a41f69fa7eb769",
+    "src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+    "benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0",
+    "/usr/bin/scx_lavd": "e6d54eebde3d59c198be75548b51c673012e3b5499b4414886b88beb2526a954",
+    "scripts/demo_review.py": "ec6360e00aa72dc2d6bdccdfbeebcf0c04d15eea7c5120d55bb18cde667f8711",
+    "scripts/demo_review_dashboard.py": "2b82bcf04d212ffbcce6e2c8c92e2a408ac4a27441c80f78a742c66c57518e1d",
+    "scripts/demo_review.fish": "3320c16b86a46eefd61613c37ee92b4ef1f6f304f77f1289f6ef771d82c11b27"
+  }
+}

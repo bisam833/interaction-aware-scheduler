@@ -1,0 +1,23 @@
+test_both_modes_and_ttl_are_required_for_success (test_audit_preflight.PreflightTests.test_both_modes_and_ttl_are_required_for_success) ... ok
+test_propagation_load_failure_aborts_gate_and_cleans_up (test_audit_preflight.PreflightTests.test_propagation_load_failure_aborts_gate_and_cleans_up) ... ok
+test_selected_verifier_configurations (test_audit_preflight.PreflightTests.test_selected_verifier_configurations) ... ok
+test_missing_timeout_and_invalid_clock_are_not_successes (test_latency_summary.SummaryTests.test_missing_timeout_and_invalid_clock_are_not_successes) ... ok
+test_missing_duplicate_or_wrong_condition_rejected (test_prophet_analysis.AnalysisTests.test_missing_duplicate_or_wrong_condition_rejected) ... ok
+test_pair_by_block_not_input_order (test_prophet_analysis.AnalysisTests.test_pair_by_block_not_input_order) ... ok
+test_throughput_and_gap_fail_even_with_lower_latency (test_prophet_analysis.AnalysisTests.test_throughput_and_gap_fail_even_with_lower_latency) ... ok
+test_windows_reset_invalid_and_include_boundary_bin (test_prophet_analysis.AnalysisTests.test_windows_reset_invalid_and_include_boundary_bin) ... ok
+test_external_descriptors_and_release (test_prophet_matrix.MatrixTests.test_external_descriptors_and_release) ... ok
+test_load_failure_stops_only_owned_scheduler (test_prophet_matrix.MatrixTests.test_load_failure_stops_only_owned_scheduler) ... ok
+test_no_silent_epoch_or_controller_failure (test_prophet_matrix.MatrixTests.test_no_silent_epoch_or_controller_failure) ... ok
+test_structural_failure_also_saves_verdict (test_prophet_matrix.MatrixTests.test_structural_failure_also_saves_verdict) ... ok
+test_timeout_fails_despite_clean_process_exits_and_saves_verdict (test_prophet_matrix.MatrixTests.test_timeout_fails_despite_clean_process_exits_and_saves_verdict) ... ok
+test_valid_block_and_no_duplicate_stage (test_prophet_matrix.MatrixTests.test_valid_block_and_no_duplicate_stage) ... ok
+test_gate_rejects_false_fallback_success (test_prophet_tools.ProphetToolsTests.test_gate_rejects_false_fallback_success) ... ok
+test_incomplete_and_invalid_remain_visible (test_prophet_tools.ProphetToolsTests.test_incomplete_and_invalid_remain_visible) ... ok
+test_rodata_variants_and_epoch_abi (test_prophet_tools.ProphetToolsTests.test_rodata_variants_and_epoch_abi) ... ok
+test_tail_support_and_saturation (test_prophet_tools.ProphetToolsTests.test_tail_support_and_saturation) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.008s
+
+OK

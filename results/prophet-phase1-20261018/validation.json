@@ -1,0 +1,37 @@
+{
+  "kernel": "7.2.10-1-cachyos",
+  "phase": "Phase 1 incomplete: host acceptance blocked",
+  "checks": {
+    "bpf_compile": "PASS",
+    "skeleton_generation": "PASS",
+    "userspace_build": "PASS",
+    "btf_parse": "PASS",
+    "native_asan_ubsan": "PASS",
+    "python_tests": 8,
+    "original_worker_test": "PASS",
+    "original_feedback_test": "PASS",
+    "original_policy_test": "PASS",
+    "baseline_preservation": "PASS",
+    "verifier": "NOT_REACHED",
+    "attach_detach": "UNTESTED",
+    "host_fairness": "UNTESTED",
+    "lease_runtime": "UNTESTED",
+    "wayland": "BLOCKED: connection failed",
+    "performance": "NOT_RUN",
+    "prediction": "NOT_IMPLEMENTED"
+  },
+  "blocker": "CapEff=0; NoNewPrivs=1; libbpf trivial BPF probe EPERM; sudo unavailable in namespace",
+  "sha256": {
+    "src/scx_prophet/prophet.bpf.c": "1efc11502ef4b4650ebc4039947d6a445ee5aff18e083a7e317d07d5d28cb325",
+    "src/scx_prophet/prophet.c": "003bd1aa6106404c447bca5b52e5fd5cc705cbbc79402a8306a52c6a14d375f1",
+    "src/scx_prophet/prophet.h": "9462903f655d2c3cd898a16ae21dbbccf4fd8a2c1ea03e66f8b7839b40f000f9",
+    "src/scx_prophet/control.h": "a811f2ae151053ac5da3758b96a11deae0ec0666a42996503e0e4ee60a97210e",
+    "src/scx_prophet/Makefile": "050a0bf1c2cd5309ea11ed653b82560ac4b10cf17f6ad76afec6cbe65dd18fde",
+    "src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+    "src/scx_prophet/build/prophet.bpf.o": "da2ff112f239e4680aa1bd06a3f75362ee7973570dd1aa529731e231d0266b0d",
+    "scripts/prophet_smoke.py": "3029efe421660b4df62e4890060a03e182a3cdd56f4f191916a55b9971d4f14c",
+    "scripts/summarize_prophet.py": "a49882928b0e7aca2d81d021979351c073e89d5dacaa880edea941adddabfdb7",
+    "tests/prophet_policy_test.c": "79443a70aa37fad53894f49cecac9da31962747dc0479d50da3d7cb9cc4c0135",
+    "tests/test_prophet_tools.py": "7cf871ad2013ecc0791e5967f3f6d253b508ac620d68a99ae73803e53dd65279"
+  }
+}

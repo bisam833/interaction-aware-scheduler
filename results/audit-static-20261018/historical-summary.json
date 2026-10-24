@@ -1,0 +1,200 @@
+[
+  {
+    "file": "results/raw/phase6-compare-half-linux-20-20261014-083850.jsonl",
+    "n": 0,
+    "dependency_chain": false,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": null,
+        "p95": null,
+        "p99": null
+      },
+      "work_to_commit": {
+        "p50": null,
+        "p95": null,
+        "p99": null
+      },
+      "commit_to_presentation": {
+        "p50": null,
+        "p95": null,
+        "p99": null
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-half-linux-3-20261014-084516.jsonl",
+    "n": 3,
+    "dependency_chain": false,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 58.312833,
+        "p95": 69.69784920000001,
+        "p99": 70.70985064
+      },
+      "work_to_commit": {
+        "p50": 20.131229,
+        "p95": 20.583182,
+        "p99": 20.6233556
+      },
+      "commit_to_presentation": {
+        "p50": 37.679324,
+        "p95": 49.6142582,
+        "p99": 50.67514124
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-half-pulsesched-3-20261014-084517.jsonl",
+    "n": 3,
+    "dependency_chain": true,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 130.312047,
+        "p95": 1244.146035,
+        "p99": 1343.1535006
+      },
+      "work_to_commit": {
+        "p50": 80.134185,
+        "p95": 1224.3123893999998,
+        "p99": 1326.01711868
+      },
+      "commit_to_presentation": {
+        "p50": 16.462016,
+        "p95": 46.8154718,
+        "p99": 49.51355676
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-heavy-linux-3-20261014-084521.jsonl",
+    "n": 3,
+    "dependency_chain": false,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 37.766334,
+        "p95": 39.1645785,
+        "p99": 39.288866899999995
+      },
+      "work_to_commit": {
+        "p50": 20.028026,
+        "p95": 21.3350915,
+        "p99": 21.4512751
+      },
+      "commit_to_presentation": {
+        "p50": 17.738198,
+        "p95": 17.829431,
+        "p99": 17.8375406
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-heavy-pulsesched-3-20261014-084522.jsonl",
+    "n": 3,
+    "dependency_chain": true,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 1043.259503,
+        "p95": 1367.5831727,
+        "p99": 1396.4119433399999
+      },
+      "work_to_commit": {
+        "p50": 1019.908316,
+        "p95": 1347.8148578,
+        "p99": 1376.9621059600001
+      },
+      "commit_to_presentation": {
+        "p50": 19.915987,
+        "p95": 23.007613,
+        "p99": 23.282424199999998
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-idle-linux-20-20261014-083840.jsonl",
+    "n": 20,
+    "dependency_chain": false,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 39.64322,
+        "p95": 63.153741200000006,
+        "p99": 68.28532503999999
+      },
+      "work_to_commit": {
+        "p50": 20.0840685,
+        "p95": 20.118141350000002,
+        "p99": 20.17932667
+      },
+      "commit_to_presentation": {
+        "p50": 19.529825,
+        "p95": 43.06968005,
+        "p99": 48.19971121
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-idle-linux-3-20261014-084513.jsonl",
+    "n": 3,
+    "dependency_chain": false,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 42.891017,
+        "p95": 54.8768696,
+        "p99": 55.94227872
+      },
+      "work_to_commit": {
+        "p50": 20.028698,
+        "p95": 20.0412152,
+        "p99": 20.04232784
+      },
+      "commit_to_presentation": {
+        "p50": 22.848301,
+        "p95": 34.8545242,
+        "p99": 35.92174404
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-idle-pulsesched-20-20261014-083846.jsonl",
+    "n": 20,
+    "dependency_chain": true,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 95.1163295,
+        "p95": 125.0501009,
+        "p99": 135.44426977999998
+      },
+      "work_to_commit": {
+        "p50": 80.2248,
+        "p95": 80.29987065,
+        "p99": 80.30301173000001
+      },
+      "commit_to_presentation": {
+        "p50": 14.930707,
+        "p95": 44.831851750000006,
+        "p99": 55.15754234999998
+      }
+    }
+  },
+  {
+    "file": "results/raw/phase6-compare-idle-pulsesched-3-20261014-084514.jsonl",
+    "n": 3,
+    "dependency_chain": true,
+    "metrics_ms": {
+      "client_to_presentation": {
+        "p50": 120.467935,
+        "p95": 121.3336126,
+        "p99": 121.41056172
+      },
+      "work_to_commit": {
+        "p50": 80.126239,
+        "p95": 80.1287905,
+        "p99": 80.1290173
+      },
+      "commit_to_presentation": {
+        "p50": 40.341646,
+        "p95": 41.2390909,
+        "p99": 41.31886378
+      }
+    }
+  }
+]

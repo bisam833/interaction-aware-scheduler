@@ -1,0 +1,5 @@
+libbpf: Failed to bump RLIMIT_MEMLOCK (err = -EPERM), you might need to do it explicitly!
+libbpf: Error in bpf_object__probe_loading(): -EPERM. Couldn't load trivial BPF program. Make sure your kernel supports BPF (CONFIG_BPF_SYSCALL=y) and/or that RLIMIT_MEMLOCK is set to big enough value.
+libbpf: failed to load BPF skeleton 'pulsesched': -EPERM
+[SCX_BUG] pulsesched_ctl.c:73 (Operation not permitted)
+Failed to load skel

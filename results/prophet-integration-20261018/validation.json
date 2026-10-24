@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "host_smoke": "PASS: all nine variants; current scheduler binary hash matches",
+    "host_adaptive_switching": "NOT_EXERCISED: only profile 0",
+    "external_benchmark_build": "PASS",
+    "native_external_backend_asan_ubsan": "PASS: BPF map and sched policy syscalls mocked; real pidfd lifecycle",
+    "shared_source_worker_and_feedback_tests": "PASS in separate temporary build",
+    "python_tests": "12 PASS",
+    "existing_block_integrity": "48 PASS",
+    "original_binaries": "UNCHANGED",
+    "external_wayland_integration": "PENDING_HOST_PREFLIGHT",
+    "sandbox_wayland_attempt": "BLOCKED: connection failed, exit 3",
+    "performance_comparisons": "NOT_RUN"
+  },
+  "sha256": {
+    "benchmarks/wayland_interaction/benchmark.c": "4b204a7212609a8c93289e4e24e010f79b774c50caa7d2b0fa325f186e33af8e",
+    "benchmarks/wayland_interaction/external_scheduler.h": "a59785629187f7e78a70a052bb7f67e551bbf09542122f8385abbd7aa2eef57b",
+    "benchmarks/wayland_interaction/Makefile": "557fdaf93b9ef75cac10e1c1ad56cdfbc5b33716b6c265967339f0f8e7c72f97",
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": "16062e1adc2a3d5abb9c09767ad7e729b2d4b8d870695c5e4359d220471bc160",
+    "scripts/audit_latency.py": "5663370d9b2ba3d0914713dc787fa528ded0e03ccba9f2519d2a0159d0a4a665",
+    "scripts/prophet_matrix.py": "e5ae7f82e6390a7aba35001252a6d89c0ed0c291ee7baec694caa91e94165cb1",
+    "tests/prophet_backend_test.c": "66699f93331d520186300d906c70eccf5005b8d7cb29e4d27fde9afa27eb6286",
+    "tests/test_prophet_matrix.py": "606e0081bd8611e1210962fd05731e9d734106de0a0209101346cb20d874944f"
+  }
+}

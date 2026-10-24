@@ -1,0 +1,10 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"scheduler","mode":"pulsesched-closed-loop","ttl_ms":100,"policy":"SCHED_EXT","propagation_enabled":true,"max_propagation_depth":2}
+{"type":"dependency_chain","root_pid":55034,"root_policy":7,"worker_pids":[55036,55037,55038,55039],"worker_policies":[7,7,7,7],"edges":[[0,1],[1,2],[2,3]]}
+{"type":"interaction","interaction_id":1,"scheduler_mode":"closed","input_ns":35638133345491,"work_start_ns":35638133345551,"commit_ns":35638153602705,"feedback_request_ns":35638153602825,"epoch_register_ns":35638133363775}
+{"type":"scheduler_epoch","interaction_id":1,"active":0,"end_ns":35638171649013,"termination_reason":1,"termination_reason_name":"PRESENTATION_FEEDBACK","boosted_runtime_ns":258850,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"epoch_member","interaction_id":1,"pid":55036,"active":0,"inherited":1,"depth":1,"parent_pid":55034,"boosted_runtime_ns":5038049,"termination_reason":1}
+{"type":"epoch_member","interaction_id":1,"pid":55037,"active":0,"inherited":1,"depth":2,"parent_pid":55036,"boosted_runtime_ns":5014944,"termination_reason":1}
+{"type":"epoch_member","interaction_id":1,"pid":55034,"active":0,"inherited":0,"depth":0,"parent_pid":0,"boosted_runtime_ns":258850,"termination_reason":1}
+{"type":"propagation_metrics","interaction_id":1,"attempts":38,"successful_inherited_boosts":2,"depth_rejected":2,"inactive_rejected":33,"inherited_urgent_enqueues":0,"inherited_urgent_dispatches":4}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":35638133345491,"work_start_ns":35638133345551,"commit_ns":35638153602705,"presentation_ns":35638170914000,"input_to_work_ns":60,"work_to_commit_ns":20257154,"commit_to_presentation_ns":17311295,"presentation_clock_id":1,"presentation_flags":7,"scheduler_mode":"closed","feedback_request_ns":35638153602825,"epoch_register_ns":35638133363775,"epoch_start_ns":35638133345491,"epoch_termination_ns":35638171649013,"termination_reason":1,"termination_reason_name":"PRESENTATION_FEEDBACK","maximum_ttl_ms":100,"boosted_runtime_ns":258850,"normal_enqueues":0,"urgent_enqueues":0}

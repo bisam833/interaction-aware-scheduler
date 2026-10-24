@@ -1,0 +1,199 @@
+{
+  "raw_directory": "results/prophet-host-smoke-01",
+  "hash_matches": {
+    "src/scx_prophet/build/scx_prophet": true,
+    "benchmarks/wayland_interaction/build/pulse-load": true
+  },
+  "variants": [
+    {
+      "name": "adaptive",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        14358,
+        0,
+        0
+      ],
+      "requested_profiles": [
+        -1,
+        0
+      ],
+      "urgent_cpu_fraction": 0.5050885207097361,
+      "max_worker_batch_gap_ms": 43.970354,
+      "lease_delta": null
+    },
+    {
+      "name": "freeze",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        5832,
+        0,
+        5851
+      ],
+      "requested_profiles": [
+        -1,
+        2
+      ],
+      "urgent_cpu_fraction": 0.5063604501524274,
+      "max_worker_batch_gap_ms": 29.011508,
+      "lease_delta": [
+        2528,
+        0,
+        0,
+        2528
+      ]
+    },
+    {
+      "name": "no-telemetry",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        0,
+        0,
+        0
+      ],
+      "requested_profiles": [
+        0
+      ],
+      "urgent_cpu_fraction": 0.5059575735523135,
+      "max_worker_batch_gap_ms": 65.031348,
+      "lease_delta": null
+    },
+    {
+      "name": "observe",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        11579,
+        0,
+        0
+      ],
+      "requested_profiles": [
+        -1,
+        0
+      ],
+      "urgent_cpu_fraction": 0.5102107682502116,
+      "max_worker_batch_gap_ms": 43.979241,
+      "lease_delta": null
+    },
+    {
+      "name": "propagation",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        10008,
+        0,
+        0
+      ],
+      "requested_profiles": [
+        -1,
+        0
+      ],
+      "urgent_cpu_fraction": 0.5049087271695971,
+      "max_worker_batch_gap_ms": 64.999617,
+      "lease_delta": null
+    },
+    {
+      "name": "sigkill",
+      "scheduler_returncode": -9,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        14644,
+        0,
+        0
+      ],
+      "requested_profiles": [
+        -1,
+        0
+      ],
+      "urgent_cpu_fraction": 0.5069686430994244,
+      "max_worker_batch_gap_ms": 44.070214,
+      "lease_delta": null
+    },
+    {
+      "name": "sigstop",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        5659,
+        0,
+        10603
+      ],
+      "requested_profiles": [
+        -1,
+        2
+      ],
+      "urgent_cpu_fraction": 0.505027349628885,
+      "max_worker_batch_gap_ms": 29.042937,
+      "lease_delta": [
+        2379,
+        0,
+        0,
+        2379
+      ]
+    },
+    {
+      "name": "static-1",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        145,
+        12533,
+        0
+      ],
+      "requested_profiles": [
+        -1,
+        1
+      ],
+      "urgent_cpu_fraction": 0.5070923603763442,
+      "max_worker_batch_gap_ms": 24.012501,
+      "lease_delta": null
+    },
+    {
+      "name": "static-2",
+      "scheduler_returncode": 0,
+      "after": {
+        "state": "disabled",
+        "rejected": 0
+      },
+      "profile_enqueues": [
+        270,
+        0,
+        10922
+      ],
+      "requested_profiles": [
+        -1,
+        2
+      ],
+      "urgent_cpu_fraction": 0.505640557208489,
+      "max_worker_batch_gap_ms": 24.960898,
+      "lease_delta": null
+    }
+  ],
+  "scope": "host smoke; adaptive profile switches not exercised"
+}

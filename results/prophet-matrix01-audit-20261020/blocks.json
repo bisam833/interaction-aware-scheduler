@@ -1,0 +1,1704 @@
+[
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-lavd-0.jsonl",
+    "condition": "heavy",
+    "implementation": "lavd",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5225777570.663042,
+    "background_max_progress_gap_ms": 22.982192,
+    "benchmark_usage": {
+      "ru_utime": 2.1338690000000042,
+      "ru_stime": 0.2802030000000002,
+      "ru_nvcsw": 791,
+      "ru_nivcsw": 280
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 126.17267100000001,
+        "p95": 129.71826715,
+        "p99": 132.4904632
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 84.3825495,
+        "p95": 87.90103169999999,
+        "p99": 89.13367725
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 40.9186655,
+        "p95": 47.929661899999985,
+        "p99": 50.34025167
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.01037,
+        "p95": 0.04622929999999997,
+        "p99": 0.16351788000000003
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.00342,
+        "p95": 20.0049326,
+        "p99": 20.00512097
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 1.4646325,
+        "p95": 1.89788695,
+        "p99": 2.3633736300000003
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.910296623028962,
+        "p95": 5.7516259167955965,
+        "p99": 6.040900033204384
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001364,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-lavd-1.jsonl",
+    "condition": "heavy",
+    "implementation": "lavd",
+    "block": 1,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5155488874.208272,
+    "background_max_progress_gap_ms": 23.345742,
+    "benchmark_usage": {
+      "ru_utime": 2.1625940000001265,
+      "ru_stime": 0.25172099999999986,
+      "ru_nvcsw": 790,
+      "ru_nivcsw": 276
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 126.3638765,
+        "p95": 128.04659945,
+        "p99": 162.86049913000005
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 84.56602050000001,
+        "p95": 88.63487694999999,
+        "p99": 89.22291647
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 41.572630000000004,
+        "p95": 44.68666445,
+        "p99": 80.58471124000005
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.010575000000000001,
+        "p95": 0.023657649999999995,
+        "p99": 0.22381111000000015
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0034675,
+        "p95": 20.0049958,
+        "p99": 20.00510964
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 1.6055125000000001,
+        "p95": 2.03106785,
+        "p99": 2.30987564
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.988773270219004,
+        "p95": 5.36246172405753,
+        "p99": 9.670277137203712
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.00138,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-linux-0.jsonl",
+    "condition": "heavy",
+    "implementation": "linux",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5485598398.776545,
+    "background_max_progress_gap_ms": 22.673454,
+    "benchmark_usage": {
+      "ru_utime": 2.1556519999999995,
+      "ru_stime": 0.25590199999999985,
+      "ru_nvcsw": 827,
+      "ru_nivcsw": 1590
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 233.033887,
+        "p95": 285.1623307,
+        "p99": 293.2655891
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 198.92535099999998,
+        "p95": 238.7754741,
+        "p99": 242.04137993
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 40.1768455,
+        "p95": 44.27264395,
+        "p99": 64.41970880000002
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.006076,
+        "p95": 1.7753507499999992,
+        "p99": 3.2068310600000003
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.003398,
+        "p95": 20.00518225,
+        "p99": 20.005717339999997
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 0.017689999999999997,
+        "p95": 0.8345066999999975,
+        "p99": 1.4586683600000003
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.821277193964362,
+        "p95": 5.312778689721653,
+        "p99": 7.730454420053099
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001544,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-prophet-adaptive-0.jsonl",
+    "condition": "heavy",
+    "implementation": "prophet-adaptive",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5216367259.906857,
+    "background_max_progress_gap_ms": 44.020691,
+    "benchmark_usage": {
+      "ru_utime": 2.178908999999976,
+      "ru_stime": 0.23580100000000037,
+      "ru_nvcsw": 760,
+      "ru_nivcsw": 259
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 133.7948055,
+        "p95": 147.47422114999998,
+        "p99": 189.76217598000005
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 91.2886525,
+        "p95": 95.81390535,
+        "p99": 97.68002126
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 40.789516500000005,
+        "p95": 55.84338299999998,
+        "p99": 106.16865697000006
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.0081805,
+        "p95": 0.09300209999999992,
+        "p99": 0.4631218200000007
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0033305,
+        "p95": 20.0049541,
+        "p99": 20.00511035
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 0.9900345,
+        "p95": 7.880580299999988,
+        "p99": 10.15833577
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.894798563871399,
+        "p95": 6.701283426836412,
+        "p99": 12.7403861152635
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001483,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-prophet-observe-0.jsonl",
+    "condition": "heavy",
+    "implementation": "prophet-observe",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5101218158.849826,
+    "background_max_progress_gap_ms": 64.276284,
+    "benchmark_usage": {
+      "ru_utime": 2.165153000000032,
+      "ru_stime": 0.251023,
+      "ru_nvcsw": 725,
+      "ru_nivcsw": 1
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 121.081558,
+        "p95": 129.06848935,
+        "p99": 132.68780483
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 80.268461,
+        "p95": 81.72692285,
+        "p99": 82.58381085
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 40.6801275,
+        "p95": 48.84544799999999,
+        "p99": 52.464240620000005
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.010134,
+        "p95": 0.07220929999999995,
+        "p99": 0.5394659400000001
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.003216000000002,
+        "p95": 20.0049146,
+        "p99": 20.00510743
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 2.060447,
+        "p95": 9.696442449999996,
+        "p99": 10.655062930000001
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.881671732125223,
+        "p95": 5.86152151918876,
+        "p99": 6.295781653635916
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001544,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-prophet-static-1-0.jsonl",
+    "condition": "heavy",
+    "implementation": "prophet-static-1",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5128738812.265679,
+    "background_max_progress_gap_ms": 42.354416,
+    "benchmark_usage": {
+      "ru_utime": 2.1699310000000196,
+      "ru_stime": 0.24511699999999959,
+      "ru_nvcsw": 794,
+      "ru_nivcsw": 125
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 124.8083055,
+        "p95": 126.97846394999999,
+        "p99": 131.74942087
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 84.2448915,
+        "p95": 89.24166705,
+        "p99": 93.09032237000001
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 39.730297500000006,
+        "p95": 42.740786099999994,
+        "p99": 43.96739767
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.0081455,
+        "p95": 0.06042924999999995,
+        "p99": 0.5450095900000004
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0035135,
+        "p95": 20.0050534,
+        "p99": 20.00662868
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 1.2437715,
+        "p95": 2.7007567999999993,
+        "p99": 2.8493678399999998
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.767690814505816,
+        "p95": 5.128953622703878,
+        "p99": 5.276148712679119
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001411,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-prophet-static-2-0.jsonl",
+    "condition": "heavy",
+    "implementation": "prophet-static-2",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5154018127.749946,
+    "background_max_progress_gap_ms": 45.073022,
+    "benchmark_usage": {
+      "ru_utime": 2.1764100000000326,
+      "ru_stime": 0.23907599999999984,
+      "ru_nvcsw": 776,
+      "ru_nivcsw": 372
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 132.089507,
+        "p95": 141.77447105,
+        "p99": 142.66447395
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 92.9653815,
+        "p95": 101.35723829999999,
+        "p99": 108.94958383000001
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 39.067533999999995,
+        "p95": 42.94875245,
+        "p99": 43.27014283
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.008250500000000001,
+        "p95": 0.021610149999999998,
+        "p99": 0.13818765000000022
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0032455,
+        "p95": 20.005127400000003,
+        "p99": 20.00557456
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 0.950657,
+        "p95": 2.5778598499999976,
+        "p99": 2.97469483
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.68815827510966,
+        "p95": 5.153909873198134,
+        "p99": 5.192477164636023
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001402,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-prophet-unobserved-0.jsonl",
+    "condition": "heavy",
+    "implementation": "prophet-unobserved",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5189299158.209724,
+    "background_max_progress_gap_ms": 45.184411,
+    "benchmark_usage": {
+      "ru_utime": 2.140645000000177,
+      "ru_stime": 0.27305400000000013,
+      "ru_nvcsw": 655,
+      "ru_nivcsw": 0
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 122.2737245,
+        "p95": 146.35331469999997,
+        "p99": 152.59211047
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 80.4466275,
+        "p95": 81.77565589999999,
+        "p99": 82.04374105999999
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 41.6757245,
+        "p95": 65.60118039999996,
+        "p99": 71.93617599
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.0195625,
+        "p95": 0.2217497,
+        "p99": 0.28736032000000006
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0031655,
+        "p95": 20.0049872,
+        "p99": 20.005064819999998
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 4.5350095,
+        "p95": 12.581601099999997,
+        "p99": 15.944710280000004
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 5.001144753233348,
+        "p95": 7.872232651009441,
+        "p99": 8.632440909816918
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001449,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-pulse-off-0.jsonl",
+    "condition": "heavy",
+    "implementation": "pulse-off",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5085060128.372669,
+    "background_max_progress_gap_ms": 45.448635,
+    "benchmark_usage": {
+      "ru_utime": 2.186696999999981,
+      "ru_stime": 0.2690910000000004,
+      "ru_nvcsw": 702,
+      "ru_nivcsw": 63
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 122.09808749999999,
+        "p95": 142.07781349999993,
+        "p99": 193.05470901000004
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 80.46157099999999,
+        "p95": 81.67382239999999,
+        "p99": 82.58612117
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 41.3699525,
+        "p95": 60.33148264999994,
+        "p99": 111.87233162000005
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.0168975,
+        "p95": 0.30384764999999997,
+        "p99": 0.6005358500000003
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.003261000000002,
+        "p95": 20.005074299999997,
+        "p99": 20.00574681
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 3.633502,
+        "p95": 7.0901089499999985,
+        "p99": 8.418403080000001
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.964451689061526,
+        "p95": 7.239861610800213,
+        "p99": 13.424834985492438
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001531,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-rusty-0.jsonl",
+    "condition": "heavy",
+    "implementation": "rusty",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 5142042580.552744,
+    "background_max_progress_gap_ms": 65.97821,
+    "benchmark_usage": {
+      "ru_utime": 2.165362000000016,
+      "ru_stime": 0.2480979999999997,
+      "ru_nvcsw": 791,
+      "ru_nivcsw": 1212
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 159.46948049999997,
+        "p95": 183.92031945,
+        "p99": 191.85758575000003
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 118.0361015,
+        "p95": 139.88737084999997,
+        "p99": 146.59251727999998
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 41.075835999999995,
+        "p95": 46.07112744999999,
+        "p99": 47.07382511
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.047286,
+        "p95": 1.96129755,
+        "p99": 1.99842792
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.003385,
+        "p95": 20.0049681,
+        "p99": 20.005230779999998
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 0.817329,
+        "p95": 2.39048425,
+        "p99": 3.0697379300000005
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.9291573010584,
+        "p95": 5.528599204606805,
+        "p99": 5.648924314765078
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001572,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/heavy-rusty-1.jsonl",
+    "condition": "heavy",
+    "implementation": "rusty",
+    "block": 1,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 26,
+      "discarded": 0,
+      "timeout": 4
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 4944464789.536771,
+    "background_max_progress_gap_ms": 60.421682,
+    "benchmark_usage": {
+      "ru_utime": 2.1496589999999287,
+      "ru_stime": 0.26887800000000084,
+      "ru_nvcsw": 982,
+      "ru_nivcsw": 1264
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 0.8666666666666667,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 26,
+        "p50": 124.9992845,
+        "p95": 314.0397125,
+        "p99": 790.2607415
+      },
+      "work_to_commit_ms": {
+        "n": 26,
+        "p50": 103.7995385,
+        "p95": 114.39442625,
+        "p99": 117.28130399999999
+      },
+      "commit_to_presentation_ms": {
+        "n": 26,
+        "p50": 20.8606505,
+        "p95": 208.779693,
+        "p99": 689.08407375
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.303689,
+        "p95": 1.73533405,
+        "p99": 1.9544084
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0036925,
+        "p95": 20.0057188,
+        "p99": 20.00748354
+      },
+      "feedback_delivery_ms": {
+        "n": 26,
+        "p50": 1.0563544999999999,
+        "p95": 2.8266795,
+        "p99": 3.8209774999999997
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 26,
+        "p50": 2.5033069982288993,
+        "p95": 25.053852782538165,
+        "p99": 82.6910447584774
+      }
+    },
+    "audit_gate": "FAIL",
+    "audit_error": "failed/incomplete block retained: /home/bisam/osproject/results/prophet-host-matrix-01/heavy-rusty-1.meta.json: timeout=4 trial_ids=[27, 28, 29, 30]",
+    "preflight": false,
+    "all_recorded_stages": 120,
+    "all_stage_cpu_min_ms": 20.001506,
+    "failed_trials": [
+      {
+        "type": "trial",
+        "interaction_id": 27,
+        "status": "timeout",
+        "input_ns": 2268780024461,
+        "work_start_ns": 2268780024501,
+        "commit_ns": 2268880059302,
+        "presentation_ns": 0,
+        "input_to_work_ns": 40,
+        "work_to_commit_ns": 100034801,
+        "commit_to_presentation_ns": 0,
+        "presentation_clock_id": 1,
+        "presentation_flags": 0,
+        "scheduler_mode": "normal",
+        "feedback_request_ns": 2268880059362,
+        "epoch_register_ns": 0,
+        "epoch_start_ns": 0,
+        "epoch_termination_ns": 0,
+        "termination_reason": 0,
+        "termination_reason_name": "NONE",
+        "maximum_ttl_ms": 0,
+        "boosted_runtime_ns": 0,
+        "normal_enqueues": 0,
+        "urgent_enqueues": 0
+      },
+      {
+        "type": "trial",
+        "interaction_id": 28,
+        "status": "timeout",
+        "input_ns": 2269880334704,
+        "work_start_ns": 2269880334744,
+        "commit_ns": 2269967691054,
+        "presentation_ns": 0,
+        "input_to_work_ns": 40,
+        "work_to_commit_ns": 87356310,
+        "commit_to_presentation_ns": 0,
+        "presentation_clock_id": 1,
+        "presentation_flags": 0,
+        "scheduler_mode": "normal",
+        "feedback_request_ns": 2269967691194,
+        "epoch_register_ns": 0,
+        "epoch_start_ns": 0,
+        "epoch_termination_ns": 0,
+        "termination_reason": 0,
+        "termination_reason_name": "NONE",
+        "maximum_ttl_ms": 0,
+        "boosted_runtime_ns": 0,
+        "normal_enqueues": 0,
+        "urgent_enqueues": 0
+      },
+      {
+        "type": "trial",
+        "interaction_id": 29,
+        "status": "timeout",
+        "input_ns": 2270968395916,
+        "work_start_ns": 2270968395946,
+        "commit_ns": 2271055253317,
+        "presentation_ns": 0,
+        "input_to_work_ns": 30,
+        "work_to_commit_ns": 86857371,
+        "commit_to_presentation_ns": 0,
+        "presentation_clock_id": 1,
+        "presentation_flags": 0,
+        "scheduler_mode": "normal",
+        "feedback_request_ns": 2271055253367,
+        "epoch_register_ns": 0,
+        "epoch_start_ns": 0,
+        "epoch_termination_ns": 0,
+        "termination_reason": 0,
+        "termination_reason_name": "NONE",
+        "maximum_ttl_ms": 0,
+        "boosted_runtime_ns": 0,
+        "normal_enqueues": 0,
+        "urgent_enqueues": 0
+      },
+      {
+        "type": "trial",
+        "interaction_id": 30,
+        "status": "timeout",
+        "input_ns": 2272057061463,
+        "work_start_ns": 2272057061493,
+        "commit_ns": 2272161070650,
+        "presentation_ns": 0,
+        "input_to_work_ns": 30,
+        "work_to_commit_ns": 104009157,
+        "commit_to_presentation_ns": 0,
+        "presentation_clock_id": 1,
+        "presentation_flags": 0,
+        "scheduler_mode": "normal",
+        "feedback_request_ns": 2272161070690,
+        "epoch_register_ns": 0,
+        "epoch_start_ns": 0,
+        "epoch_termination_ns": 0,
+        "termination_reason": 0,
+        "termination_reason_name": "NONE",
+        "maximum_ttl_ms": 0,
+        "boosted_runtime_ns": 0,
+        "normal_enqueues": 0,
+        "urgent_enqueues": 0
+      }
+    ]
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-lavd-0.jsonl",
+    "condition": "idle",
+    "implementation": "lavd",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.21650000000000003,
+      "ru_stime": 0.030039999999999997,
+      "ru_nvcsw": 78,
+      "ru_nivcsw": 6
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 111.292468,
+        "p95": 119.3524135,
+        "p99": 120.0688531
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.843884,
+        "p95": 80.98952290000001,
+        "p99": 81.00246858000001
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 30.286733,
+        "p95": 38.4923084,
+        "p99": 39.22169288
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.047462000000000004,
+        "p95": 0.08936904999999998,
+        "p99": 0.10293381000000001
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.004111,
+        "p95": 20.00688715,
+        "p99": 20.00857983
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.73433,
+        "p95": 1.239986,
+        "p99": 1.2849332
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.634449974241702,
+        "p95": 4.619130405147484,
+        "p99": 4.706657554561331
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.003003,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-linux-0.jsonl",
+    "condition": "idle",
+    "implementation": "linux",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.21709499999999998,
+      "ru_stime": 0.029421999999999997,
+      "ru_nvcsw": 80,
+      "ru_nivcsw": 19
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 111.877889,
+        "p95": 118.14892520000001,
+        "p99": 118.70635064000001
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.871801,
+        "p95": 81.3764238,
+        "p99": 81.42127916
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 30.445376,
+        "p95": 37.2832016,
+        "p99": 37.89100832
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.053203,
+        "p95": 0.09662004999999999,
+        "p99": 0.10545041000000002
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.0044345,
+        "p95": 20.0105617,
+        "p99": 20.01061714
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.677447,
+        "p95": 3.1441597999999997,
+        "p99": 3.36342316
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.6534873543138158,
+        "p95": 4.4740359118551405,
+        "p99": 4.54697356141437
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.002832,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-prophet-adaptive-0.jsonl",
+    "condition": "idle",
+    "implementation": "prophet-adaptive",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.22416500000000017,
+      "ru_stime": 0.023833000000000215,
+      "ru_nvcsw": 78,
+      "ru_nivcsw": 0
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 112.04608,
+        "p95": 118.2175942,
+        "p99": 118.76617324
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.823529,
+        "p95": 81.0775774,
+        "p99": 81.10015948
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 30.940235,
+        "p95": 37.3655087,
+        "p99": 37.93664414
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.036901,
+        "p95": 0.10790334999999993,
+        "p99": 0.15224787000000006
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.0036295,
+        "p95": 20.0080523,
+        "p99": 20.01045206
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.651086,
+        "p95": 0.8718406999999999,
+        "p99": 0.8914633399999999
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.7128711207901564,
+        "p95": 4.48391287803287,
+        "p99": 4.552449923121111
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.001672,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-prophet-observe-0.jsonl",
+    "condition": "idle",
+    "implementation": "prophet-observe",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.23094900000000007,
+      "ru_stime": 0.017088000000000214,
+      "ru_nvcsw": 77,
+      "ru_nivcsw": 4
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 110.730709,
+        "p95": 119.3128246,
+        "p99": 120.07567931999999
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.862624,
+        "p95": 81.07356779999999,
+        "p99": 81.09231836
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 29.633653,
+        "p95": 38.4265504,
+        "p99": 39.20814128
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.042592000000000005,
+        "p95": 0.12904764999999996,
+        "p99": 0.15118713000000003
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.003922,
+        "p95": 20.00717275,
+        "p99": 20.00852575
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.709274,
+        "p95": 1.1911727,
+        "p99": 1.23400814
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.556079468278653,
+        "p95": 4.611239353926932,
+        "p99": 4.705031343762334
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.002607,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-prophet-static-1-0.jsonl",
+    "condition": "idle",
+    "implementation": "prophet-static-1",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.22138799999999992,
+      "ru_stime": 0.027281999999999584,
+      "ru_nvcsw": 81,
+      "ru_nivcsw": 3
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 106.123556,
+        "p95": 117.6530186,
+        "p99": 118.67785972
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.940301,
+        "p95": 81.0564964,
+        "p99": 81.06682488
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 25.054099,
+        "p95": 36.6994771,
+        "p99": 37.73462182
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.040122500000000005,
+        "p95": 0.15875704999999998,
+        "p99": 0.16527301
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.003750500000002,
+        "p95": 20.0044374,
+        "p99": 20.00459228
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.784348,
+        "p95": 0.846682,
+        "p99": 0.8522228000000001
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.006526635447906,
+        "p95": 4.403988162103154,
+        "p99": 4.528206964472509
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.001923,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-prophet-static-2-0.jsonl",
+    "condition": "idle",
+    "implementation": "prophet-static-2",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.22250000000000014,
+      "ru_stime": 0.025788000000000366,
+      "ru_nvcsw": 79,
+      "ru_nivcsw": 3
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 101.626121,
+        "p95": 117.5438063,
+        "p99": 118.95871166
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.965678,
+        "p95": 81.0149836,
+        "p99": 81.01936631999999
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 20.605619,
+        "p95": 36.572384,
+        "p99": 37.991652
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.034311,
+        "p95": 0.142508,
+        "p99": 0.1449896
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.0034425,
+        "p95": 20.0049739,
+        "p99": 20.00508918
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.545046,
+        "p95": 0.6873306,
+        "p99": 0.6999781199999999
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 2.472702864445113,
+        "p95": 4.388736813797568,
+        "p99": 4.559050942628897
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.001729,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-prophet-unobserved-0.jsonl",
+    "condition": "idle",
+    "implementation": "prophet-unobserved",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.22031599999999996,
+      "ru_stime": 0.028052999999999884,
+      "ru_nvcsw": 81,
+      "ru_nivcsw": 0
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 114.85754,
+        "p95": 126.1434347,
+        "p99": 127.14662534
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.725639,
+        "p95": 82.26960430000001,
+        "p99": 82.40684566
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 32.416334,
+        "p95": 45.246212,
+        "p99": 46.3866456
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.042422,
+        "p95": 0.0570348,
+        "p99": 0.05804856
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.003636,
+        "p95": 20.0054905,
+        "p99": 20.0058117
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.759855,
+        "p95": 1.0413165,
+        "p99": 1.0663353
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.8900050484583604,
+        "p95": 5.429608206270864,
+        "p99": 5.566461820298643
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.002486,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-pulse-off-0.jsonl",
+    "condition": "idle",
+    "implementation": "pulse-off",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.239892,
+      "ru_stime": 0.03777300000000006,
+      "ru_nvcsw": 82,
+      "ru_nivcsw": 6
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 109.639249,
+        "p95": 124.92897009999999,
+        "p99": 126.28805641999999
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.877547,
+        "p95": 81.5029309,
+        "p99": 81.55852057999999
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 28.066811,
+        "p95": 44.216413700000004,
+        "p99": 45.651933940000006
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.044455499999999995,
+        "p95": 0.09058859999999999,
+        "p99": 0.09483372
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.004310500000003,
+        "p95": 20.0072715,
+        "p99": 20.0091503
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.489647,
+        "p95": 0.6429503,
+        "p99": 0.65657726
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.3680562547303046,
+        "p95": 5.306030981718148,
+        "p99": 5.4782954018948455
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.001663,
+    "failed_trials": []
+  },
+  {
+    "file": "/home/bisam/osproject/results/prophet-host-matrix-01/preflight/idle-rusty-0.jsonl",
+    "condition": "idle",
+    "implementation": "rusty",
+    "block": 0,
+    "returncode": 0,
+    "error": null,
+    "expected": 3,
+    "trial_records": 3,
+    "missing": 0,
+    "statuses": {
+      "presented": 3,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 0,
+    "background_workers_reported": 0,
+    "background_iterations_per_second": 0,
+    "background_max_progress_gap_ms": null,
+    "benchmark_usage": {
+      "ru_utime": 0.22365899999999994,
+      "ru_stime": 0.024157000000000206,
+      "ru_nvcsw": 78,
+      "ru_nivcsw": 0
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 3,
+        "p50": 113.4126,
+        "p95": 119.6902737,
+        "p99": 120.24828914
+      },
+      "work_to_commit_ms": {
+        "n": 3,
+        "p50": 80.764965,
+        "p95": 81.12146849999999,
+        "p99": 81.1531577
+      },
+      "commit_to_presentation_ms": {
+        "n": 3,
+        "p50": 32.249987,
+        "p95": 38.9407841,
+        "p99": 39.535521620000004
+      },
+      "handoff_ms": {
+        "n": 12,
+        "p50": 0.03802850000000001,
+        "p95": 0.08484624999999996,
+        "p99": 0.10880205000000004
+      },
+      "work_cpu_ms": {
+        "n": 12,
+        "p50": 20.003938499999997,
+        "p95": 20.0048229,
+        "p99": 20.00494698
+      },
+      "feedback_delivery_ms": {
+        "n": 3,
+        "p50": 0.604191,
+        "p95": 0.669918,
+        "p99": 0.6757603999999999
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 3,
+        "p50": 3.8700431776991344,
+        "p95": 4.672948111280166,
+        "p99": 4.744317438709591
+      }
+    },
+    "audit_gate": "PASS",
+    "preflight": true,
+    "all_recorded_stages": 12,
+    "all_stage_cpu_min_ms": 20.002346,
+    "failed_trials": []
+  }
+]

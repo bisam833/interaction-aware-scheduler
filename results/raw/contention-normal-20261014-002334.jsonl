@@ -1,0 +1,11 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"interaction","interaction_id":1,"input_ns":31283857533705,"work_start_ns":31283857534095,"commit_ns":31283877711065}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":31283857533705,"work_start_ns":31283857534095,"commit_ns":31283877711065,"presentation_ns":31283904099000,"input_to_work_ns":390,"work_to_commit_ns":20176970,"commit_to_presentation_ns":26387935,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":2,"input_ns":31284041541125,"work_start_ns":31284041541356,"commit_ns":31284061756971}
+{"type":"trial","interaction_id":2,"status":"presented","input_ns":31284041541125,"work_start_ns":31284041541356,"commit_ns":31284061756971,"presentation_ns":31284079112000,"input_to_work_ns":231,"work_to_commit_ns":20215615,"commit_to_presentation_ns":17355029,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":3,"input_ns":31284193563045,"work_start_ns":31284193563386,"commit_ns":31284213765315}
+{"type":"trial","interaction_id":3,"status":"presented","input_ns":31284193563045,"work_start_ns":31284193563386,"commit_ns":31284213765315,"presentation_ns":31284229124000,"input_to_work_ns":341,"work_to_commit_ns":20201929,"commit_to_presentation_ns":15358685,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":4,"input_ns":31284505604468,"work_start_ns":31284505604809,"commit_ns":31284525780276}
+{"type":"trial","interaction_id":4,"status":"presented","input_ns":31284505604468,"work_start_ns":31284505604809,"commit_ns":31284525780276,"presentation_ns":31284570814000,"input_to_work_ns":341,"work_to_commit_ns":20175467,"commit_to_presentation_ns":45033724,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":5,"input_ns":31284849555313,"work_start_ns":31284849555484,"commit_ns":31284869704837}
+{"type":"trial","interaction_id":5,"status":"presented","input_ns":31284849555313,"work_start_ns":31284849555484,"commit_ns":31284869704837,"presentation_ns":31284912522000,"input_to_work_ns":171,"work_to_commit_ns":20149353,"commit_to_presentation_ns":42817163,"presentation_clock_id":1,"presentation_flags":7}

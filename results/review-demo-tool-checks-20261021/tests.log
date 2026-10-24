@@ -1,0 +1,20 @@
+test_actual_recorded_block_parses_without_using_it_as_live (test_demo_review.DemoTests.test_actual_recorded_block_parses_without_using_it_as_live) ... ok
+test_cleanup_signal_protection_restores_handlers (test_demo_review.DemoTests.test_cleanup_signal_protection_restores_handlers) ... ok
+test_complete_dashboard_renders_recorded_fixture_in_temp_only (test_demo_review.DemoTests.test_complete_dashboard_renders_recorded_fixture_in_temp_only) ... ok
+test_constant_controller_is_not_invented_switch (test_demo_review.DemoTests.test_constant_controller_is_not_invented_switch) ... ok
+test_failed_and_omitted_visible_without_latency (test_demo_review.DemoTests.test_failed_and_omitted_visible_without_latency) ... ok
+test_interruption_omits_remaining_arms (test_demo_review.DemoTests.test_interruption_omits_remaining_arms) ... [1/5] Linux — 32 workers, 32 trials
+ok
+test_missing_metadata_rejected (test_demo_review.DemoTests.test_missing_metadata_rejected) ... ok
+test_real_owned_workers_clean_up_after_client_failure (test_demo_review.DemoTests.test_real_owned_workers_clean_up_after_client_failure) ... ok
+test_worker_failure_is_retained_and_other_arms_continue (test_demo_review.DemoTests.test_worker_failure_is_retained_and_other_arms_continue) ... [1/5] Linux — 32 workers, 32 trials
+[2/5] LAVD — 32 workers, 32 trials
+[3/5] PulseSched — 32 workers, 32 trials
+[4/5] Prophet · 5 ms — 32 workers, 32 trials
+[5/5] Prophet · adaptive — 32 workers, 32 trials
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.143s
+
+OK

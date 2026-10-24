@@ -1,0 +1,3 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"interaction","interaction_id":1,"input_ns":30468725969198,"work_start_ns":30468725969428,"commit_ns":30468746051887}
+{"type":"trial","interaction_id":1,"status":"timeout","input_ns":30468725969198,"work_start_ns":30468725969428,"commit_ns":30468746051887,"presentation_ns":0,"input_to_work_ns":230,"work_to_commit_ns":20082459,"commit_to_presentation_ns":0,"presentation_clock_id":1,"presentation_flags":0}

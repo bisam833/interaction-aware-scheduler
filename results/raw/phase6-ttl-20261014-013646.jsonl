@@ -1,0 +1,11 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"scheduler","mode":"pulsesched-closed-loop","ttl_ms":100,"policy":"SCHED_EXT","propagation_enabled":true,"max_propagation_depth":2}
+{"type":"dependency_chain","root_pid":55155,"root_policy":7,"worker_pids":[55157,55158,55159,55160],"worker_policies":[7,7,7,7],"edges":[[0,1],[1,2],[2,3]]}
+{"type":"interaction","interaction_id":1,"scheduler_mode":"closed","input_ns":35675293931331,"work_start_ns":35675293931431,"commit_ns":35675374151739,"feedback_request_ns":35675374151779,"epoch_register_ns":35675293943213}
+{"type":"scheduler_epoch","interaction_id":1,"active":0,"end_ns":35675396497067,"termination_reason":2,"termination_reason_name":"TIMEOUT","boosted_runtime_ns":222812,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"epoch_member","interaction_id":1,"pid":55158,"active":0,"inherited":1,"depth":2,"parent_pid":55157,"boosted_runtime_ns":20015948,"termination_reason":2}
+{"type":"epoch_member","interaction_id":1,"pid":55157,"active":0,"inherited":1,"depth":1,"parent_pid":55155,"boosted_runtime_ns":20022459,"termination_reason":2}
+{"type":"epoch_member","interaction_id":1,"pid":55155,"active":0,"inherited":0,"depth":0,"parent_pid":0,"boosted_runtime_ns":222812,"termination_reason":2}
+{"type":"propagation_metrics","interaction_id":1,"attempts":43,"successful_inherited_boosts":2,"depth_rejected":2,"inactive_rejected":38,"inherited_urgent_enqueues":0,"inherited_urgent_dispatches":4}
+{"type":"trial","interaction_id":1,"status":"timeout","input_ns":35675293931331,"work_start_ns":35675293931431,"commit_ns":35675374151739,"presentation_ns":0,"input_to_work_ns":100,"work_to_commit_ns":80220308,"commit_to_presentation_ns":0,"presentation_clock_id":1,"presentation_flags":0,"scheduler_mode":"closed","feedback_request_ns":35675374151779,"epoch_register_ns":35675293943213,"epoch_start_ns":35675293931331,"epoch_termination_ns":35675396497067,"termination_reason":2,"termination_reason_name":"TIMEOUT","maximum_ttl_ms":100,"boosted_runtime_ns":222812,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"late-feedback","detail":"presented-after-timeout"}

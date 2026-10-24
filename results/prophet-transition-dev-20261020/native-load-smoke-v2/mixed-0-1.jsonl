@@ -1,0 +1,13 @@
+{"type":"load_ready","index":1,"periodic":0,"pid":9}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14339843841692,"planned_end_ns":14340843841692,"observed_start_ns":14339843952528,"observed_end_ns":14340843929575,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":1,"active":false,"planned_start_ns":14340843841692,"planned_end_ns":14341843841692,"observed_start_ns":14340843935206,"observed_end_ns":14341847108651,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":2,"active":true,"planned_start_ns":14341843841692,"planned_end_ns":14342843841692,"observed_start_ns":14341847113470,"observed_end_ns":14342848660788,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":3,"active":false,"planned_start_ns":14342843841692,"planned_end_ns":14343843841692,"observed_start_ns":14342848662722,"observed_end_ns":14343843910840,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14343843841692,"planned_end_ns":14344843841692,"observed_start_ns":14343843913956,"observed_end_ns":14344844079570,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":0,"start_ns":14339843841692,"end_ns":14340843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":1,"start_ns":14340843841692,"end_ns":14341843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":2,"start_ns":14341843841692,"end_ns":14342843841692,"iterations":227000000,"cpu_ns":458943799,"max_progress_gap_ns":9320628,"first_ns":14341847113500,"last_ns":14342848660107}
+{"type":"load_bin","index":1,"periodic":0,"phase":3,"start_ns":14342843841692,"end_ns":14343843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":4,"start_ns":14343843841692,"end_ns":14344843841692,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":227000000,"wall_ns":5000242507,"cpu_ns":459677995,"max_batch_gap_ns":9320628}
+{"type":"load_exit","complete":true,"process_cpu_ns":459680019}

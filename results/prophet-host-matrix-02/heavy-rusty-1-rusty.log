@@ -1,0 +1,20 @@
+14:27:49 [0m[34m[INFO] [0mRunning scx_rusty (build ID: 1.1.3 x86_64-unknown-linux-gnu)
+14:27:49 [0m[34m[INFO] [0mNODE[00] mask= ffff
+14:27:49 [0m[34m[INFO] [0m DOM[00] mask= ffff
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member sub_caps_updated not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member sub_ecaps_updated not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member init_cids not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member cid_shard_size not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member rescue_bandwidth_ppt not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[34m[INFO] [0mlibbpf: struct_ops rusty: member rescue_quantum_us not found in kernel, skipping it as it's set to zero
+
+14:27:49 [0m[33m[WARN] [0mlibbpf: map 'rusty': BPF map skeleton link is uninitialized
+
+14:27:49 [0m[34m[INFO] [0mRusty scheduler started! Run `scx_rusty --monitor` for metrics.
+EXIT: unregistered from user space
+14:28:00 [0m[34m[INFO] [0mUnregister scx_rusty scheduler

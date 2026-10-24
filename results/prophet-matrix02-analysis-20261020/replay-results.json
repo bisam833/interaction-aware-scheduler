@@ -1,0 +1,26 @@
+[
+  {
+    "block": 0,
+    "returncode": 0,
+    "stdout": "PASS: 17 recorded decisions match actual prophet_decide\n",
+    "stderr": ""
+  },
+  {
+    "block": 1,
+    "returncode": 0,
+    "stdout": "PASS: 17 recorded decisions match actual prophet_decide\n",
+    "stderr": ""
+  },
+  {
+    "block": 2,
+    "returncode": 0,
+    "stdout": "PASS: 17 recorded decisions match actual prophet_decide\n",
+    "stderr": ""
+  },
+  {
+    "block": 3,
+    "returncode": 0,
+    "stdout": "PASS: 17 recorded decisions match actual prophet_decide\n",
+    "stderr": ""
+  }
+]

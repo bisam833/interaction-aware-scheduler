@@ -1,0 +1,15 @@
+{"type":"load_ready","index":1,"periodic":0,"pid":7}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14029888605967,"planned_end_ns":14030888605967,"observed_start_ns":14029888772960,"observed_end_ns":14030888936772}
+{"type":"load_phase","phase":1,"active":true,"planned_start_ns":14030888605967,"planned_end_ns":14032888605967,"observed_start_ns":14030888951480,"observed_end_ns":14032890690362}
+{"type":"load_phase","phase":2,"active":false,"planned_start_ns":14032888605967,"planned_end_ns":14033888605967,"observed_start_ns":14032890692566,"observed_end_ns":14033890610541}
+{"type":"load_phase","phase":3,"active":false,"planned_start_ns":14033888605967,"planned_end_ns":14034888605967,"observed_start_ns":14033890614478,"observed_end_ns":14034888659005}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14034888605967,"planned_end_ns":14036888605967,"observed_start_ns":14034888660668,"observed_end_ns":14036888982349}
+{"type":"load_bin","index":1,"periodic":0,"phase":0,"start_ns":14029888605967,"end_ns":14030888605967,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":1,"start_ns":14030888605967,"end_ns":14031888605967,"iterations":250000000,"cpu_ns":499055015,"max_progress_gap_ns":6285985,"first_ns":14030888951510,"last_ns":14031889681035}
+{"type":"load_bin","index":1,"periodic":0,"phase":1,"start_ns":14031888605967,"end_ns":14032888605967,"iterations":253000000,"cpu_ns":499708721,"max_progress_gap_ns":6308298,"first_ns":14031889681616,"last_ns":14032890689740}
+{"type":"load_bin","index":1,"periodic":0,"phase":2,"start_ns":14032888605967,"end_ns":14033888605967,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":3,"start_ns":14033888605967,"end_ns":14034888605967,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":4,"start_ns":14034888605967,"end_ns":14035888605967,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":4,"start_ns":14035888605967,"end_ns":14036888605967,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":503000000,"wall_ns":7000384407,"cpu_ns":999781958,"max_batch_gap_ns":6308298}
+{"type":"load_exit","complete":true,"process_cpu_ns":999784553}

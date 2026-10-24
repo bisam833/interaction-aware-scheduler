@@ -1,0 +1,314 @@
+libbpf: prog 'pulse_select_cpu': BPF program load failed: -EINVAL
+libbpf: prog 'pulse_select_cpu': -- BEGIN PROG LOAD LOG --
+0: R1=ctx() R10=fp0
+; s32 BPF_STRUCT_OPS(pulse_select_cpu, struct task_struct *p, s32 prev_cpu, @ pulsesched.bpf.c:189
+0: (79) r2 = *(u64 *)(r1 +16)         ; R1=ctx() R2=scalar()
+1: (7b) *(u64 *)(r10 -128) = r2       ; R2=scalar(id=1) R10=fp0 fp-128=scalar(id=1)
+2: (79) r8 = *(u64 *)(r1 +8)          ; R1=ctx() R8=scalar()
+3: (79) r6 = *(u64 *)(r1 +0)
+func 'select_cpu' arg0 has btf_id 137409 type STRUCT 'task_struct'
+4: R1=ctx() R6=trusted_ptr_task_struct()
+; bool is_idle = false; @ pulsesched.bpf.c:192
+4: (b4) w1 = 0                        ; R1=0
+5: (73) *(u8 *)(r10 -117) = r1        ; R1=0 R10=fp0 fp-120=????0???
+; __u64 now = bpf_ktime_get_ns(); @ pulsesched.bpf.c:125
+6: (85) call bpf_ktime_get_ns#5       ; R0=scalar()
+7: (bf) r9 = r0                       ; R0=scalar(id=2) R9=scalar(id=2)
+8: (b7) r1 = 0                        ; R1=0
+; struct pulse_task_state inherited = {}; @ pulsesched.bpf.c:129
+9: (7b) *(u64 *)(r10 -16) = r1        ; R1=0 R10=fp0 fp-16=0
+10: (7b) *(u64 *)(r10 -24) = r1       ; R1=0 R10=fp0 fp-24=0
+11: (7b) *(u64 *)(r10 -32) = r1       ; R1=0 R10=fp0 fp-32=0
+12: (7b) *(u64 *)(r10 -40) = r1       ; R1=0 R10=fp0 fp-40=0
+13: (7b) *(u64 *)(r10 -48) = r1       ; R1=0 R10=fp0 fp-48=0
+14: (7b) *(u64 *)(r10 -56) = r1       ; R1=0 R10=fp0 fp-56=0
+15: (7b) *(u64 *)(r10 -64) = r1       ; R1=0 R10=fp0 fp-64=0
+16: (7b) *(u64 *)(r10 -72) = r1       ; R1=0 R10=fp0 fp-72=0
+17: (7b) *(u64 *)(r10 -80) = r1       ; R1=0 R10=fp0 fp-80=0
+18: (7b) *(u64 *)(r10 -88) = r1       ; R1=0 R10=fp0 fp-88=0
+19: (7b) *(u64 *)(r10 -96) = r1       ; R1=0 R10=fp0 fp-96=0
+20: (7b) *(u64 *)(r10 -104) = r1      ; R1=0 R10=fp0 fp-104=0
+21: (7b) *(u64 *)(r10 -112) = r1      ; R1=0 R10=fp0 fp-112=0
+; __u32 child_pid = p->pid; @ pulsesched.bpf.c:130
+22: (61) r1 = *(u32 *)(r6 +2872)      ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R6=trusted_ptr_task_struct()
+23: (63) *(u32 *)(r10 -116) = r1      ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-120=mmmm0???
+; if (!pulse_propagation_enabled) @ pulsesched.bpf.c:132
+24: (18) r1 = 0xffffd23d815f5004      ; R1=map_value(map=pulsesch.rodata,ks=4,vs=340,imm=4)
+26: (71) r1 = *(u8 *)(r1 +0)          ;
+27: (05) goto pc+0
+28: (b4) w1 = 6                       ; R1=6
+29: (63) *(u32 *)(r10 -4) = r1        ; R1=6 R10=fp0 fp-8=mmmmpppp
+30: (bf) r2 = r10                     ; R2=fp0 R10=fp0
+31: (07) r2 += -4                     ; R2=fp-4
+; __u64 *value = bpf_map_lookup_elem(&metrics, &index); @ pulsesched.bpf.c:78
+32: (18) r1 = 0xffff8c89c1338400      ; R1=map_ptr(map=metrics,ks=4,vs=8)
+34: (85) call bpf_map_lookup_elem#1   ; R0=map_value_or_null(id=3,map=metrics,ks=4,vs=8)
+; if (value) @ pulsesched.bpf.c:79
+35: (15) if r0 == 0x0 goto pc+3       ; R0=map_value(id=3,map=metrics,ks=4,vs=8)
+; (*value)++; @ pulsesched.bpf.c:80
+36: (79) r1 = *(u64 *)(r0 +0)         ; R0=map_value(id=3,map=metrics,ks=4,vs=8) R1=scalar()
+37: (07) r1 += 1                      ; R1=scalar()
+38: (7b) *(u64 *)(r0 +0) = r1         ;
+; waker = (struct task_struct *)bpf_get_current_task_btf(); @ pulsesched.bpf.c:135
+39: (85) call bpf_get_current_task_btf#158    ; R0=trusted_ptr_task_struct()
+40: (bf) r7 = r0                      ; R7=trusted_ptr_task_struct()
+; if (!waker || waker == p) { @ pulsesched.bpf.c:136
+41: (15) if r7 == 0x0 goto pc+1       ; R7=trusted_ptr_task_struct()
+42: (5d) if r7 != r6 goto pc+9 52: R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R9=scalar() R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar()
+; __u32 pid = p->pid; @ pulsesched.bpf.c:85
+52: (61) r1 = *(u32 *)(r7 +2872)      ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R7=trusted_ptr_task_struct()
+53: (63) *(u32 *)(r10 -4) = r1        ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmmpppp
+54: (bf) r2 = r10                     ; R2=fp0 R10=fp0
+55: (07) r2 += -4                     ; R2=fp-4
+; return bpf_map_lookup_elem(&task_state, &pid); @ pulsesched.bpf.c:86
+56: (18) r1 = 0xffff8c89d878b000      ; R1=map_ptr(map=task_state,ks=4,vs=104)
+58: (85) call bpf_map_lookup_elem#1   ; R0=map_value_or_null(id=36,map=task_state,ks=4,vs=104)
+; if (!parent || !urgent_now(waker, now)) { @ pulsesched.bpf.c:141
+59: (15) if r0 == 0x0 goto pc+7       ; R0=map_value(id=36,map=task_state,ks=4,vs=104)
+60: (bf) r1 = r7                      ; R1=trusted_ptr_task_struct() R7=trusted_ptr_task_struct()
+61: (bf) r2 = r9                      ; R2=scalar(id=37) R9=scalar(id=37)
+62: (7b) *(u64 *)(r10 -136) = r0      ; R10=fp0 fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+63: (85) call pc+177
+caller:
+ R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R9=scalar(id=37) R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar() fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+callee:
+ frame1: R1=trusted_ptr_task_struct() R2=scalar(id=37) R10=fp0
+241: frame1: R1=trusted_ptr_task_struct() R2=scalar(id=37) R10=fp0
+; static bool urgent_now(struct task_struct *p, __u64 now) @ pulsesched.bpf.c:108
+241: (bf) r7 = r2                     ; frame1: R2=scalar(id=37) R7=scalar(id=37)
+242: (bf) r9 = r1                     ; frame1: R1=trusted_ptr_task_struct() R9=trusted_ptr_task_struct()
+; __u32 pid = p->pid; @ pulsesched.bpf.c:85
+243: (61) r1 = *(u32 *)(r9 +2872)     ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R9=trusted_ptr_task_struct()
+244: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmm????
+245: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+246: (07) r2 += -4                    ; frame1: R2=fp-4
+; return bpf_map_lookup_elem(&task_state, &pid); @ pulsesched.bpf.c:86
+247: (18) r1 = 0xffff8c89d878b000     ; frame1: R1=map_ptr(map=task_state,ks=4,vs=104)
+249: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=38,map=task_state,ks=4,vs=104)
+250: (bf) r8 = r0                     ; frame1: R0=map_value_or_null(id=38,map=task_state,ks=4,vs=104) R8=map_value_or_null(id=38,map=task_state,ks=4,vs=104)
+251: (b4) w6 = 0                      ; frame1: R6=0
+; if (!state || expire_if_needed(p, now) || !pulse_epoch_live(state, now)) @ pulsesched.bpf.c:111
+252: (15) if r8 == 0x0 goto pc+84     ; frame1: R8=map_value(id=38,map=task_state,ks=4,vs=104)
+; __u32 pid = p->pid; @ pulsesched.bpf.c:85
+253: (61) r1 = *(u32 *)(r9 +2872)     ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R9=trusted_ptr_task_struct()
+254: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmmpppp
+255: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+256: (07) r2 += -4                    ; frame1: R2=fp-4
+; return bpf_map_lookup_elem(&task_state, &pid); @ pulsesched.bpf.c:86
+257: (18) r1 = 0xffff8c89d878b000     ; frame1: R1=map_ptr(map=task_state,ks=4,vs=104)
+259: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=39,map=task_state,ks=4,vs=104)
+; if (!state || !state->active) @ pulsesched.bpf.c:92
+260: (15) if r0 == 0x0 goto pc+32     ; frame1: R0=map_value(id=39,map=task_state,ks=4,vs=104)
+261: (61) r1 = *(u32 *)(r0 +72)       ; frame1: R0=map_value(id=39,map=task_state,ks=4,vs=104) R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+262: (16) if w1 == 0x0 goto pc+30     ; frame1: R1=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+263: (79) r1 = *(u64 *)(r0 +8)        ; frame1: R0=map_value(id=39,map=task_state,ks=4,vs=104) R1=scalar()
+; if (state->deadline_ns == 0 || @ pulsesched.bpf.c:95
+264: (79) r2 = *(u64 *)(r0 +24)       ; frame1: R0=map_value(id=39,map=task_state,ks=4,vs=104) R2=scalar()
+265: (15) if r2 == 0x0 goto pc+6      ; frame1: R2=scalar(umin=1)
+; state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS || @ pulsesched.bpf.c:96
+266: (3d) if r7 >= r2 goto pc+5       ; frame1: R2=scalar(umin=1) R7=scalar(id=37,umax=0xfffffffffffffffe)
+267: (bf) r3 = r2                     ; frame1: R2=scalar(id=40,umin=1) R3=scalar(id=40,umin=1)
+268: (1f) r3 -= r1                    ; frame1: R1=scalar() R3=scalar()
+269: (18) r4 = 0x2540be401            ; frame1: R4=0x2540be401
+271: (ad) if r3 < r4 goto pc+21 293: frame1: R6=0 R7=scalar(id=37,umax=0xfffffffffffffffe) R8=map_value(id=38,map=task_state,ks=4,vs=104) R10=fp0
+; return s && s->active && s->epoch_id && s->start_ns <= now && @ pulse_policy.h:23
+293: (61) r1 = *(u32 *)(r8 +72)       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R8=map_value(id=38,map=task_state,ks=4,vs=104)
+294: (16) if w1 == 0x0 goto pc+42     ; frame1: R1=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+295: (79) r1 = *(u64 *)(r8 +0)        ; frame1: R1=scalar() R8=map_value(id=38,map=task_state,ks=4,vs=104)
+296: (15) if r1 == 0x0 goto pc+40     ; frame1: R1=scalar(umin=1)
+297: (79) r1 = *(u64 *)(r8 +8)        ; frame1: R1=scalar() R8=map_value(id=38,map=task_state,ks=4,vs=104)
+298: (2d) if r1 > r7 goto pc+38       ; frame1: R1=scalar(umax=0xfffffffffffffffe) R7=scalar(id=37,umax=0xfffffffffffffffe)
+; s->deadline_ns > s->start_ns && @ pulse_policy.h:24
+299: (79) r2 = *(u64 *)(r8 +24)       ; frame1: R2=scalar() R8=map_value(id=38,map=task_state,ks=4,vs=104)
+300: (3d) if r7 >= r2 goto pc+36      ; frame1: R2=scalar(umin=1) R7=scalar(id=37,umax=0xfffffffffffffffe)
+301: (bd) if r2 <= r1 goto pc+35      ; frame1: R1=scalar(umax=0xfffffffffffffffe) R2=scalar(umin=1)
+302: (1f) r2 -= r1                    ; frame1: R1=scalar(umax=0xfffffffffffffffe) R2=scalar()
+303: (18) r1 = 0x2540be400            ; frame1: R1=0x2540be400
+305: (2d) if r2 > r1 goto pc+31       ; frame1: R1=0x2540be400 R2=scalar(smin=0,smax=umax=0x2540be400,var_off=(0x0; 0x3ffffffff))
+; if (state->inherited) { @ pulsesched.bpf.c:113
+306: (61) r1 = *(u32 *)(r8 +80)       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R8=map_value(id=38,map=task_state,ks=4,vs=104)
+307: (16) if w1 == 0x0 goto pc+28     ; frame1: R1=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+; __u32 root_pid = state->root_pid; @ pulsesched.bpf.c:114
+308: (61) r1 = *(u32 *)(r8 +96)       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R8=map_value(id=38,map=task_state,ks=4,vs=104)
+309: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmmpppp
+310: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+311: (07) r2 += -4                    ; frame1: R2=fp-4
+; struct pulse_task_state *root = bpf_map_lookup_elem(&task_state, &root_pid); @ pulsesched.bpf.c:115
+312: (18) r1 = 0xffff8c89d878b000     ; frame1: R1=map_ptr(map=task_state,ks=4,vs=104)
+314: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=47,map=task_state,ks=4,vs=104)
+; return s && s->active && s->epoch_id && s->start_ns <= now && @ pulse_policy.h:23
+315: (15) if r0 == 0x0 goto pc+17     ; frame1: R0=map_value(id=47,map=task_state,ks=4,vs=104)
+316: (61) r1 = *(u32 *)(r0 +72)       ; frame1: R0=map_value(id=47,map=task_state,ks=4,vs=104) R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+317: (16) if w1 == 0x0 goto pc+15     ; frame1: R1=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+318: (79) r2 = *(u64 *)(r0 +0)        ; frame1: R0=map_value(id=47,map=task_state,ks=4,vs=104) R2=scalar()
+319: (15) if r2 == 0x0 goto pc+13     ; frame1: R2=scalar(umin=1)
+320: (79) r1 = *(u64 *)(r0 +8)        ; frame1: R0=map_value(id=47,map=task_state,ks=4,vs=104) R1=scalar()
+321: (2d) if r1 > r7 goto pc+11       ; frame1: R1=scalar(umax=0xfffffffffffffffe) R7=scalar(id=37,umax=0xfffffffffffffffe)
+; s->deadline_ns > s->start_ns && @ pulse_policy.h:24
+322: (79) r3 = *(u64 *)(r0 +24)       ; frame1: R0=map_value(id=47,map=task_state,ks=4,vs=104) R3=scalar()
+323: (3d) if r7 >= r3 goto pc+9       ; frame1: R3=scalar(umin=1) R7=scalar(id=37,umax=0xfffffffffffffffe)
+324: (bd) if r3 <= r1 goto pc+8       ; frame1: R1=scalar(umax=0xfffffffffffffffe) R3=scalar(umin=1)
+325: (1f) r3 -= r1                    ; frame1: R1=scalar(umax=0xfffffffffffffffe) R3=scalar()
+326: (18) r4 = 0x2540be400            ; frame1: R4=0x2540be400
+328: (2d) if r3 > r4 goto pc+4        ; frame1: R3=scalar(smin=0,smax=umax=0x2540be400,var_off=(0x0; 0x3ffffffff)) R4=0x2540be400
+; return pulse_epoch_live(root, now) && root->direct && @ pulse_policy.h:32
+329: (61) r3 = *(u32 *)(r0 +92)       ; frame1: R3=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+330: (16) if w3 == 0x0 goto pc+2      ; frame1: R3=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+; root->epoch_id == child->epoch_id && root->start_ns == child->start_ns; @ pulse_policy.h:33
+331: (79) r3 = *(u64 *)(r8 +0)        ; frame1: R3=scalar() R8=map_value(id=38,map=task_state,ks=4,vs=104)
+332: (1d) if r2 == r3 goto pc+1 334: frame1: R1=scalar(umax=0xfffffffffffffffe) R6=0 R8=map_value(id=38,map=task_state,ks=4,vs=104) R10=fp0
+; root->epoch_id == child->epoch_id && root->start_ns == child->start_ns; @ pulse_policy.h:33
+334: (79) r2 = *(u64 *)(r8 +8)        ; frame1: R2=scalar()
+335: (5d) if r1 != r2 goto pc+1       ; frame1: R1=scalar(umax=0xfffffffffffffffe) R2=scalar(umax=0xfffffffffffffffe)
+336: (b4) w6 = 1                      ; frame1: R6=1
+; } @ pulsesched.bpf.c:121
+337: (bc) w0 = w6                     ; frame1: R0=1 R6=1
+338: (95) exit
+returning from callee:
+ frame1: R0=1 R6=1 R10=fp0
+to caller at 64:
+ R0=1 R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R9=scalar(umax=0xfffffffffffffffe) R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar() fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+; if (!parent || !urgent_now(waker, now)) { @ pulsesched.bpf.c:141
+64: (79) r1 = *(u64 *)(r10 -136)      ; R1=map_value(id=36,map=task_state,ks=4,vs=104) R10=fp0 fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+65: (54) w0 &= 1                      ; R0=1
+66: (56) if w0 != 0x0 goto pc+9       ; R0=1
+; if (parent->depth >= pulse_max_propagation_depth) { @ pulsesched.bpf.c:145
+76: (61) r1 = *(u32 *)(r1 +84)        ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+77: (18) r2 = 0xffffd23d815f5000      ; R2=map_value(map=pulsesch.rodata,ks=4,vs=340)
+79: (61) r2 = *(u32 *)(r2 +0)         ; R2=2
+80: (ae) if w1 < w2 goto pc+9 90: R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R9=scalar(umax=0xfffffffffffffffe) R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar() fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+90: (bf) r2 = r10                     ; R2=fp0 R10=fp0
+91: (07) r2 += -116                   ; R2=fp-116
+; child = bpf_map_lookup_elem(&task_state, &child_pid); @ pulsesched.bpf.c:149
+92: (18) r1 = 0xffff8c89d878b000      ; R1=map_ptr(map=task_state,ks=4,vs=104)
+94: (85) call bpf_map_lookup_elem#1   ; R0=map_value_or_null(id=49,map=task_state,ks=4,vs=104)
+; if (!child || child->direct || urgent_now(p, now)) @ pulsesched.bpf.c:152
+95: (15) if r0 == 0x0 goto pc+53      ; R0=map_value(id=49,map=task_state,ks=4,vs=104)
+96: (61) r1 = *(u32 *)(r0 +92)        ; R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+97: (56) if w1 != 0x0 goto pc+51      ; R1=0
+98: (bf) r1 = r6                      ; R1=trusted_ptr_task_struct() R6=trusted_ptr_task_struct()
+99: (bf) r2 = r9                      ; R2=scalar(umax=0xfffffffffffffffe)
+100: (85) call pc+140
+caller:
+ R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar() fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+callee:
+ frame1: R1=trusted_ptr_task_struct() R2=scalar(umax=0xfffffffffffffffe) R10=fp0
+241: frame1: R1=trusted_ptr_task_struct() R2=scalar(umax=0xfffffffffffffffe) R10=fp0
+; static bool urgent_now(struct task_struct *p, __u64 now) @ pulsesched.bpf.c:108
+241: (bf) r7 = r2                     ; frame1: R2=scalar(id=51,umax=0xfffffffffffffffe) R7=scalar(id=51,umax=0xfffffffffffffffe)
+242: (bf) r9 = r1                     ; frame1: R1=trusted_ptr_task_struct() R9=trusted_ptr_task_struct()
+; __u32 pid = p->pid; @ pulsesched.bpf.c:85
+243: (61) r1 = *(u32 *)(r9 +2872)     ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R9=trusted_ptr_task_struct()
+244: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmm????
+245: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+246: (07) r2 += -4                    ; frame1: R2=fp-4
+; return bpf_map_lookup_elem(&task_state, &pid); @ pulsesched.bpf.c:86
+247: (18) r1 = 0xffff8c89d878b000     ; frame1: R1=map_ptr(map=task_state,ks=4,vs=104)
+249: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=52,map=task_state,ks=4,vs=104)
+250: (bf) r8 = r0                     ; frame1: R0=map_value_or_null(id=52,map=task_state,ks=4,vs=104) R8=map_value_or_null(id=52,map=task_state,ks=4,vs=104)
+251: (b4) w6 = 0                      ; frame1: R6=0
+; if (!state || expire_if_needed(p, now) || !pulse_epoch_live(state, now)) @ pulsesched.bpf.c:111
+252: (15) if r8 == 0x0 goto pc+84     ; frame1: R8=map_value(id=52,map=task_state,ks=4,vs=104)
+; __u32 pid = p->pid; @ pulsesched.bpf.c:85
+253: (61) r1 = *(u32 *)(r9 +2872)     ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R9=trusted_ptr_task_struct()
+254: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-8=mmmmpppp
+255: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+256: (07) r2 += -4                    ; frame1: R2=fp-4
+; return bpf_map_lookup_elem(&task_state, &pid); @ pulsesched.bpf.c:86
+257: (18) r1 = 0xffff8c89d878b000     ; frame1: R1=map_ptr(map=task_state,ks=4,vs=104)
+259: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=53,map=task_state,ks=4,vs=104)
+; if (!state || !state->active) @ pulsesched.bpf.c:92
+260: (15) if r0 == 0x0 goto pc+32     ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104)
+261: (61) r1 = *(u32 *)(r0 +72)       ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104) R1=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+262: (16) if w1 == 0x0 goto pc+30     ; frame1: R1=scalar(smin=umin=umin32=1,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+263: (79) r1 = *(u64 *)(r0 +8)        ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104) R1=scalar()
+; if (state->deadline_ns == 0 || @ pulsesched.bpf.c:95
+264: (79) r2 = *(u64 *)(r0 +24)       ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104) R2=scalar()
+265: (15) if r2 == 0x0 goto pc+6      ; frame1: R2=scalar(umin=1)
+; state->deadline_ns - state->start_ns > MAX_EPOCH_TTL_NS || @ pulsesched.bpf.c:96
+266: (3d) if r7 >= r2 goto pc+5       ; frame1: R2=scalar(umin=1) R7=scalar(umax=0xfffffffffffffffe)
+267: (bf) r3 = r2                     ; frame1: R2=scalar(id=54,umin=1) R3=scalar(id=54,umin=1)
+268: (1f) r3 -= r1                    ; frame1: R1=scalar() R3=scalar()
+269: (18) r4 = 0x2540be401            ; frame1: R4=0x2540be401
+271: (ad) if r3 < r4 goto pc+21       ; frame1: R3=scalar(umin=0x2540be401) R4=0x2540be401
+272: (bf) r3 = r2                     ; frame1: R2=scalar(id=55,umin=1) R3=scalar(id=55,umin=1)
+; state->end_ns = state->deadline_ns > state->start_ns && @ pulsesched.bpf.c:99
+273: (ad) if r2 < r7 goto pc+1        ; frame1: R2=scalar(id=55,umin=1) R3=scalar(id=55,umin=1) R7=scalar(umax=0xfffffffffffffffe)
+274: (bf) r3 = r7                     ; frame1: R3=scalar(id=56,umax=0xfffffffffffffffe) R7=scalar(id=56,umax=0xfffffffffffffffe)
+275: (2d) if r2 > r1 goto pc+1        ; frame1: R1=scalar(umin=1) R2=scalar(id=55,umin=1)
+276: (bf) r3 = r7                     ; frame1: R3=scalar(id=56,umax=0xfffffffffffffffe)
+; state->active = 0; @ pulsesched.bpf.c:98
+277: (18) r1 = 0x200000000            ; frame1: R1=0x200000000
+279: (7b) *(u64 *)(r0 +72) = r1       ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104) R1=0x200000000
+; state->end_ns = state->deadline_ns > state->start_ns && @ pulsesched.bpf.c:99
+280: (7b) *(u64 *)(r0 +16) = r3       ; frame1: R0=map_value(id=53,map=task_state,ks=4,vs=104) R3=scalar(id=56,umax=0xfffffffffffffffe)
+; state->termination_reason = PULSE_REASON_TIMEOUT; @ pulsesched.bpf.c:101
+281: (b4) w1 = 2                      ; frame1: R1=2
+282: (63) *(u32 *)(r10 -4) = r1       ; frame1: R1=2 R10=fp0 fp-8=mmmmpppp
+283: (bf) r2 = r10                    ; frame1: R2=fp0 R10=fp0
+284: (07) r2 += -4                    ; frame1: R2=fp-4
+; __u64 *value = bpf_map_lookup_elem(&metrics, &index); @ pulsesched.bpf.c:78
+285: (18) r1 = 0xffff8c89c1338400     ; frame1: R1=map_ptr(map=metrics,ks=4,vs=8)
+287: (85) call bpf_map_lookup_elem#1          ; frame1: R0=map_value_or_null(id=57,map=metrics,ks=4,vs=8)
+; if (value) @ pulsesched.bpf.c:79
+288: (15) if r0 == 0x0 goto pc+48     ; frame1: R0=map_value(id=57,map=metrics,ks=4,vs=8)
+; (*value)++; @ pulsesched.bpf.c:80
+289: (79) r1 = *(u64 *)(r0 +0)        ; frame1: R0=map_value(id=57,map=metrics,ks=4,vs=8) R1=scalar()
+290: (07) r1 += 1                     ; frame1: R1=scalar()
+291: (7b) *(u64 *)(r0 +0) = r1        ; frame1: R0=map_value(id=57,map=metrics,ks=4,vs=8) R1=scalar()
+292: (05) goto pc+44
+; } @ pulsesched.bpf.c:121
+337: (bc) w0 = w6                     ; frame1: R0=0 R6=0
+338: (95) exit
+returning from callee:
+ frame1: R0=0 R6=0 R10=fp0
+to caller at 101:
+ R0=0 R6=trusted_ptr_task_struct() R7=trusted_ptr_task_struct() R8=scalar() R10=fp0 fp-16=0 fp-40=0 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-96=0 fp-120=mmmm0??? fp-128=scalar() fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+; if (!child || child->direct || urgent_now(p, now)) @ pulsesched.bpf.c:152
+101: (54) w0 &= 1                     ; R0=0
+102: (56) if w0 != 0x0 goto pc+46     ; R0=0
+103: (79) r4 = *(u64 *)(r10 -136)     ; R4=map_value(id=36,map=task_state,ks=4,vs=104) R10=fp0 fp-136=map_value(id=36,map=task_state,ks=4,vs=104)
+; inherited.epoch_id = parent->epoch_id; @ pulsesched.bpf.c:154
+104: (79) r1 = *(u64 *)(r4 +0)        ; R1=scalar() R4=map_value(id=36,map=task_state,ks=4,vs=104)
+105: (7b) *(u64 *)(r10 -112) = r1     ; R1=scalar(id=58) R10=fp0 fp-112=scalar(id=58)
+; inherited.start_ns = parent->start_ns; @ pulsesched.bpf.c:155
+106: (79) r1 = *(u64 *)(r4 +8)        ; R1=scalar() R4=map_value(id=36,map=task_state,ks=4,vs=104)
+107: (7b) *(u64 *)(r10 -104) = r1     ; R1=scalar(id=59) R10=fp0 fp-104=scalar(id=59)
+; inherited.deadline_ns = parent->deadline_ns; @ pulsesched.bpf.c:156
+108: (79) r1 = *(u64 *)(r4 +24)       ; R1=scalar() R4=map_value(id=36,map=task_state,ks=4,vs=104)
+; inherited.active = 1; @ pulsesched.bpf.c:157
+109: (b4) w2 = 1                      ; R2=1
+; inherited.inherited = 1; @ pulsesched.bpf.c:158
+110: (63) *(u32 *)(r10 -32) = r2      ; R2=1 R10=fp0 fp-32=pppp1
+; inherited.active = 1; @ pulsesched.bpf.c:157
+111: (63) *(u32 *)(r10 -40) = r2      ; R2=1 R10=fp0 fp-40=mmmm1
+; inherited.deadline_ns = parent->deadline_ns; @ pulsesched.bpf.c:156
+112: (7b) *(u64 *)(r10 -88) = r1      ; R1=scalar(id=60) R10=fp0 fp-88=scalar(id=60)
+113: (b7) r2 = 2872                   ; R2=2872
+114: (bf) r1 = r7                     ; R1=trusted_ptr_task_struct() R7=trusted_ptr_task_struct()
+115: (0f) r1 += r2                    ; R1=trusted_ptr_task_struct(imm=2872) R2=2872
+; inherited.depth = parent->depth + 1; @ pulsesched.bpf.c:159
+116: (61) r2 = *(u32 *)(r4 +84)       ; R2=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R4=map_value(id=36,map=task_state,ks=4,vs=104)
+117: (04) w2 += 1                     ; R2=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+118: (63) *(u32 *)(r10 -28) = r2      ; R2=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-32=mmmmmmmm
+; inherited.direct = 0; @ pulsesched.bpf.c:161
+119: (b4) w2 = 0                      ; R2=0
+; inherited.parent_pid = waker->pid; @ pulsesched.bpf.c:160
+120: (61) r3 = *(u32 *)(r7 +2872)     ; R3=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R7=trusted_ptr_task_struct()
+; inherited.direct = 0; @ pulsesched.bpf.c:161
+121: (63) *(u32 *)(r10 -20) = r2      ; R2=0 R10=fp0 fp-24=0000pppp
+; inherited.parent_pid = waker->pid; @ pulsesched.bpf.c:160
+122: (63) *(u32 *)(r10 -24) = r3      ; R3=scalar(id=61,smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R10=fp0 fp-24=0000scalar(id=61,smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff))
+; inherited.root_pid = parent->inherited ? parent->root_pid : waker->pid; @ pulsesched.bpf.c:162
+123: (61) r2 = *(u32 *)(r4 +80)       ; R2=scalar(smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) R4=map_value(id=36,map=task_state,ks=4,vs=104)
+124: (16) if w2 == 0x0 goto pc+2 127: R1=trusted_ptr_task_struct(imm=2872) R6=trusted_ptr_task_struct() R8=scalar() R10=fp0 fp-16=0 fp-24=0000scalar(id=61,smin=0,smax=umax=0xffffffff,var_off=(0x0; 0xffffffff)) fp-32=mmmmmmmm fp-40=mmmm1 fp-48=0 fp-56=0 fp-64=0 fp-72=0 fp-80=0 fp-88=scalar(id=60) fp-96=0 fp-104=scalar(id=59) fp-112=scalar(id=58) fp-120=mmmm0??? fp-128=scalar()
+; inherited.root_pid = parent->inherited ? parent->root_pid : waker->pid; @ pulsesched.bpf.c:162
+127: (61) r1 = *(u32 *)(r1 +0)
+same insn cannot be used with different pointers
+processed 642 insns (limit 1000000) max_states_per_insn 1 total_states 55 peak_states 55 mark_read 0
+-- END PROG LOAD LOG --
+libbpf: prog 'pulse_select_cpu': failed to load: -EINVAL
+libbpf: failed to load object 'pulsesched'
+libbpf: failed to load BPF skeleton 'pulsesched': -EINVAL
+[SCX_BUG] benchmark.c:341 (Invalid argument)
+Failed to load skel

@@ -1,0 +1,5 @@
+make: Entering directory '/home/bisam/osproject/src/scx_prophet'
+make: Nothing to be done for 'all'.
+ASAN_OPTIONS=detect_leaks=0 build/prophet-policy-test
+PASS: lease/ABI bounds, histogram edges, hysteresis/dwell/circuit breaker, queued-slice runtime accounting, model fairness
+make: Leaving directory '/home/bisam/osproject/src/scx_prophet'

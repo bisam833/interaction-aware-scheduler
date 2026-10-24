@@ -1,0 +1,24 @@
+make: Entering directory '/home/bisam/osproject/benchmarks/wayland_interaction'
+cc -std=gnu11 -O2 -g -Wall -Wextra -Werror transition_load.c -o build/transition-load
+make -C ../../src/pulsesched build/pulsesched.bpf.skel.h
+make[1]: Entering directory '/home/bisam/osproject/src/pulsesched'
+make[1]: 'build/pulsesched.bpf.skel.h' is up to date.
+make[1]: Leaving directory '/home/bisam/osproject/src/pulsesched'
+ASAN_OPTIONS=detect_leaks=0 build/transition-feedback-test
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":14235774647391,"work_start_ns":14235774647391,"commit_ns":14235774647391,"presentation_ns":14235784647781,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":10000390,"presentation_clock_id":0,"presentation_flags":7,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":14235784648022,"refresh_ns":16666666}
+{"type":"trial","interaction_id":1,"status":"discarded","input_ns":14235774962108,"work_start_ns":14235774962108,"commit_ns":14235774962108,"presentation_ns":0,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":0,"presentation_clock_id":0,"presentation_flags":0,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":14235784962569,"refresh_ns":0}
+{"type":"surface_state","received_ns":14235784977738,"interaction_id":0,"xdg_version":6,"width":400,"height":300,"activated":true,"suspended":true}
+{"type":"feedback_timeout_diagnostic","interaction_id":1,"observed_ns":14235784981946,"commit_ns":14235774981755,"wait_ns":10000191,"limit_ms":1,"surface_state_received_ns":14235784977738,"xdg_version":6,"suspended":true,"buffers_busy":[0,0]}
+{"type":"trial","interaction_id":1,"status":"timeout","input_ns":14235774981755,"work_start_ns":14235774981755,"commit_ns":14235774981755,"presentation_ns":0,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":0,"presentation_clock_id":0,"presentation_flags":0,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":0,"refresh_ns":0}
+{"type":"surface_state","received_ns":14235784989731,"interaction_id":0,"xdg_version":5,"width":400,"height":300,"activated":false,"suspended":null}
+{"type":"protocol-error","detail":"epoch-observation-failed"}
+{"type":"protocol-error","detail":"manual-input-during-planned-workload"}
+{"type":"protocol-error","detail":"manual-input-during-planned-workload"}
+feedback lifecycle tests passed: presented, discarded, timeout, observation error, buffer release
+build/prophet-transition-bench --selftest-workers
+{"type":"dependency_chain","root_pid":17,"root_policy":0,"worker_pids":[18,19,20,21],"worker_policies":[0,0,0,0],"edges":[[0,1],[1,2],[2,3]]}
+worker selftest passed: five equal-work chains and clean teardown
+make: Leaving directory '/home/bisam/osproject/benchmarks/wayland_interaction'

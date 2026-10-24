@@ -1,0 +1,23 @@
+{
+  "raw_directory_unchanged": true,
+  "scheduler_and_worker_hash_checks": {
+    "/home/bisam/osproject/src/scx_prophet/build/scx_prophet": true,
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/pulse-load": true,
+    "/home/bisam/osproject/src/pulsesched/build/pulsesched": true,
+    "/usr/bin/scx_lavd": true,
+    "/usr/bin/scx_rusty": true
+  },
+  "native_build_and_sanitizers": "PASS",
+  "python_tests": 14,
+  "host_rerun": "NOT RUN: zero effective capabilities; NoNewPrivs=1",
+  "sha256": {
+    "scripts/prophet_matrix.py": "635023df2fbb9ddefd3ab73b27e55232a5b2cdeb993d0682e81ac4feff83a6a5",
+    "scripts/audit_latency.py": "85266618759785d9efbf68a67a8150bbdc07a3ca9d5d5f4e19aed6e5db33719e",
+    "scripts/summarize_latency_audit.py": "a07900a76212f522ad43d3a9150fb6392ebc94a4461b4843f550dc0f18362664",
+    "benchmarks/wayland_interaction/benchmark.c": "428689575fc53236e9105eb4b5ca7de5bf86086b9993c3d7affd75dbea5e01dd",
+    "benchmarks/wayland_interaction/Makefile": "ff59264cabfd9d9c135bd436242702e17875ede1a656a2ce4820a8f854f2fc7d",
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": "dc6ba0bd0940537ccba7f5b3e0691b0d6ee69eb7b1e0b322a1a41f69fa7eb769",
+    "tests/feedback_lifecycle_test.c": "46107a4c7039fb4fbee40d11d6b7c8c43275ecccbde1eda87e1b5f322a414a09",
+    "tests/test_prophet_matrix.py": "064ee8a91c019a7eacddb3f724f23d0a1a3768d9cde8f352796139aa019828e7"
+  }
+}

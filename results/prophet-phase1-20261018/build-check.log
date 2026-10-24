@@ -1,0 +1,45 @@
+make: Entering directory '/home/bisam/osproject/src/scx_prophet'
+cc -std=gnu11 -Wall -Wextra -O2 -g -I../../external/scx-c-examples/scheds/include -I../../external/scx-c-examples/scheds/vmlinux -I../../external/scx-c-examples/scheds/vmlinux/arch/x86 -Ibuild prophet.c -o build/scx_prophet -lbpf -lelf -lz -lzstd -lpthread
+ASAN_OPTIONS=detect_leaks=0 build/prophet-policy-test
+PASS: lease/ABI bounds, histogram edges, hysteresis/dwell/circuit breaker, queued-slice runtime accounting, model fairness
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:74,
+                 from prophet.c:11:
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_read_enum’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:44:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   44 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:55:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   55 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_struct_has_field’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:99:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   99 |         for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                       ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:79:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_alloc_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:57: warning: unused parameter ‘map’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                   ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:68: warning: unused parameter ‘addr’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                              ~~~~~~^~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:80: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                                          ~~~~~~^~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:55: warning: unused parameter ‘node_id’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                   ~~~~^~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:70: warning: unused parameter ‘flags’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                                ~~~~~~^~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_free_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:47: warning: unused parameter ‘map’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                         ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:66: warning: unused parameter ‘ptr’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                    ~~~~~~~~~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:77: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                                       ~~~~~~^~~~~~~~
+make: Leaving directory '/home/bisam/osproject/src/scx_prophet'

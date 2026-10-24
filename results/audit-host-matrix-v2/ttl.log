@@ -1,0 +1,21 @@
+registered pid=25176 policy=SCHED_EXT
+normal_work_start_ns=7492610702566
+epoch=1 start_ns=7492630703800 ttl_ms=100
+epoch=1 end_ns=7492730703800 active=0 reason=2 boosted_runtime_ns=20225104 urgent_enqueues=7
+control_read_ns=7492732090174
+epoch=2 start_ns=7492732095624 ttl_ms=100
+epoch=2 end_ns=7492832095624 active=0 reason=2 boosted_runtime_ns=20356183 urgent_enqueues=7
+control_read_ns=7492833691643
+metric[0]=566
+metric[1]=14
+metric[2]=2
+metric[3]=0
+metric[4]=0
+metric[5]=0
+metric[6]=0
+metric[7]=0
+metric[8]=0
+metric[9]=0
+metric[10]=0
+metric[11]=0
+EXIT: unregistered from user space

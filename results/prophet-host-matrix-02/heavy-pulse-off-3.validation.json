@@ -1,0 +1,79 @@
+{
+  "meta": "results/prophet-host-matrix-02/heavy-pulse-off-3.meta.json",
+  "status": "PASS",
+  "summary": {
+    "file": "results/prophet-host-matrix-02/heavy-pulse-off-3.jsonl",
+    "condition": "heavy",
+    "implementation": "pulse-off",
+    "block": 3,
+    "returncode": 0,
+    "error": null,
+    "expected": 30,
+    "trial_records": 30,
+    "missing": 0,
+    "statuses": {
+      "presented": 30,
+      "discarded": 0,
+      "timeout": 0
+    },
+    "invalid_presentations": 0,
+    "protocol_errors": 0,
+    "ignored_inputs": 0,
+    "background_workers_expected": 32,
+    "background_workers_reported": 32,
+    "background_iterations_per_second": 4960647619.0678835,
+    "background_max_progress_gap_ms": 54.605938,
+    "benchmark_usage": {
+      "ru_utime": 2.19657400000051,
+      "ru_stime": 0.260787999999998,
+      "ru_nvcsw": 718,
+      "ru_nivcsw": 41
+    },
+    "latency_population": "Presentation latency uses valid presented trials only. Missing, timeout and discarded feedback are excluded; these percentiles do not describe failed trials. Handoff and CPU-work metrics include all recorded stages.",
+    "valid_presented_fraction": 1.0,
+    "latency": {
+      "client_to_presentation_ms": {
+        "n": 30,
+        "p50": 121.10393099999999,
+        "p95": 137.87955259999998,
+        "p99": 144.63594476
+      },
+      "work_to_commit_ms": {
+        "n": 30,
+        "p50": 80.33780999999999,
+        "p95": 81.85243919999999,
+        "p99": 84.80145755000001
+      },
+      "commit_to_presentation_ms": {
+        "n": 30,
+        "p50": 40.701511499999995,
+        "p95": 54.57235935,
+        "p99": 62.81520625000001
+      },
+      "handoff_ms": {
+        "n": 120,
+        "p50": 0.013174,
+        "p95": 0.20055915,
+        "p99": 0.9012281000000004
+      },
+      "work_cpu_ms": {
+        "n": 120,
+        "p50": 20.0034515,
+        "p95": 20.00513955,
+        "p99": 20.0055644
+      },
+      "feedback_delivery_ms": {
+        "n": 30,
+        "p50": 4.3369385000000005,
+        "p95": 10.925635649999998,
+        "p99": 12.219654430000002
+      },
+      "commit_wait_refresh_intervals": {
+        "n": 30,
+        "p50": 4.884237841789451,
+        "p95": 6.548758825652024,
+        "p99": 7.53791188826143
+      }
+    }
+  }
+}

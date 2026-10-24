@@ -1,0 +1,58 @@
+{
+  "condition": "heavy",
+  "workers": 32,
+  "implementation": "prophet-observe",
+  "block": 2,
+  "command": [
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/prophet-wayland-bench",
+    "20",
+    "30",
+    "1000",
+    "250",
+    "dep-off"
+  ],
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "before": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "trace_delay": false,
+  "workload_version": 2,
+  "requested_trials": 30,
+  "work_ms_per_stage": 20,
+  "input_origin": "synthetic-client-dispatch",
+  "interval_ms": 200,
+  "external_scheduler": true,
+  "returncode": 0,
+  "benchmark_usage": {
+    "ru_utime": 2.188083000000006,
+    "ru_stime": 0.23083199999999948,
+    "ru_nvcsw": 756,
+    "ru_nivcsw": 13
+  },
+  "sched_schedstats": "0",
+  "scheduler_returncode": 0,
+  "elapsed_ns": 10131528853,
+  "after": {
+    "state": "disabled",
+    "rejected": 0
+  }
+}

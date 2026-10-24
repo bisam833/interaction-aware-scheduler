@@ -1,0 +1,53 @@
+{
+  "status": "LOCAL_CHECKS_PASS_HOST_EXPERIMENT_PENDING",
+  "python_tests": 27,
+  "native_transition_checks": "PASS; sanitizer feedback lifecycle and real equal-work worker chains",
+  "native_baseline_checks": "PASS; compiled in isolated /tmp directory",
+  "prophet_policy_checks": "PASS; scheduler executable unchanged",
+  "native_load_scenarios": {
+    "purpose": "generator validation only; no Wayland/scheduler comparison",
+    "generator_sha256": "5965d5116bb71b46ceb8b70c17804e0a7b028e4d57c230bc269de14ebb3113fa",
+    "runs": [
+      {
+        "scenario": "steps",
+        "epoch_ns": 14327341728463,
+        "workers": 2,
+        "cpu": 15,
+        "max_activation_lag_ms": 3.174363,
+        "max_continuous_worker_batch_gap_ms": 6.852888,
+        "status": "PASS"
+      },
+      {
+        "scenario": "irregular",
+        "epoch_ns": 14332592222835,
+        "workers": 2,
+        "cpu": 15,
+        "max_activation_lag_ms": 1.733537,
+        "max_continuous_worker_batch_gap_ms": 7.452811,
+        "status": "PASS"
+      },
+      {
+        "scenario": "mixed",
+        "epoch_ns": 14339843841692,
+        "workers": 3,
+        "cpu": 15,
+        "max_activation_lag_ms": 3.271778,
+        "max_continuous_worker_batch_gap_ms": 10.059109,
+        "status": "PASS"
+      }
+    ]
+  },
+  "preserved_originals": {
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": true,
+    "benchmarks/wayland_interaction/build/pulsesched-wayland-bench": true,
+    "src/scx_prophet/build/scx_prophet": true,
+    "scripts/prophet_matrix.py": true
+  },
+  "matrix02_raw_files_checked": 1517,
+  "matrix02_changed_files": [],
+  "wayland_probe": "exit 3: wayland connect failed",
+  "privileged_validation": "NOT RUN in this namespace; zero effective capabilities and NoNewPrivs=1",
+  "performance_claim": "No new scheduler comparison; adaptive advantage over fixed 5 ms remains unestablished",
+  "plan_manifest_sha256": "490de71d0223d07621138f5c6a14fcf21883586ef51db282238c7100ce107d1e",
+  "implementation_archive_sha256": "fc9cc418a3758b019ae990cb4a02c084c55d71f227b3080125e21aca0024efa6"
+}

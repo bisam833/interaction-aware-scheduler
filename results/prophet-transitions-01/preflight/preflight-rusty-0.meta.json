@@ -1,0 +1,93 @@
+{
+  "condition": "preflight",
+  "implementation": "rusty",
+  "block": 0,
+  "plan": {
+    "phases": [
+      {
+        "label": "idle",
+        "start_ns": 0,
+        "duration_ns": 1000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "busy",
+        "start_ns": 1000000000,
+        "duration_ns": 1000000000,
+        "batch_workers": 2,
+        "periodic_workers": 1
+      },
+      {
+        "label": "idle-final",
+        "start_ns": 2000000000,
+        "duration_ns": 1000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      }
+    ],
+    "duration_ns": 3000000000,
+    "interval_ms": 500,
+    "first_input_ns": 250000000,
+    "trials": 6,
+    "work_ms": 20,
+    "feedback_timeout_ms": 1000
+  },
+  "before": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "workers": 3,
+  "requested_trials": 6,
+  "work_ms_per_stage": 20,
+  "interval_ms": 500,
+  "trace_delay": false,
+  "input_origin": "synthetic-client-dispatch",
+  "primary_latency_origin": "absolute planned input due time",
+  "command": [
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/prophet-transition-bench",
+    "20",
+    "6",
+    "1000",
+    "0",
+    "dep-normal"
+  ],
+  "epoch_ns": 16080592598828,
+  "all_workload_children_usage": {
+    "ru_utime": 2.641385999999997,
+    "ru_stime": 0.05937000000000037,
+    "ru_nvcsw": 514,
+    "ru_nivcsw": 14
+  },
+  "returncode": 0,
+  "worker_returncodes": [
+    0,
+    0,
+    0
+  ],
+  "scheduler_returncode": 0,
+  "after": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "elapsed_ns": 5310412707
+}

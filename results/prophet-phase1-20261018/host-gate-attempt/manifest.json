@@ -1,0 +1,30 @@
+{
+  "kernel": "7.2.10-1-cachyos",
+  "before": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "epoch_abi_bytes": 104,
+  "sha256": {
+    "src/scx_prophet/build/scx_prophet": "03c7876ad5994d8743c16bd7bfecab1057c71a46cfde26d4d1aba8e74e3f5c58",
+    "benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0"
+  }
+}

@@ -1,0 +1,2 @@
+{"type":"dependency_chain","root_pid":3,"root_policy":0,"worker_pids":[4,5,6,7],"worker_policies":[0,0,0,0],"edges":[[0,1],[1,2],[2,3]]}
+worker selftest passed: five equal-work chains and clean teardown

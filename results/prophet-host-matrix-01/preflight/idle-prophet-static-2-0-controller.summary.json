@@ -1,0 +1,154 @@
+{
+  "file": "results/prophet-host-matrix-01/preflight/idle-prophet-static-2-0-controller.jsonl",
+  "attached": {
+    "type": "attached",
+    "mode": "static",
+    "profile": 2,
+    "telemetry": true,
+    "propagation": false,
+    "poll_ms": 100,
+    "possible_cpus": 16,
+    "telemetry_map_id": 158,
+    "task_map_id": 160,
+    "metrics_map_id": 161,
+    "abi": 1
+  },
+  "exit": {
+    "type": "exit",
+    "process_cpu_ns": 44303439,
+    "uei_code": 0
+  },
+  "complete": true,
+  "polls": 18,
+  "invalid_polls_including_initial_baseline": 1,
+  "enqueue_to_run": {
+    "samples": 5298,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      347,
+      1108,
+      846,
+      317,
+      227,
+      2236,
+      172,
+      32,
+      0,
+      2,
+      1,
+      3,
+      3,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": true,
+        "lower_ns": 8192,
+        "upper_exclusive_ns": 16384
+      },
+      "p95": {
+        "supported": true,
+        "lower_ns": 16384,
+        "upper_exclusive_ns": 32768
+      },
+      "p99": {
+        "supported": true,
+        "lower_ns": 32768,
+        "upper_exclusive_ns": 65536
+      },
+      "p999": {
+        "supported": false,
+        "minimum_samples": 20000
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "runnable_to_first_run": {
+    "samples": 5328,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      19,
+      932,
+      801,
+      690,
+      234,
+      338,
+      2182,
+      92,
+      26,
+      0,
+      2,
+      1,
+      3,
+      3,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": true,
+        "lower_ns": 4096,
+        "upper_exclusive_ns": 8192
+      },
+      "p95": {
+        "supported": true,
+        "lower_ns": 16384,
+        "upper_exclusive_ns": 32768
+      },
+      "p99": {
+        "supported": true,
+        "lower_ns": 32768,
+        "upper_exclusive_ns": 65536
+      },
+      "p999": {
+        "supported": false,
+        "minimum_samples": 20000
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "profile_enqueues": [
+    623,
+    0,
+    4675
+  ],
+  "fallback_enqueues": 623,
+  "local_enqueues": 4871,
+  "shared_enqueues": 427,
+  "completed_running_interval_ns": 745651440,
+  "runnable_events": 5328,
+  "quiescent_events": 5327,
+  "caveat": "Completed intervals only; approximate asynchronous CPU reads; no per-task/compositor attribution."
+}

@@ -1,0 +1,27 @@
+{
+  "frozen_files_unchanged": {
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": true,
+    "scripts/prophet_matrix.py": true,
+    "scripts/prophet_smoke.py": true,
+    "src/pulsesched/Makefile": true,
+    "src/pulsesched/build/pulsesched": true,
+    "src/pulsesched/build/pulsesched.bpf.skel.h": true,
+    "src/pulsesched/pulse_policy.h": true,
+    "src/pulsesched/pulsesched.bpf.c": true,
+    "src/pulsesched/pulsesched.c": true,
+    "src/scx_prophet/.gitignore": true,
+    "src/scx_prophet/Makefile": true,
+    "src/scx_prophet/README.md": true,
+    "src/scx_prophet/build/prophet-policy-test": true,
+    "src/scx_prophet/build/prophet.bpf.o": true,
+    "src/scx_prophet/build/prophet.bpf.skel.h": true,
+    "src/scx_prophet/build/scx_prophet": true,
+    "src/scx_prophet/control.h": true,
+    "src/scx_prophet/prophet.bpf.c": true,
+    "src/scx_prophet/prophet.c": true,
+    "src/scx_prophet/prophet.h": true
+  },
+  "matrix02_raw_files_unchanged": 1517,
+  "live_demo_run": false,
+  "limitation": "Current namespace has CapEff=0 and NoNewPrivs=1; host invocation required."
+}

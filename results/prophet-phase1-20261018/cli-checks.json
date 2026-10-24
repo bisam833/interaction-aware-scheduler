@@ -1,0 +1,30 @@
+{
+  "--help": {
+    "returncode": 0,
+    "expected": 0
+  },
+  "--mode invalid": {
+    "returncode": 2,
+    "expected": 2
+  },
+  "--profile 1": {
+    "returncode": 2,
+    "expected": 2
+  },
+  "--mode adaptive --no-telemetry": {
+    "returncode": 2,
+    "expected": 2
+  },
+  "--mode static --profile 3": {
+    "returncode": 2,
+    "expected": 2
+  },
+  "--poll-ms 0": {
+    "returncode": 2,
+    "expected": 2
+  },
+  "--duration 1x": {
+    "returncode": 2,
+    "expected": 2
+  }
+}

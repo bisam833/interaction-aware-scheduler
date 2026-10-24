@@ -1,0 +1,2 @@
+pulsesched attached partial=0 propagation=0 trace_delay=0 policy=bounded-vtime
+EXIT: unregistered from user space

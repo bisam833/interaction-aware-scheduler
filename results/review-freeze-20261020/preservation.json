@@ -1,0 +1,101 @@
+{
+  "status": "FROZEN_FOR_REVIEW",
+  "date": "2026-10-20",
+  "verified_implementation": "completed prophet-host-matrix-02 and prior host smoke",
+  "original_snapshot": "results/prophet-matrix02-analysis-20261020/verified-implementation-snapshot.tar.gz",
+  "archive_members_verified_against_saved_hashes": 33,
+  "copied_files_sha256": {
+    "verified-implementation-snapshot.tar.gz": "69231797f89ad29ab4baffed4474a0acb25e3ef7722aebb8760e4e1e92be2f91",
+    "snapshot-sha256.json": "561becec5bda98cb529647d4f26762bf315e6ab712bb581a7316c8cc33b759bc",
+    "REVIEW_TOMORROW.md": "d75e81321d3d01e4f133469b0b29d09654c2855f3c95f1cfc9aa69b571645ca1"
+  },
+  "current_verified_files": {
+    "benchmarks/wayland_interaction/build/prophet-wayland-bench": {
+      "sha256": "dc6ba0bd0940537ccba7f5b3e0691b0d6ee69eb7b1e0b322a1a41f69fa7eb769",
+      "matches_verified_snapshot": true
+    },
+    "scripts/prophet_matrix.py": {
+      "sha256": "635023df2fbb9ddefd3ab73b27e55232a5b2cdeb993d0682e81ac4feff83a6a5",
+      "matches_verified_snapshot": true
+    },
+    "scripts/prophet_smoke.py": {
+      "sha256": "3029efe421660b4df62e4890060a03e182a3cdd56f4f191916a55b9971d4f14c",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/Makefile": {
+      "sha256": "a53afe1bebba99a8430ab342870ea2d0b2630f7c5e7e6537de48e9a170dfda3b",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/build/pulsesched": {
+      "sha256": "665287720f9a8d65c520a374b876910ec50000fd21792b8028ea3ad115f594bf",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/build/pulsesched.bpf.skel.h": {
+      "sha256": "e5159cc5a26e8022be18d575f114a8a2db766ff506e69051f9c579de641db078",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/pulse_policy.h": {
+      "sha256": "2867a3f8d7778ec0cf97e6e095b1f3e16a7dd1f8e9e5a16d7ed55e12070a5d6a",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/pulsesched.bpf.c": {
+      "sha256": "f115fbc668feb9273053da8e51e19ecfbf76cd73a55f3da6bf6109db042c990b",
+      "matches_verified_snapshot": true
+    },
+    "src/pulsesched/pulsesched.c": {
+      "sha256": "c0ff7723b0439eba47ff17fe91fbf73d2d52cecff0854e488394f4b2c6be2590",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/.gitignore": {
+      "sha256": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/Makefile": {
+      "sha256": "050a0bf1c2cd5309ea11ed653b82560ac4b10cf17f6ad76afec6cbe65dd18fde",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/README.md": {
+      "sha256": "b278faa1f4d224a23b0f2bdecfcb8dedaaadd46887d6bfd465873355d594b250",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/build/prophet-policy-test": {
+      "sha256": "89041f911b4ab4c503afb5de089bdda191431ff5e336b8f768e9ff6414f03798",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/build/prophet.bpf.o": {
+      "sha256": "da2ff112f239e4680aa1bd06a3f75362ee7973570dd1aa529731e231d0266b0d",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/build/prophet.bpf.skel.h": {
+      "sha256": "b058c24c12aeec86d28c5830601281676357483814f444ccb2d952d67867f27c",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/build/scx_prophet": {
+      "sha256": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/control.h": {
+      "sha256": "a811f2ae151053ac5da3758b96a11deae0ec0666a42996503e0e4ee60a97210e",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/prophet.bpf.c": {
+      "sha256": "1efc11502ef4b4650ebc4039947d6a445ee5aff18e083a7e317d07d5d28cb325",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/prophet.c": {
+      "sha256": "003bd1aa6106404c447bca5b52e5fd5cc705cbbc79402a8306a52c6a14d375f1",
+      "matches_verified_snapshot": true
+    },
+    "src/scx_prophet/prophet.h": {
+      "sha256": "9462903f655d2c3cd898a16ae21dbbccf4fd8a2c1ea03e66f8b7839b40f000f9",
+      "matches_verified_snapshot": true
+    }
+  },
+  "changes_this_freeze": "Review documentation and preservation copies only; no implementation changes, builds, runtime tests, or experiments.",
+  "preserved_raw_results": [
+    "results/prophet-host-matrix-02",
+    "results/prophet-host-smoke-01",
+    "results/audit-host-matrix-v2"
+  ],
+  "later_transition_work": "Preserved in place; excluded from host-verified release claims."
+}

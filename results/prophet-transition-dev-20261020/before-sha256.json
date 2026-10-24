@@ -1,0 +1,8 @@
+{
+  "benchmarks/wayland_interaction/benchmark.c": "428689575fc53236e9105eb4b5ca7de5bf86086b9993c3d7affd75dbea5e01dd",
+  "benchmarks/wayland_interaction/Makefile": "ff59264cabfd9d9c135bd436242702e17875ede1a656a2ce4820a8f854f2fc7d",
+  "benchmarks/wayland_interaction/build/prophet-wayland-bench": "dc6ba0bd0940537ccba7f5b3e0691b0d6ee69eb7b1e0b322a1a41f69fa7eb769",
+  "benchmarks/wayland_interaction/build/pulsesched-wayland-bench": "69b5a11578ed35b2cb057e9ee104489850a44e5ee2f7ae5b6399378a2fe05917",
+  "src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+  "scripts/prophet_matrix.py": "635023df2fbb9ddefd3ab73b27e55232a5b2cdeb993d0682e81ac4feff83a6a5"
+}

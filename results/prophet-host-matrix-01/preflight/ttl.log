@@ -1,0 +1,21 @@
+registered pid=10825 policy=SCHED_EXT
+normal_work_start_ns=2118522272962
+epoch=1 start_ns=2118542274040 ttl_ms=100
+epoch=1 end_ns=2118642274040 active=0 reason=2 boosted_runtime_ns=20284525 urgent_enqueues=7
+control_read_ns=2118645251535
+epoch=2 start_ns=2118645259010 ttl_ms=100
+epoch=2 end_ns=2118745259010 active=0 reason=2 boosted_runtime_ns=20245532 urgent_enqueues=7
+control_read_ns=2118747974006
+metric[0]=152
+metric[1]=14
+metric[2]=2
+metric[3]=0
+metric[4]=0
+metric[5]=0
+metric[6]=0
+metric[7]=0
+metric[8]=0
+metric[9]=0
+metric[10]=0
+metric[11]=0
+EXIT: unregistered from user space

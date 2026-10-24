@@ -1,0 +1,12 @@
+{
+  "src/pulsesched/pulsesched.bpf.c": "f115fbc668feb9273053da8e51e19ecfbf76cd73a55f3da6bf6109db042c990b",
+  "src/pulsesched/pulsesched.c": "c0ff7723b0439eba47ff17fe91fbf73d2d52cecff0854e488394f4b2c6be2590",
+  "src/pulsesched/pulsesched_ctl.c": "0cd1aa457a6701f0bdd9b68424d5bc5f1570da51a7516ba85b74429a31cde5e4",
+  "src/pulsesched/pulse_policy.h": "2867a3f8d7778ec0cf97e6e095b1f3e16a7dd1f8e9e5a16d7ed55e12070a5d6a",
+  "src/pulsesched/Makefile": "a53afe1bebba99a8430ab342870ea2d0b2630f7c5e7e6537de48e9a170dfda3b",
+  "benchmarks/wayland_interaction/benchmark.c": "3e8b06097e51452b98fe1534194e80c2c5e63ee457123feab5081e1dab3a2274",
+  "benchmarks/wayland_interaction/Makefile": "51bfa98f917ab76493c20d379e6386f1f4e69924048e894ad2009a9a7877c4dc",
+  "src/pulsesched/build/pulsesched": "665287720f9a8d65c520a374b876910ec50000fd21792b8028ea3ad115f594bf",
+  "benchmarks/wayland_interaction/build/pulsesched-wayland-bench": "69b5a11578ed35b2cb057e9ee104489850a44e5ee2f7ae5b6399378a2fe05917",
+  "benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0"
+}

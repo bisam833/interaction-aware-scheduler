@@ -1,0 +1,3813 @@
+{
+  "rows": [
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-adaptive-0-controller.jsonl",
+      "mode": "adaptive",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 0,
+      "sampled_seconds": 7.697077471,
+      "enqueue_wait_slow_fraction": 0.3199312874320999,
+      "wake_wait_slow_fraction": 0.006834983958711118,
+      "enqueue_completions_per_second": 2798.3348330781014,
+      "wake_completions_per_second": 931.3924703253126,
+      "runnable_callbacks_per_second": 931.1326314439274,
+      "charged_cpu_equivalents": 16.011242917500315,
+      "requested_time_fractions": {
+        "-1": 0.05259250423999672,
+        "0": 0.17727275788075222,
+        "1": 0.4784918923901662,
+        "2": 0.2916428454890848
+      },
+      "windows": [
+        {
+          "seconds": 0.504941551,
+          "now_ns": 2884593008215,
+          "elapsed_ns": 504941551,
+          "samples": 1421,
+          "slow_samples": 427,
+          "enqueue_wait_ge_8388608ns_fraction": 0.30049261083743845,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.10498631,
+          "now_ns": 2885193052974,
+          "elapsed_ns": 600044759,
+          "samples": 1184,
+          "slow_samples": 484,
+          "enqueue_wait_ge_8388608ns_fraction": 0.40878378378378377,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.701072965,
+          "now_ns": 2885789139629,
+          "elapsed_ns": 596086655,
+          "samples": 1917,
+          "slow_samples": 457,
+          "enqueue_wait_ge_8388608ns_fraction": 0.23839332290036516,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.206940393,
+          "now_ns": 2886295007057,
+          "elapsed_ns": 505867428,
+          "samples": 1487,
+          "slow_samples": 386,
+          "enqueue_wait_ge_8388608ns_fraction": 0.25958305312710156,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.802951284,
+          "now_ns": 2886891017948,
+          "elapsed_ns": 596010891,
+          "samples": 2490,
+          "slow_samples": 847,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3401606425702811,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.403950164,
+          "now_ns": 2887492016828,
+          "elapsed_ns": 600998880,
+          "samples": 1268,
+          "slow_samples": 852,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6719242902208202,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.002938101,
+          "now_ns": 2888091004765,
+          "elapsed_ns": 598987937,
+          "samples": 1223,
+          "slow_samples": 850,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6950122649223222,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.600949816,
+          "now_ns": 2888689016480,
+          "elapsed_ns": 598011715,
+          "samples": 1251,
+          "slow_samples": 851,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6802557953637091,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.100950087,
+          "now_ns": 2889189016751,
+          "elapsed_ns": 500000271,
+          "samples": 1691,
+          "slow_samples": 50,
+          "enqueue_wait_ge_8388608ns_fraction": 0.02956830277942046,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.700939353,
+          "now_ns": 2889789006017,
+          "elapsed_ns": 599989266,
+          "samples": 2005,
+          "slow_samples": 39,
+          "enqueue_wait_ge_8388608ns_fraction": 0.01945137157107232,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.200950384,
+          "now_ns": 2890289017048,
+          "elapsed_ns": 500011031,
+          "samples": 1744,
+          "slow_samples": 18,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010321100917431193,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.801939871,
+          "now_ns": 2890890006535,
+          "elapsed_ns": 600989487,
+          "samples": 2001,
+          "slow_samples": 16,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0079960019990005,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.401950363,
+          "now_ns": 2891490017027,
+          "elapsed_ns": 600010492,
+          "samples": 1213,
+          "slow_samples": 830,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6842539159109645,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.000916667,
+          "now_ns": 2892088983331,
+          "elapsed_ns": 598966304,
+          "samples": 1290,
+          "slow_samples": 851,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6596899224806202,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.500940565,
+          "now_ns": 2892589007229,
+          "elapsed_ns": 500023898,
+          "samples": 1315,
+          "slow_samples": 700,
+          "enqueue_wait_ge_8388608ns_fraction": 0.532319391634981,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 9.001939457,
+          "now_ns": 2893090006121,
+          "elapsed_ns": 500998892,
+          "samples": 977,
+          "slow_samples": 707,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7236438075742068,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.601017451,
+          "now_ns": 2893689084115,
+          "elapsed_ns": 599077994,
+          "samples": 1949,
+          "slow_samples": 54,
+          "enqueue_wait_ge_8388608ns_fraction": 0.027706516162134428,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.504941551,
+          "requested": 0,
+          "generation": 1
+        },
+        {
+          "seconds": 2.206940393,
+          "requested": 1,
+          "generation": 4
+        },
+        {
+          "seconds": 4.600949816,
+          "requested": 2,
+          "generation": 8
+        },
+        {
+          "seconds": 6.801939871,
+          "requested": 1,
+          "generation": 12
+        },
+        {
+          "seconds": 9.001939457,
+          "requested": 2,
+          "generation": 16
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-adaptive-1-controller.jsonl",
+      "mode": "adaptive",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 1,
+      "sampled_seconds": 7.69196559,
+      "enqueue_wait_slow_fraction": 0.2636190321664706,
+      "wake_wait_slow_fraction": 0.006039863096436481,
+      "enqueue_completions_per_second": 3205.032538373589,
+      "wake_completions_per_second": 1291.4774362634662,
+      "runnable_callbacks_per_second": 1291.2174246998939,
+      "charged_cpu_equivalents": 16.021025783475977,
+      "requested_time_fractions": {
+        "-1": 0.052590911725969434,
+        "0": 0.17696239543784173,
+        "1": 0.44766563112069097,
+        "2": 0.32278106171549786
+      },
+      "windows": [
+        {
+          "seconds": 0.504921065,
+          "now_ns": 2972591009432,
+          "elapsed_ns": 504921065,
+          "samples": 1558,
+          "slow_samples": 406,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2605905006418485,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.103918368,
+          "now_ns": 2973190006735,
+          "elapsed_ns": 598997303,
+          "samples": 1296,
+          "slow_samples": 464,
+          "enqueue_wait_ge_8388608ns_fraction": 0.35802469135802467,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.700338442,
+          "now_ns": 2973786426809,
+          "elapsed_ns": 596420074,
+          "samples": 1812,
+          "slow_samples": 477,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2632450331125828,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.203922627,
+          "now_ns": 2974290010994,
+          "elapsed_ns": 503584185,
+          "samples": 1484,
+          "slow_samples": 416,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2803234501347709,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.800926717,
+          "now_ns": 2974887015084,
+          "elapsed_ns": 597004090,
+          "samples": 3001,
+          "slow_samples": 812,
+          "enqueue_wait_ge_8388608ns_fraction": 0.27057647450849714,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.304938037,
+          "now_ns": 2975391026404,
+          "elapsed_ns": 504011320,
+          "samples": 2642,
+          "slow_samples": 692,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2619227857683573,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.900920743,
+          "now_ns": 2975987009110,
+          "elapsed_ns": 595982706,
+          "samples": 2022,
+          "slow_samples": 847,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4188921859545005,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.40192211,
+          "now_ns": 2976488010477,
+          "elapsed_ns": 501001367,
+          "samples": 1154,
+          "slow_samples": 713,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6178509532062392,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.000928853,
+          "now_ns": 2977087017220,
+          "elapsed_ns": 599006743,
+          "samples": 1951,
+          "slow_samples": 54,
+          "enqueue_wait_ge_8388608ns_fraction": 0.027678113787801127,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.600935476,
+          "now_ns": 2977687023843,
+          "elapsed_ns": 600006623,
+          "samples": 2026,
+          "slow_samples": 38,
+          "enqueue_wait_ge_8388608ns_fraction": 0.018756169792694965,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.200917777,
+          "now_ns": 2978287006144,
+          "elapsed_ns": 599982301,
+          "samples": 2019,
+          "slow_samples": 18,
+          "enqueue_wait_ge_8388608ns_fraction": 0.008915304606240713,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.700928491,
+          "now_ns": 2978787016858,
+          "elapsed_ns": 500010714,
+          "samples": 1650,
+          "slow_samples": 12,
+          "enqueue_wait_ge_8388608ns_fraction": 0.007272727272727273,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.203927253,
+          "now_ns": 2979290015620,
+          "elapsed_ns": 502998762,
+          "samples": 976,
+          "slow_samples": 694,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7110655737704918,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.800928023,
+          "now_ns": 2979887016390,
+          "elapsed_ns": 597000770,
+          "samples": 1193,
+          "slow_samples": 862,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7225481978206203,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.300928676,
+          "now_ns": 2980387017043,
+          "elapsed_ns": 500000653,
+          "samples": 1036,
+          "slow_samples": 710,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6853281853281853,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.800930313,
+          "now_ns": 2980887018680,
+          "elapsed_ns": 500001637,
+          "samples": 1037,
+          "slow_samples": 711,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6856316297010607,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.302917977,
+          "now_ns": 2981389006344,
+          "elapsed_ns": 501987664,
+          "samples": 1720,
+          "slow_samples": 80,
+          "enqueue_wait_ge_8388608ns_fraction": 0.046511627906976744,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.504921065,
+          "requested": 0,
+          "generation": 1
+        },
+        {
+          "seconds": 2.203922627,
+          "requested": 1,
+          "generation": 4
+        },
+        {
+          "seconds": 4.40192211,
+          "requested": 2,
+          "generation": 8
+        },
+        {
+          "seconds": 6.700928491,
+          "requested": 1,
+          "generation": 12
+        },
+        {
+          "seconds": 8.800930313,
+          "requested": 2,
+          "generation": 16
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-adaptive-2-controller.jsonl",
+      "mode": "adaptive",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 2,
+      "sampled_seconds": 7.793127138,
+      "enqueue_wait_slow_fraction": 0.2934976777420507,
+      "wake_wait_slow_fraction": 0.0072,
+      "enqueue_completions_per_second": 2873.301000161355,
+      "wake_completions_per_second": 962.3864550379674,
+      "runnable_callbacks_per_second": 962.5147732319724,
+      "charged_cpu_equivalents": 16.0138346087637,
+      "requested_time_fractions": {
+        "-1": 0.051953898698735075,
+        "0": 0.1750518716869096,
+        "1": 0.4536021348036088,
+        "2": 0.31939209481074654
+      },
+      "windows": [
+        {
+          "seconds": 0.503956385,
+          "now_ns": 3057030030234,
+          "elapsed_ns": 503956385,
+          "samples": 1301,
+          "slow_samples": 442,
+          "enqueue_wait_ge_8388608ns_fraction": 0.33973866256725593,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.00893546,
+          "now_ns": 3057535009309,
+          "elapsed_ns": 504979075,
+          "samples": 880,
+          "slow_samples": 447,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5079545454545454,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.60194335,
+          "now_ns": 3058128017199,
+          "elapsed_ns": 593007890,
+          "samples": 1780,
+          "slow_samples": 469,
+          "enqueue_wait_ge_8388608ns_fraction": 0.26348314606741574,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.201971561,
+          "now_ns": 3058728045410,
+          "elapsed_ns": 600028211,
+          "samples": 1461,
+          "slow_samples": 457,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3127994524298426,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.801941939,
+          "now_ns": 3059328015788,
+          "elapsed_ns": 599970378,
+          "samples": 3355,
+          "slow_samples": 805,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2399403874813711,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.301943424,
+          "now_ns": 3059828017273,
+          "elapsed_ns": 500001485,
+          "samples": 1095,
+          "slow_samples": 724,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6611872146118721,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.900937317,
+          "now_ns": 3060427011166,
+          "elapsed_ns": 598993893,
+          "samples": 1187,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7186183656276327,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.401942848,
+          "now_ns": 3060928016697,
+          "elapsed_ns": 501005531,
+          "samples": 1009,
+          "slow_samples": 704,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6977205153617443,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.000087588,
+          "now_ns": 3061526161437,
+          "elapsed_ns": 598144740,
+          "samples": 1954,
+          "slow_samples": 54,
+          "enqueue_wait_ge_8388608ns_fraction": 0.027635619242579325,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.500942789,
+          "now_ns": 3062027016638,
+          "elapsed_ns": 500855201,
+          "samples": 1586,
+          "slow_samples": 4,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0025220680958385876,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.100932739,
+          "now_ns": 3062627006588,
+          "elapsed_ns": 599989950,
+          "samples": 2004,
+          "slow_samples": 26,
+          "enqueue_wait_ge_8388608ns_fraction": 0.012974051896207584,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.600942402,
+          "now_ns": 3063127016251,
+          "elapsed_ns": 500009663,
+          "samples": 1712,
+          "slow_samples": 28,
+          "enqueue_wait_ge_8388608ns_fraction": 0.016355140186915886,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.102943493,
+          "now_ns": 3063629017342,
+          "elapsed_ns": 502001091,
+          "samples": 1012,
+          "slow_samples": 682,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6739130434782609,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.700932429,
+          "now_ns": 3064227006278,
+          "elapsed_ns": 597988936,
+          "samples": 1196,
+          "slow_samples": 858,
+          "enqueue_wait_ge_8388608ns_fraction": 0.717391304347826,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.200942893,
+          "now_ns": 3064727016742,
+          "elapsed_ns": 500010464,
+          "samples": 959,
+          "slow_samples": 701,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7309697601668405,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.800942971,
+          "now_ns": 3065327016820,
+          "elapsed_ns": 600000078,
+          "samples": 1177,
+          "slow_samples": 854,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7255734919286321,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.40094426,
+          "now_ns": 3065927018109,
+          "elapsed_ns": 600001289,
+          "samples": 1971,
+          "slow_samples": 43,
+          "enqueue_wait_ge_8388608ns_fraction": 0.021816336884830034,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.503956385,
+          "requested": 0,
+          "generation": 1
+        },
+        {
+          "seconds": 2.201971561,
+          "requested": 1,
+          "generation": 4
+        },
+        {
+          "seconds": 4.401942848,
+          "requested": 2,
+          "generation": 8
+        },
+        {
+          "seconds": 6.600942402,
+          "requested": 1,
+          "generation": 12
+        },
+        {
+          "seconds": 8.800942971,
+          "requested": 2,
+          "generation": 16
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-adaptive-3-controller.jsonl",
+      "mode": "adaptive",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 3,
+      "sampled_seconds": 7.788337721,
+      "enqueue_wait_slow_fraction": 0.3072465090809528,
+      "wake_wait_slow_fraction": 0.011504170261719874,
+      "enqueue_completions_per_second": 2813.694113560641,
+      "wake_completions_per_second": 892.8734537601853,
+      "runnable_callbacks_per_second": 892.4882624514017,
+      "charged_cpu_equivalents": 16.02752935988149,
+      "requested_time_fractions": {
+        "-1": 0.051742040516281396,
+        "0": 0.1648605121793329,
+        "1": 0.4638391137976422,
+        "2": 0.3195583335067435
+      },
+      "windows": [
+        {
+          "seconds": 0.501946455,
+          "now_ns": 3148525028174,
+          "elapsed_ns": 501946455,
+          "samples": 1201,
+          "slow_samples": 424,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3530391340549542,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.007938697,
+          "now_ns": 3149031020416,
+          "elapsed_ns": 505992242,
+          "samples": 723,
+          "slow_samples": 458,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6334716459197787,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.510965438,
+          "now_ns": 3149534047157,
+          "elapsed_ns": 503026741,
+          "samples": 1369,
+          "slow_samples": 424,
+          "enqueue_wait_ge_8388608ns_fraction": 0.30971512052593136,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.10124847,
+          "now_ns": 3150124330189,
+          "elapsed_ns": 590283032,
+          "samples": 1049,
+          "slow_samples": 506,
+          "enqueue_wait_ge_8388608ns_fraction": 0.48236415633937085,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.700926287,
+          "now_ns": 3150724008006,
+          "elapsed_ns": 599677817,
+          "samples": 2718,
+          "slow_samples": 835,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3072111846946284,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.300925306,
+          "now_ns": 3151324007025,
+          "elapsed_ns": 599999019,
+          "samples": 1523,
+          "slow_samples": 855,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5613919894944189,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.80093718,
+          "now_ns": 3151824018899,
+          "elapsed_ns": 500011874,
+          "samples": 1016,
+          "slow_samples": 713,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7017716535433071,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.400935094,
+          "now_ns": 3152424016813,
+          "elapsed_ns": 599997914,
+          "samples": 1203,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7090606816292602,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.00092532,
+          "now_ns": 3153024007039,
+          "elapsed_ns": 599990226,
+          "samples": 1997,
+          "slow_samples": 50,
+          "enqueue_wait_ge_8388608ns_fraction": 0.02503755633450175,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.500935823,
+          "now_ns": 3153524017542,
+          "elapsed_ns": 500010503,
+          "samples": 1550,
+          "slow_samples": 25,
+          "enqueue_wait_ge_8388608ns_fraction": 0.016129032258064516,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.100936446,
+          "now_ns": 3154124018165,
+          "elapsed_ns": 600000623,
+          "samples": 2320,
+          "slow_samples": 5,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0021551724137931034,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.700935241,
+          "now_ns": 3154724016960,
+          "elapsed_ns": 599998795,
+          "samples": 1933,
+          "slow_samples": 27,
+          "enqueue_wait_ge_8388608ns_fraction": 0.01396792550439731,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.200941923,
+          "now_ns": 3155224023642,
+          "elapsed_ns": 500006682,
+          "samples": 1072,
+          "slow_samples": 692,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6455223880597015,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.800934829,
+          "now_ns": 3155824016548,
+          "elapsed_ns": 599992906,
+          "samples": 1176,
+          "slow_samples": 859,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7304421768707483,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.300938384,
+          "now_ns": 3156324020103,
+          "elapsed_ns": 500003555,
+          "samples": 1043,
+          "slow_samples": 702,
+          "enqueue_wait_ge_8388608ns_fraction": 0.673058485139022,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.900924249,
+          "now_ns": 3156924005968,
+          "elapsed_ns": 599985865,
+          "samples": 1175,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7259574468085106,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.400936091,
+          "now_ns": 3157424017810,
+          "elapsed_ns": 500011842,
+          "samples": 1657,
+          "slow_samples": 77,
+          "enqueue_wait_ge_8388608ns_fraction": 0.04646952323476162,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.501946455,
+          "requested": 0,
+          "generation": 1
+        },
+        {
+          "seconds": 2.10124847,
+          "requested": 1,
+          "generation": 4
+        },
+        {
+          "seconds": 4.400935094,
+          "requested": 2,
+          "generation": 8
+        },
+        {
+          "seconds": 6.700935241,
+          "requested": 1,
+          "generation": 12
+        },
+        {
+          "seconds": 8.900924249,
+          "requested": 2,
+          "generation": 16
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-observe-0-controller.jsonl",
+      "mode": "observe",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 0,
+      "sampled_seconds": 7.698944466,
+      "enqueue_wait_slow_fraction": 0.5446265938069217,
+      "wake_wait_slow_fraction": 0.05820810348107285,
+      "enqueue_completions_per_second": 1426.169528626913,
+      "wake_completions_per_second": 682.8208754090784,
+      "runnable_callbacks_per_second": 682.8208754090784,
+      "charged_cpu_equivalents": 15.984326207244004,
+      "requested_time_fractions": {
+        "-1": 0.010931147260018507,
+        "0": 0.9890688527399815,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.503955031,
+          "now_ns": 2854601021764,
+          "elapsed_ns": 503955031,
+          "samples": 503,
+          "slow_samples": 400,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7952286282306164,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.007939013,
+          "now_ns": 2855105005746,
+          "elapsed_ns": 503983982,
+          "samples": 543,
+          "slow_samples": 424,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7808471454880295,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.600951561,
+          "now_ns": 2855698018294,
+          "elapsed_ns": 593012548,
+          "samples": 1855,
+          "slow_samples": 500,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2695417789757412,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.101950208,
+          "now_ns": 2856199016941,
+          "elapsed_ns": 500998647,
+          "samples": 712,
+          "slow_samples": 383,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5379213483146067,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.605950139,
+          "now_ns": 2856703016872,
+          "elapsed_ns": 503999931,
+          "samples": 692,
+          "slow_samples": 391,
+          "enqueue_wait_ge_8388608ns_fraction": 0.565028901734104,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.208950735,
+          "now_ns": 2857306017468,
+          "elapsed_ns": 603000596,
+          "samples": 871,
+          "slow_samples": 480,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5510907003444316,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.802951176,
+          "now_ns": 2857900017909,
+          "elapsed_ns": 594000441,
+          "samples": 892,
+          "slow_samples": 458,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5134529147982063,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.404950441,
+          "now_ns": 2858502017174,
+          "elapsed_ns": 601999265,
+          "samples": 925,
+          "slow_samples": 461,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4983783783783784,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.000952184,
+          "now_ns": 2859098018917,
+          "elapsed_ns": 596001743,
+          "samples": 793,
+          "slow_samples": 463,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5838587641866331,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.606950086,
+          "now_ns": 2859704016819,
+          "elapsed_ns": 605997902,
+          "samples": 843,
+          "slow_samples": 460,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5456702253855279,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.20094918,
+          "now_ns": 2860298015913,
+          "elapsed_ns": 593999094,
+          "samples": 830,
+          "slow_samples": 462,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5566265060240964,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.701940599,
+          "now_ns": 2860799007332,
+          "elapsed_ns": 500991419,
+          "samples": 655,
+          "slow_samples": 391,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5969465648854961,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.204219542,
+          "now_ns": 2861301286275,
+          "elapsed_ns": 502278943,
+          "samples": 662,
+          "slow_samples": 381,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5755287009063444,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.800762326,
+          "now_ns": 2861897829059,
+          "elapsed_ns": 596542784,
+          "samples": 1126,
+          "slow_samples": 478,
+          "enqueue_wait_ge_8388608ns_fraction": 0.42451154529307283,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.301949544,
+          "now_ns": 2862399016277,
+          "elapsed_ns": 501187218,
+          "samples": 728,
+          "slow_samples": 390,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5357142857142857,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.802949228,
+          "now_ns": 2862900015961,
+          "elapsed_ns": 500999684,
+          "samples": 671,
+          "slow_samples": 392,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5842026825633383,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.30694881,
+          "now_ns": 2863404015543,
+          "elapsed_ns": 503999582,
+          "samples": 623,
+          "slow_samples": 386,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6195826645264848,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.104949498,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-observe-1-controller.jsonl",
+      "mode": "observe",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 1,
+      "sampled_seconds": 7.60295582,
+      "enqueue_wait_slow_fraction": 0.5204746186100455,
+      "wake_wait_slow_fraction": 0.036631352127850604,
+      "enqueue_completions_per_second": 1474.2950327968629,
+      "wake_completions_per_second": 732.4782797435748,
+      "runnable_callbacks_per_second": 732.6098075366693,
+      "charged_cpu_equivalents": 15.991761370250867,
+      "requested_time_fractions": {
+        "-1": 0.01053168037657651,
+        "0": 0.9894683196234235,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.503942659,
+          "now_ns": 2942477013946,
+          "elapsed_ns": 503942659,
+          "samples": 1320,
+          "slow_samples": 415,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3143939393939394,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.106843939,
+          "now_ns": 2943079915226,
+          "elapsed_ns": 602901280,
+          "samples": 1220,
+          "slow_samples": 515,
+          "enqueue_wait_ge_8388608ns_fraction": 0.42213114754098363,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.700114622,
+          "now_ns": 2943673185909,
+          "elapsed_ns": 593270683,
+          "samples": 1790,
+          "slow_samples": 446,
+          "enqueue_wait_ge_8388608ns_fraction": 0.24916201117318434,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.20693658,
+          "now_ns": 2944180007867,
+          "elapsed_ns": 506821958,
+          "samples": 1382,
+          "slow_samples": 387,
+          "enqueue_wait_ge_8388608ns_fraction": 0.28002894356005786,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.801935135,
+          "now_ns": 2944775006422,
+          "elapsed_ns": 594998555,
+          "samples": 1967,
+          "slow_samples": 484,
+          "enqueue_wait_ge_8388608ns_fraction": 0.24605998983223182,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.404049295,
+          "now_ns": 2945377120582,
+          "elapsed_ns": 602114160,
+          "samples": 694,
+          "slow_samples": 459,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6613832853025937,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.000938413,
+          "now_ns": 2945974009700,
+          "elapsed_ns": 596889118,
+          "samples": 739,
+          "slow_samples": 469,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6346414073071719,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.500945073,
+          "now_ns": 2946474016360,
+          "elapsed_ns": 500006660,
+          "samples": 580,
+          "slow_samples": 368,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6344827586206897,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.000977816,
+          "now_ns": 2946974049103,
+          "elapsed_ns": 500032743,
+          "samples": 625,
+          "slow_samples": 377,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6032,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.503402176,
+          "now_ns": 2947476473463,
+          "elapsed_ns": 502424360,
+          "samples": 594,
+          "slow_samples": 392,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6599326599326599,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.10293567,
+          "now_ns": 2948076006957,
+          "elapsed_ns": 599533494,
+          "samples": 749,
+          "slow_samples": 464,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6194926568758344,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.702949249,
+          "now_ns": 2948676020536,
+          "elapsed_ns": 600013579,
+          "samples": 724,
+          "slow_samples": 451,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6229281767955801,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.206136586,
+          "now_ns": 2949179207873,
+          "elapsed_ns": 503187337,
+          "samples": 571,
+          "slow_samples": 385,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6742556917688266,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.804950433,
+          "now_ns": 2949778021720,
+          "elapsed_ns": 598813847,
+          "samples": 756,
+          "slow_samples": 458,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6058201058201058,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.403935386,
+          "now_ns": 2950377006673,
+          "elapsed_ns": 598984953,
+          "samples": 726,
+          "slow_samples": 461,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6349862258953168,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.00093491,
+          "now_ns": 2950974006197,
+          "elapsed_ns": 596999524,
+          "samples": 694,
+          "slow_samples": 461,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6642651296829971,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.503952116,
+          "now_ns": 2951477023403,
+          "elapsed_ns": 503017206,
+          "samples": 723,
+          "slow_samples": 377,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5214384508990318,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100092586,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-observe-2-controller.jsonl",
+      "mode": "observe",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 2,
+      "sampled_seconds": 7.794994469,
+      "enqueue_wait_slow_fraction": 0.42618166287015946,
+      "wake_wait_slow_fraction": 0.029653836843379328,
+      "enqueue_completions_per_second": 1802.1821639345155,
+      "wake_completions_per_second": 1059.9109509130815,
+      "runnable_callbacks_per_second": 1060.4241007319692,
+      "charged_cpu_equivalents": 16.003568536977237,
+      "requested_time_fractions": {
+        "-1": 0.010330382285554355,
+        "0": 0.9896696177144456,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.503934567,
+          "now_ns": 3026723018702,
+          "elapsed_ns": 503934567,
+          "samples": 1270,
+          "slow_samples": 394,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3102362204724409,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.007933064,
+          "now_ns": 3027227017199,
+          "elapsed_ns": 503998497,
+          "samples": 912,
+          "slow_samples": 424,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4649122807017544,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.600933193,
+          "now_ns": 3027820017328,
+          "elapsed_ns": 593000129,
+          "samples": 2005,
+          "slow_samples": 455,
+          "enqueue_wait_ge_8388608ns_fraction": 0.22693266832917705,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.200274698,
+          "now_ns": 3028419358833,
+          "elapsed_ns": 599341505,
+          "samples": 1591,
+          "slow_samples": 450,
+          "enqueue_wait_ge_8388608ns_fraction": 0.28284098051539913,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.707932758,
+          "now_ns": 3028927016893,
+          "elapsed_ns": 507658060,
+          "samples": 2156,
+          "slow_samples": 394,
+          "enqueue_wait_ge_8388608ns_fraction": 0.18274582560296845,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.304935109,
+          "now_ns": 3029524019244,
+          "elapsed_ns": 597002351,
+          "samples": 1348,
+          "slow_samples": 460,
+          "enqueue_wait_ge_8388608ns_fraction": 0.34124629080118696,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.900930969,
+          "now_ns": 3030120015104,
+          "elapsed_ns": 595995860,
+          "samples": 1049,
+          "slow_samples": 455,
+          "enqueue_wait_ge_8388608ns_fraction": 0.43374642516682554,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.500961715,
+          "now_ns": 3030720045850,
+          "elapsed_ns": 600030746,
+          "samples": 760,
+          "slow_samples": 453,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5960526315789474,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.10093862,
+          "now_ns": 3031320022755,
+          "elapsed_ns": 599976905,
+          "samples": 949,
+          "slow_samples": 455,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4794520547945205,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.602923254,
+          "now_ns": 3031822007389,
+          "elapsed_ns": 501984634,
+          "samples": 700,
+          "slow_samples": 384,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5485714285714286,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.205927807,
+          "now_ns": 3032425011942,
+          "elapsed_ns": 603004553,
+          "samples": 825,
+          "slow_samples": 460,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5575757575757576,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.800971149,
+          "now_ns": 3033020055284,
+          "elapsed_ns": 595043342,
+          "samples": 856,
+          "slow_samples": 459,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5362149532710281,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.302925709,
+          "now_ns": 3033522009844,
+          "elapsed_ns": 501954560,
+          "samples": 675,
+          "slow_samples": 374,
+          "enqueue_wait_ge_8388608ns_fraction": 0.554074074074074,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.813928415,
+          "now_ns": 3034033012550,
+          "elapsed_ns": 511002706,
+          "samples": 767,
+          "slow_samples": 399,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5202086049543677,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.401954213,
+          "now_ns": 3034621038348,
+          "elapsed_ns": 588025798,
+          "samples": 751,
+          "slow_samples": 458,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6098535286284953,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.00693025,
+          "now_ns": 3035226014385,
+          "elapsed_ns": 604976037,
+          "samples": 946,
+          "slow_samples": 474,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5010570824524313,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.529939935,
+          "now_ns": 3035749024070,
+          "elapsed_ns": 523009685,
+          "samples": 686,
+          "slow_samples": 396,
+          "enqueue_wait_ge_8388608ns_fraction": 0.577259475218659,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100214304,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-observe-3-controller.jsonl",
+      "mode": "observe",
+      "initial_profile": 0,
+      "telemetry": true,
+      "block": 3,
+      "sampled_seconds": 7.695008179,
+      "enqueue_wait_slow_fraction": 0.5390450691655511,
+      "wake_wait_slow_fraction": 0.06962719298245613,
+      "enqueue_completions_per_second": 1456.1388031501922,
+      "wake_completions_per_second": 711.1103552733468,
+      "runnable_callbacks_per_second": 711.1103552733468,
+      "charged_cpu_equivalents": 16.012671378344482,
+      "requested_time_fractions": {
+        "-1": 0.01043334598435087,
+        "0": 0.9895666540156491,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.503948833,
+          "now_ns": 3118229020064,
+          "elapsed_ns": 503948833,
+          "samples": 1397,
+          "slow_samples": 432,
+          "enqueue_wait_ge_8388608ns_fraction": 0.30923407301360056,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.007937256,
+          "now_ns": 3118733008487,
+          "elapsed_ns": 503988423,
+          "samples": 918,
+          "slow_samples": 407,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4433551198257081,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.610096642,
+          "now_ns": 3119335167873,
+          "elapsed_ns": 602159386,
+          "samples": 1854,
+          "slow_samples": 471,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2540453074433657,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.200065336,
+          "now_ns": 3119925136567,
+          "elapsed_ns": 589968694,
+          "samples": 1112,
+          "slow_samples": 482,
+          "enqueue_wait_ge_8388608ns_fraction": 0.43345323741007197,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.706947029,
+          "now_ns": 3120432018260,
+          "elapsed_ns": 506881693,
+          "samples": 1682,
+          "slow_samples": 429,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2550535077288942,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.300945532,
+          "now_ns": 3121026016763,
+          "elapsed_ns": 593998503,
+          "samples": 813,
+          "slow_samples": 462,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5682656826568265,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.802937275,
+          "now_ns": 3121528008506,
+          "elapsed_ns": 501991743,
+          "samples": 853,
+          "slow_samples": 389,
+          "enqueue_wait_ge_8388608ns_fraction": 0.45603751465416176,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.306945312,
+          "now_ns": 3122032016543,
+          "elapsed_ns": 504008037,
+          "samples": 607,
+          "slow_samples": 399,
+          "enqueue_wait_ge_8388608ns_fraction": 0.657331136738056,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.901274029,
+          "now_ns": 3122626345260,
+          "elapsed_ns": 594328717,
+          "samples": 698,
+          "slow_samples": 465,
+          "enqueue_wait_ge_8388608ns_fraction": 0.666189111747851,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.401953738,
+          "now_ns": 3123127024969,
+          "elapsed_ns": 500679709,
+          "samples": 557,
+          "slow_samples": 389,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6983842010771992,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.902935859,
+          "now_ns": 3123628007090,
+          "elapsed_ns": 500982121,
+          "samples": 637,
+          "slow_samples": 373,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5855572998430141,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.5079408,
+          "now_ns": 3124233012031,
+          "elapsed_ns": 605004941,
+          "samples": 764,
+          "slow_samples": 478,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6256544502617801,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.010949251,
+          "now_ns": 3124736020482,
+          "elapsed_ns": 503008451,
+          "samples": 581,
+          "slow_samples": 397,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6833046471600689,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.60194592,
+          "now_ns": 3125327017151,
+          "elapsed_ns": 590996669,
+          "samples": 676,
+          "slow_samples": 474,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7011834319526628,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.206939893,
+          "now_ns": 3125932011124,
+          "elapsed_ns": 604993973,
+          "samples": 700,
+          "slow_samples": 474,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6771428571428572,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.800945648,
+          "now_ns": 3126526016879,
+          "elapsed_ns": 594005755,
+          "samples": 685,
+          "slow_samples": 462,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6744525547445256,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.300946008,
+          "now_ns": 3127026017239,
+          "elapsed_ns": 500000360,
+          "samples": 622,
+          "slow_samples": 373,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5996784565916399,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100170044,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-1-0-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 1,
+      "telemetry": true,
+      "block": 0,
+      "sampled_seconds": 7.700000786,
+      "enqueue_wait_slow_fraction": 0.7030217488933085,
+      "wake_wait_slow_fraction": 0.009538598047914819,
+      "enqueue_completions_per_second": 2024.285507650856,
+      "wake_completions_per_second": 585.454485692568,
+      "runnable_callbacks_per_second": 585.7142259257946,
+      "charged_cpu_equivalents": 16.000402390348537,
+      "requested_time_fractions": {
+        "-1": 0.010423409673569629,
+        "0": 0.0,
+        "1": 0.9895765903264304,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.502939908,
+          "now_ns": 2864555016511,
+          "elapsed_ns": 502939908,
+          "samples": 799,
+          "slow_samples": 626,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7834793491864831,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.100105712,
+          "now_ns": 2865152182315,
+          "elapsed_ns": 597165804,
+          "samples": 1135,
+          "slow_samples": 829,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7303964757709251,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.600929685,
+          "now_ns": 2865653006288,
+          "elapsed_ns": 500823973,
+          "samples": 2276,
+          "slow_samples": 703,
+          "enqueue_wait_ge_8388608ns_fraction": 0.30887521968365556,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.100940867,
+          "now_ns": 2866153017470,
+          "elapsed_ns": 500011182,
+          "samples": 1057,
+          "slow_samples": 713,
+          "enqueue_wait_ge_8388608ns_fraction": 0.674550614947966,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.701940031,
+          "now_ns": 2866754016634,
+          "elapsed_ns": 600999164,
+          "samples": 1233,
+          "slow_samples": 849,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6885644768856448,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.300939718,
+          "now_ns": 2867353016321,
+          "elapsed_ns": 598999687,
+          "samples": 1210,
+          "slow_samples": 858,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7090909090909091,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.801931007,
+          "now_ns": 2867854007610,
+          "elapsed_ns": 500991289,
+          "samples": 984,
+          "slow_samples": 709,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7205284552845529,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.400930145,
+          "now_ns": 2868453006748,
+          "elapsed_ns": 598999138,
+          "samples": 1214,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7026359143327842,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.000929826,
+          "now_ns": 2869053006429,
+          "elapsed_ns": 599999681,
+          "samples": 1207,
+          "slow_samples": 849,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7033968516984258,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.603939806,
+          "now_ns": 2869656016409,
+          "elapsed_ns": 603009980,
+          "samples": 1190,
+          "slow_samples": 852,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7159663865546219,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.203940021,
+          "now_ns": 2870256016624,
+          "elapsed_ns": 600000215,
+          "samples": 1291,
+          "slow_samples": 857,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6638264910921766,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.800940595,
+          "now_ns": 2870853017198,
+          "elapsed_ns": 597000574,
+          "samples": 1179,
+          "slow_samples": 857,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7268871925360475,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.400940014,
+          "now_ns": 2871453016617,
+          "elapsed_ns": 599999419,
+          "samples": 1180,
+          "slow_samples": 854,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7237288135593221,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.002929661,
+          "now_ns": 2872055006264,
+          "elapsed_ns": 601989647,
+          "samples": 1276,
+          "slow_samples": 860,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6739811912225705,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.600929013,
+          "now_ns": 2872653005616,
+          "elapsed_ns": 597999352,
+          "samples": 1166,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7315608919382505,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 9.101938558,
+          "now_ns": 2873154015161,
+          "elapsed_ns": 501009545,
+          "samples": 1034,
+          "slow_samples": 708,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6847195357833655,
+          "requested_after_window": 1
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100084858,
+          "requested": 1,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-1-1-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 1,
+      "telemetry": true,
+      "block": 1,
+      "sampled_seconds": 7.701988996,
+      "enqueue_wait_slow_fraction": 0.6140509403060936,
+      "wake_wait_slow_fraction": 0.011931732366711977,
+      "enqueue_completions_per_second": 2299.016527963889,
+      "wake_completions_per_second": 859.6480731715654,
+      "runnable_callbacks_per_second": 859.6480731715654,
+      "charged_cpu_equivalents": 15.993711138249463,
+      "requested_time_fractions": {
+        "-1": 0.01051946721002645,
+        "0": 0.0,
+        "1": 0.9894805327899735,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.500070986,
+          "now_ns": 2952400149158,
+          "elapsed_ns": 500070986,
+          "samples": 1438,
+          "slow_samples": 671,
+          "enqueue_wait_ge_8388608ns_fraction": 0.4666203059805285,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.005939033,
+          "now_ns": 2952906017205,
+          "elapsed_ns": 505868047,
+          "samples": 1253,
+          "slow_samples": 745,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5945730247406225,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.600941085,
+          "now_ns": 2953501019257,
+          "elapsed_ns": 595002052,
+          "samples": 2215,
+          "slow_samples": 841,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3796839729119639,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.200940886,
+          "now_ns": 2954101019058,
+          "elapsed_ns": 599999801,
+          "samples": 2291,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.37363596682671324,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.701985432,
+          "now_ns": 2954602063604,
+          "elapsed_ns": 501044546,
+          "samples": 2432,
+          "slow_samples": 706,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2902960526315789,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.301938926,
+          "now_ns": 2955202017098,
+          "elapsed_ns": 599953494,
+          "samples": 1329,
+          "slow_samples": 828,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6230248306997742,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.801943598,
+          "now_ns": 2955702021770,
+          "elapsed_ns": 500004672,
+          "samples": 945,
+          "slow_samples": 695,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7354497354497355,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.40094156,
+          "now_ns": 2956301019732,
+          "elapsed_ns": 598997962,
+          "samples": 1198,
+          "slow_samples": 844,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7045075125208681,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.00192855,
+          "now_ns": 2956902006722,
+          "elapsed_ns": 600986990,
+          "samples": 1116,
+          "slow_samples": 846,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7580645161290323,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.601928115,
+          "now_ns": 2957502006287,
+          "elapsed_ns": 599999565,
+          "samples": 1195,
+          "slow_samples": 850,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7112970711297071,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.200938073,
+          "now_ns": 2958101016245,
+          "elapsed_ns": 599009958,
+          "samples": 1122,
+          "slow_samples": 854,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7611408199643493,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.70193847,
+          "now_ns": 2958602016642,
+          "elapsed_ns": 501000397,
+          "samples": 991,
+          "slow_samples": 709,
+          "enqueue_wait_ge_8388608ns_fraction": 0.715438950554995,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.300938244,
+          "now_ns": 2959201016416,
+          "elapsed_ns": 598999774,
+          "samples": 1127,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7595385980479148,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.800943819,
+          "now_ns": 2959701021991,
+          "elapsed_ns": 500005575,
+          "samples": 876,
+          "slow_samples": 712,
+          "enqueue_wait_ge_8388608ns_fraction": 0.8127853881278538,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.40029311,
+          "now_ns": 2960300371282,
+          "elapsed_ns": 599349291,
+          "samples": 1210,
+          "slow_samples": 851,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7033057851239669,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.900938128,
+          "now_ns": 2960801016300,
+          "elapsed_ns": 500645018,
+          "samples": 1028,
+          "slow_samples": 710,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6906614785992218,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 9.501013295,
+          "now_ns": 2961401091467,
+          "elapsed_ns": 600075167,
+          "samples": 1265,
+          "slow_samples": 848,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6703557312252965,
+          "requested_after_window": 1
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.101017695,
+          "requested": 1,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-1-2-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 1,
+      "telemetry": true,
+      "block": 2,
+      "sampled_seconds": 7.699996167,
+      "enqueue_wait_slow_fraction": 0.5267568999566495,
+      "wake_wait_slow_fraction": 0.010572777663724081,
+      "enqueue_completions_per_second": 2696.2351083985936,
+      "wake_completions_per_second": 1265.195434999234,
+      "runnable_callbacks_per_second": 1265.3253051937527,
+      "charged_cpu_equivalents": 15.988735889587618,
+      "requested_time_fractions": {
+        "-1": 0.01043730875786204,
+        "0": 0.0,
+        "1": 0.9895626912421379,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.500305517,
+          "now_ns": 3036886386630,
+          "elapsed_ns": 500305517,
+          "samples": 1791,
+          "slow_samples": 619,
+          "enqueue_wait_ge_8388608ns_fraction": 0.34561697375767725,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.006927889,
+          "now_ns": 3037393009002,
+          "elapsed_ns": 506622372,
+          "samples": 1262,
+          "slow_samples": 746,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5911251980982567,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.601939901,
+          "now_ns": 3037988021014,
+          "elapsed_ns": 595012012,
+          "samples": 3195,
+          "slow_samples": 827,
+          "enqueue_wait_ge_8388608ns_fraction": 0.25884194053208137,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.200963678,
+          "now_ns": 3038587044791,
+          "elapsed_ns": 599023777,
+          "samples": 1378,
+          "slow_samples": 859,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6233671988388969,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.703941424,
+          "now_ns": 3039090022537,
+          "elapsed_ns": 502977746,
+          "samples": 2583,
+          "slow_samples": 702,
+          "enqueue_wait_ge_8388608ns_fraction": 0.27177700348432055,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.302070196,
+          "now_ns": 3039688151309,
+          "elapsed_ns": 598128772,
+          "samples": 2501,
+          "slow_samples": 833,
+          "enqueue_wait_ge_8388608ns_fraction": 0.33306677329068374,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.905926764,
+          "now_ns": 3040292007877,
+          "elapsed_ns": 603856568,
+          "samples": 1224,
+          "slow_samples": 875,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7148692810457516,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.500940419,
+          "now_ns": 3040887021532,
+          "elapsed_ns": 595013655,
+          "samples": 1223,
+          "slow_samples": 848,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6933769419460344,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.006929438,
+          "now_ns": 3041393010551,
+          "elapsed_ns": 505989019,
+          "samples": 1900,
+          "slow_samples": 707,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3721052631578947,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.600932839,
+          "now_ns": 3041987013952,
+          "elapsed_ns": 594003401,
+          "samples": 1277,
+          "slow_samples": 858,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6718872357086922,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.100941144,
+          "now_ns": 3042487022257,
+          "elapsed_ns": 500008305,
+          "samples": 1099,
+          "slow_samples": 712,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6478616924476797,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.601929469,
+          "now_ns": 3042988010582,
+          "elapsed_ns": 500988325,
+          "samples": 2027,
+          "slow_samples": 711,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3507646768623582,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.102937917,
+          "now_ns": 3043489019030,
+          "elapsed_ns": 501008448,
+          "samples": 1273,
+          "slow_samples": 713,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5600942655145326,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.701923653,
+          "now_ns": 3044088004766,
+          "elapsed_ns": 598985736,
+          "samples": 1191,
+          "slow_samples": 855,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7178841309823678,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.302925445,
+          "now_ns": 3044689006558,
+          "elapsed_ns": 601001792,
+          "samples": 1156,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.740484429065744,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.900923953,
+          "now_ns": 3045287005066,
+          "elapsed_ns": 597998508,
+          "samples": 1177,
+          "slow_samples": 851,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7230246389124894,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 9.401935845,
+          "now_ns": 3045788016958,
+          "elapsed_ns": 501011892,
+          "samples": 1032,
+          "slow_samples": 710,
+          "enqueue_wait_ge_8388608ns_fraction": 0.687984496124031,
+          "requested_after_window": 1
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100207833,
+          "requested": 1,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-1-3-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 1,
+      "telemetry": true,
+      "block": 3,
+      "sampled_seconds": 7.700000818,
+      "enqueue_wait_slow_fraction": 0.6067974578612877,
+      "wake_wait_slow_fraction": 0.012836970474967908,
+      "enqueue_completions_per_second": 2349.999750350676,
+      "wake_completions_per_second": 910.5193837915772,
+      "runnable_callbacks_per_second": 910.6492539076507,
+      "charged_cpu_equivalents": 15.997963969177334,
+      "requested_time_fractions": {
+        "-1": 0.010434343794506192,
+        "0": 0.0,
+        "1": 0.9895656562054939,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.500907661,
+          "now_ns": 3128260008545,
+          "elapsed_ns": 500907661,
+          "samples": 2085,
+          "slow_samples": 605,
+          "enqueue_wait_ge_8388608ns_fraction": 0.290167865707434,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.001915034,
+          "now_ns": 3128761015918,
+          "elapsed_ns": 501007373,
+          "samples": 1232,
+          "slow_samples": 714,
+          "enqueue_wait_ge_8388608ns_fraction": 0.5795454545454546,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 1.50291991,
+          "now_ns": 3129262020794,
+          "elapsed_ns": 501004876,
+          "samples": 2682,
+          "slow_samples": 697,
+          "enqueue_wait_ge_8388608ns_fraction": 0.2598806860551827,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.100906472,
+          "now_ns": 3129860007356,
+          "elapsed_ns": 597986562,
+          "samples": 1258,
+          "slow_samples": 859,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6828298887122417,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 2.604919126,
+          "now_ns": 3130364020010,
+          "elapsed_ns": 504012654,
+          "samples": 1881,
+          "slow_samples": 706,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3753322700691122,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.201906113,
+          "now_ns": 3130961006997,
+          "elapsed_ns": 596986987,
+          "samples": 2635,
+          "slow_samples": 852,
+          "enqueue_wait_ge_8388608ns_fraction": 0.3233396584440228,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 3.703914677,
+          "now_ns": 3131463015561,
+          "elapsed_ns": 502008564,
+          "samples": 1063,
+          "slow_samples": 728,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6848541862652869,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.300915221,
+          "now_ns": 3132060016105,
+          "elapsed_ns": 597000544,
+          "samples": 1214,
+          "slow_samples": 848,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6985172981878089,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 4.801913935,
+          "now_ns": 3132561014819,
+          "elapsed_ns": 500998714,
+          "samples": 996,
+          "slow_samples": 716,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7188755020080321,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.400916547,
+          "now_ns": 3133160017431,
+          "elapsed_ns": 599002612,
+          "samples": 1180,
+          "slow_samples": 851,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7211864406779661,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 5.902916176,
+          "now_ns": 3133662017060,
+          "elapsed_ns": 501999629,
+          "samples": 994,
+          "slow_samples": 718,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7223340040241448,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 6.502916265,
+          "now_ns": 3134262017149,
+          "elapsed_ns": 600000089,
+          "samples": 1321,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.647993943981832,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.100919267,
+          "now_ns": 3134860020151,
+          "elapsed_ns": 598003002,
+          "samples": 1212,
+          "slow_samples": 853,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7037953795379538,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 7.702906673,
+          "now_ns": 3135462007557,
+          "elapsed_ns": 601987406,
+          "samples": 1205,
+          "slow_samples": 861,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7145228215767635,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.300906033,
+          "now_ns": 3136060006917,
+          "elapsed_ns": 597999360,
+          "samples": 1260,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6793650793650794,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 8.800914535,
+          "now_ns": 3136560015419,
+          "elapsed_ns": 500008502,
+          "samples": 1026,
+          "slow_samples": 711,
+          "enqueue_wait_ge_8388608ns_fraction": 0.6929824561403509,
+          "requested_after_window": 1
+        },
+        {
+          "seconds": 9.400916554,
+          "now_ns": 3137160017438,
+          "elapsed_ns": 600002019,
+          "samples": 1205,
+          "slow_samples": 856,
+          "enqueue_wait_ge_8388608ns_fraction": 0.7103734439834025,
+          "requested_after_window": 1
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100179157,
+          "requested": 1,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-2-0-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 2,
+      "telemetry": true,
+      "block": 0,
+      "sampled_seconds": 7.700005643,
+      "enqueue_wait_slow_fraction": 0.010119557677398295,
+      "wake_wait_slow_fraction": 0.000561955605507165,
+      "enqueue_completions_per_second": 3182.7249402445664,
+      "wake_completions_per_second": 462.2074534757584,
+      "runnable_callbacks_per_second": 462.3373235104524,
+      "charged_cpu_equivalents": 15.99746518380571,
+      "requested_time_fractions": {
+        "-1": 0.010930013608106724,
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.9890699863918933
+      },
+      "windows": [
+        {
+          "seconds": 0.500950094,
+          "now_ns": 2874584018836,
+          "elapsed_ns": 500950094,
+          "samples": 1229,
+          "slow_samples": 148,
+          "enqueue_wait_ge_8388608ns_fraction": 0.12042310821806347,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.10094143,
+          "now_ns": 2875184010172,
+          "elapsed_ns": 599991336,
+          "samples": 2065,
+          "slow_samples": 36,
+          "enqueue_wait_ge_8388608ns_fraction": 0.017433414043583534,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.602938472,
+          "now_ns": 2875686007214,
+          "elapsed_ns": 501997042,
+          "samples": 3386,
+          "slow_samples": 19,
+          "enqueue_wait_ge_8388608ns_fraction": 0.005611340815121087,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.200937683,
+          "now_ns": 2876284006425,
+          "elapsed_ns": 597999211,
+          "samples": 1983,
+          "slow_samples": 16,
+          "enqueue_wait_ge_8388608ns_fraction": 0.008068582955118508,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.700938969,
+          "now_ns": 2876784007711,
+          "elapsed_ns": 500001286,
+          "samples": 1588,
+          "slow_samples": 17,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010705289672544081,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.300937668,
+          "now_ns": 2877384006410,
+          "elapsed_ns": 599998699,
+          "samples": 1902,
+          "slow_samples": 20,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010515247108307046,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.900942351,
+          "now_ns": 2877984011093,
+          "elapsed_ns": 600004683,
+          "samples": 1898,
+          "slow_samples": 4,
+          "enqueue_wait_ge_8388608ns_fraction": 0.002107481559536354,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 4.400947473,
+          "now_ns": 2878484016215,
+          "elapsed_ns": 500005122,
+          "samples": 1574,
+          "slow_samples": 15,
+          "enqueue_wait_ge_8388608ns_fraction": 0.009529860228716646,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.00093747,
+          "now_ns": 2879084006212,
+          "elapsed_ns": 599989997,
+          "samples": 1881,
+          "slow_samples": 32,
+          "enqueue_wait_ge_8388608ns_fraction": 0.01701222753854333,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.600937499,
+          "now_ns": 2879684006241,
+          "elapsed_ns": 600000029,
+          "samples": 1874,
+          "slow_samples": 30,
+          "enqueue_wait_ge_8388608ns_fraction": 0.016008537886873,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.200937296,
+          "now_ns": 2880284006038,
+          "elapsed_ns": 599999797,
+          "samples": 1873,
+          "slow_samples": 4,
+          "enqueue_wait_ge_8388608ns_fraction": 0.002135611318739989,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.700938254,
+          "now_ns": 2880784006996,
+          "elapsed_ns": 500000958,
+          "samples": 1579,
+          "slow_samples": 13,
+          "enqueue_wait_ge_8388608ns_fraction": 0.008233058898036731,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.200947328,
+          "now_ns": 2881284016070,
+          "elapsed_ns": 500009074,
+          "samples": 1599,
+          "slow_samples": 17,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010631644777986242,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.800937369,
+          "now_ns": 2881884006111,
+          "elapsed_ns": 599990041,
+          "samples": 1880,
+          "slow_samples": 12,
+          "enqueue_wait_ge_8388608ns_fraction": 0.006382978723404255,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.30093748,
+          "now_ns": 2882384006222,
+          "elapsed_ns": 500000111,
+          "samples": 1624,
+          "slow_samples": 24,
+          "enqueue_wait_ge_8388608ns_fraction": 0.014778325123152709,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.900938432,
+          "now_ns": 2882984007174,
+          "elapsed_ns": 600000952,
+          "samples": 1993,
+          "slow_samples": 11,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0055193176116407425,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.400946892,
+          "now_ns": 2883484015634,
+          "elapsed_ns": 500008460,
+          "samples": 1564,
+          "slow_samples": 25,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0159846547314578,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.104938424,
+          "requested": 2,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-2-1-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 2,
+      "telemetry": true,
+      "block": 1,
+      "sampled_seconds": 7.906012561,
+      "enqueue_wait_slow_fraction": 0.03254766257508488,
+      "wake_wait_slow_fraction": 0.002021276595744681,
+      "enqueue_completions_per_second": 3874.5195208905006,
+      "wake_completions_per_second": 1188.968513200924,
+      "runnable_callbacks_per_second": 1189.72742927318,
+      "charged_cpu_equivalents": 15.994106027325346,
+      "requested_time_fractions": {
+        "-1": 0.010313094464326595,
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.9896869055356734
+      },
+      "windows": [
+        {
+          "seconds": 0.500942201,
+          "now_ns": 2962411017582,
+          "elapsed_ns": 500942201,
+          "samples": 2856,
+          "slow_samples": 215,
+          "enqueue_wait_ge_8388608ns_fraction": 0.07528011204481792,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.000943703,
+          "now_ns": 2962911019084,
+          "elapsed_ns": 500001502,
+          "samples": 2386,
+          "slow_samples": 70,
+          "enqueue_wait_ge_8388608ns_fraction": 0.02933780385582565,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.600941944,
+          "now_ns": 2963511017325,
+          "elapsed_ns": 599998241,
+          "samples": 3685,
+          "slow_samples": 108,
+          "enqueue_wait_ge_8388608ns_fraction": 0.029308005427408412,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.200112839,
+          "now_ns": 2964110188220,
+          "elapsed_ns": 599170895,
+          "samples": 3441,
+          "slow_samples": 36,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010462074978204011,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.801932841,
+          "now_ns": 2964712008222,
+          "elapsed_ns": 601820002,
+          "samples": 4228,
+          "slow_samples": 92,
+          "enqueue_wait_ge_8388608ns_fraction": 0.021759697256385997,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.400932648,
+          "now_ns": 2965311008029,
+          "elapsed_ns": 598999807,
+          "samples": 1980,
+          "slow_samples": 42,
+          "enqueue_wait_ge_8388608ns_fraction": 0.021212121212121213,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.900934813,
+          "now_ns": 2965811010194,
+          "elapsed_ns": 500002165,
+          "samples": 1735,
+          "slow_samples": 116,
+          "enqueue_wait_ge_8388608ns_fraction": 0.06685878962536022,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 4.400944217,
+          "now_ns": 2966311019598,
+          "elapsed_ns": 500009404,
+          "samples": 1624,
+          "slow_samples": 61,
+          "enqueue_wait_ge_8388608ns_fraction": 0.037561576354679806,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.000933503,
+          "now_ns": 2966911008884,
+          "elapsed_ns": 599989286,
+          "samples": 1979,
+          "slow_samples": 53,
+          "enqueue_wait_ge_8388608ns_fraction": 0.026781202627589692,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.600933177,
+          "now_ns": 2967511008558,
+          "elapsed_ns": 599999674,
+          "samples": 2090,
+          "slow_samples": 72,
+          "enqueue_wait_ge_8388608ns_fraction": 0.03444976076555024,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.100933661,
+          "now_ns": 2968011009042,
+          "elapsed_ns": 500000484,
+          "samples": 1619,
+          "slow_samples": 31,
+          "enqueue_wait_ge_8388608ns_fraction": 0.019147621988882025,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.600943969,
+          "now_ns": 2968511019350,
+          "elapsed_ns": 500010308,
+          "samples": 1836,
+          "slow_samples": 81,
+          "enqueue_wait_ge_8388608ns_fraction": 0.04411764705882353,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.100944494,
+          "now_ns": 2969011019875,
+          "elapsed_ns": 500000525,
+          "samples": 1685,
+          "slow_samples": 32,
+          "enqueue_wait_ge_8388608ns_fraction": 0.018991097922848664,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.700947657,
+          "now_ns": 2969611023038,
+          "elapsed_ns": 600003163,
+          "samples": 1988,
+          "slow_samples": 54,
+          "enqueue_wait_ge_8388608ns_fraction": 0.02716297786720322,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.300944611,
+          "now_ns": 2970211019992,
+          "elapsed_ns": 599996954,
+          "samples": 2065,
+          "slow_samples": 116,
+          "enqueue_wait_ge_8388608ns_fraction": 0.056174334140435836,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.800946662,
+          "now_ns": 2970711022043,
+          "elapsed_ns": 500002051,
+          "samples": 1582,
+          "slow_samples": 33,
+          "enqueue_wait_ge_8388608ns_fraction": 0.020859671302149177,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.302934554,
+          "now_ns": 2971213009935,
+          "elapsed_ns": 501987892,
+          "samples": 1679,
+          "slow_samples": 102,
+          "enqueue_wait_ge_8388608ns_fraction": 0.06075044669446099,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.80694886,
+          "now_ns": 2971717024241,
+          "elapsed_ns": 504014306,
+          "samples": 2260,
+          "slow_samples": 95,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0420353982300885,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.10113999,
+          "requested": 2,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-2-2-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 2,
+      "telemetry": true,
+      "block": 2,
+      "sampled_seconds": 7.799996954,
+      "enqueue_wait_slow_fraction": 0.009619976802892815,
+      "wake_wait_slow_fraction": 0.002068378148193211,
+      "enqueue_completions_per_second": 3758.206595832986,
+      "wake_completions_per_second": 1053.7183602084776,
+      "runnable_callbacks_per_second": 1053.7183602084776,
+      "charged_cpu_equivalents": 15.994088695255662,
+      "requested_time_fractions": {
+        "-1": 0.010328666724875025,
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.989671333275125
+      },
+      "windows": [
+        {
+          "seconds": 0.500920619,
+          "now_ns": 3046958007120,
+          "elapsed_ns": 500920619,
+          "samples": 2560,
+          "slow_samples": 137,
+          "enqueue_wait_ge_8388608ns_fraction": 0.053515625,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.100922483,
+          "now_ns": 3047558008984,
+          "elapsed_ns": 600001864,
+          "samples": 2327,
+          "slow_samples": 15,
+          "enqueue_wait_ge_8388608ns_fraction": 0.006446067898581865,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.700918675,
+          "now_ns": 3048158005176,
+          "elapsed_ns": 599996192,
+          "samples": 3523,
+          "slow_samples": 38,
+          "enqueue_wait_ge_8388608ns_fraction": 0.010786261708770934,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.2009297,
+          "now_ns": 3048658016201,
+          "elapsed_ns": 500011025,
+          "samples": 3185,
+          "slow_samples": 12,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0037676609105180532,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.700941596,
+          "now_ns": 3049158028097,
+          "elapsed_ns": 500011896,
+          "samples": 3511,
+          "slow_samples": 30,
+          "enqueue_wait_ge_8388608ns_fraction": 0.00854457419538593,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.300929986,
+          "now_ns": 3049758016487,
+          "elapsed_ns": 599988390,
+          "samples": 2130,
+          "slow_samples": 44,
+          "enqueue_wait_ge_8388608ns_fraction": 0.020657276995305163,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.900931105,
+          "now_ns": 3050358017606,
+          "elapsed_ns": 600001119,
+          "samples": 1974,
+          "slow_samples": 14,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0070921985815602835,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 4.500930156,
+          "now_ns": 3050958016657,
+          "elapsed_ns": 599999051,
+          "samples": 1959,
+          "slow_samples": 23,
+          "enqueue_wait_ge_8388608ns_fraction": 0.01174068402246044,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.100936247,
+          "now_ns": 3051558022748,
+          "elapsed_ns": 600006091,
+          "samples": 1945,
+          "slow_samples": 6,
+          "enqueue_wait_ge_8388608ns_fraction": 0.003084832904884319,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.700934546,
+          "now_ns": 3052158021047,
+          "elapsed_ns": 599998299,
+          "samples": 2270,
+          "slow_samples": 5,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0022026431718061676,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.300929985,
+          "now_ns": 3052758016486,
+          "elapsed_ns": 599995439,
+          "samples": 2124,
+          "slow_samples": 43,
+          "enqueue_wait_ge_8388608ns_fraction": 0.02024482109227872,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.900928555,
+          "now_ns": 3053358015056,
+          "elapsed_ns": 599998570,
+          "samples": 2005,
+          "slow_samples": 41,
+          "enqueue_wait_ge_8388608ns_fraction": 0.020448877805486283,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.400930411,
+          "now_ns": 3053858016912,
+          "elapsed_ns": 500001856,
+          "samples": 1670,
+          "slow_samples": 24,
+          "enqueue_wait_ge_8388608ns_fraction": 0.01437125748502994,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.000936461,
+          "now_ns": 3054458022962,
+          "elapsed_ns": 600006050,
+          "samples": 1934,
+          "slow_samples": 9,
+          "enqueue_wait_ge_8388608ns_fraction": 0.004653567735263702,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.60091999,
+          "now_ns": 3055058006491,
+          "elapsed_ns": 599983529,
+          "samples": 1937,
+          "slow_samples": 8,
+          "enqueue_wait_ge_8388608ns_fraction": 0.004130098089829634,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.200920305,
+          "now_ns": 3055658006806,
+          "elapsed_ns": 600000315,
+          "samples": 1937,
+          "slow_samples": 10,
+          "enqueue_wait_ge_8388608ns_fraction": 0.005162622612287042,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.700920716,
+          "now_ns": 3056158007217,
+          "elapsed_ns": 500000411,
+          "samples": 1687,
+          "slow_samples": 16,
+          "enqueue_wait_ge_8388608ns_fraction": 0.00948429164196799,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.100197577,
+          "requested": 2,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-static-2-3-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 2,
+      "telemetry": true,
+      "block": 3,
+      "sampled_seconds": 7.899192358,
+      "enqueue_wait_slow_fraction": 0.011538844126131502,
+      "wake_wait_slow_fraction": 0.002258355916892502,
+      "enqueue_completions_per_second": 3817.985261424368,
+      "wake_completions_per_second": 1121.1272746170034,
+      "runnable_callbacks_per_second": 1121.5070602791363,
+      "charged_cpu_equivalents": 15.993958517550004,
+      "requested_time_fractions": {
+        "-1": 0.010235973227750066,
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.98976402677225
+      },
+      "windows": [
+        {
+          "seconds": 0.500129587,
+          "now_ns": 3138333212348,
+          "elapsed_ns": 500129587,
+          "samples": 2587,
+          "slow_samples": 128,
+          "enqueue_wait_ge_8388608ns_fraction": 0.04947816003092385,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.000934268,
+          "now_ns": 3138834017029,
+          "elapsed_ns": 500804681,
+          "samples": 1840,
+          "slow_samples": 1,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0005434782608695652,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 1.50393754,
+          "now_ns": 3139337020301,
+          "elapsed_ns": 503003272,
+          "samples": 3435,
+          "slow_samples": 57,
+          "enqueue_wait_ge_8388608ns_fraction": 0.016593886462882096,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.10093129,
+          "now_ns": 3139934014051,
+          "elapsed_ns": 596993750,
+          "samples": 2084,
+          "slow_samples": 76,
+          "enqueue_wait_ge_8388608ns_fraction": 0.036468330134357005,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 2.701930312,
+          "now_ns": 3140535013073,
+          "elapsed_ns": 600999022,
+          "samples": 3723,
+          "slow_samples": 28,
+          "enqueue_wait_ge_8388608ns_fraction": 0.007520816545796401,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.301931782,
+          "now_ns": 3141135014543,
+          "elapsed_ns": 600001470,
+          "samples": 3938,
+          "slow_samples": 69,
+          "enqueue_wait_ge_8388608ns_fraction": 0.017521584560690705,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 3.801934467,
+          "now_ns": 3141635017228,
+          "elapsed_ns": 500002685,
+          "samples": 1552,
+          "slow_samples": 27,
+          "enqueue_wait_ge_8388608ns_fraction": 0.017396907216494846,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 4.400923611,
+          "now_ns": 3142234006372,
+          "elapsed_ns": 598989144,
+          "samples": 1986,
+          "slow_samples": 38,
+          "enqueue_wait_ge_8388608ns_fraction": 0.019133937562940583,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 4.900928064,
+          "now_ns": 3142734010825,
+          "elapsed_ns": 500004453,
+          "samples": 1660,
+          "slow_samples": 8,
+          "enqueue_wait_ge_8388608ns_fraction": 0.004819277108433735,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.400935204,
+          "now_ns": 3143234017965,
+          "elapsed_ns": 500007140,
+          "samples": 1665,
+          "slow_samples": 6,
+          "enqueue_wait_ge_8388608ns_fraction": 0.0036036036036036037,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 5.901924081,
+          "now_ns": 3143735006842,
+          "elapsed_ns": 500988877,
+          "samples": 1607,
+          "slow_samples": 15,
+          "enqueue_wait_ge_8388608ns_fraction": 0.009334163036714374,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 6.500073482,
+          "now_ns": 3144333156243,
+          "elapsed_ns": 598149401,
+          "samples": 2091,
+          "slow_samples": 47,
+          "enqueue_wait_ge_8388608ns_fraction": 0.022477283596365374,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.000934192,
+          "now_ns": 3144834016953,
+          "elapsed_ns": 500860710,
+          "samples": 1627,
+          "slow_samples": 11,
+          "enqueue_wait_ge_8388608ns_fraction": 0.006760909649661954,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 7.601933895,
+          "now_ns": 3145435016656,
+          "elapsed_ns": 600999703,
+          "samples": 1942,
+          "slow_samples": 11,
+          "enqueue_wait_ge_8388608ns_fraction": 0.005664263645726055,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.200922487,
+          "now_ns": 3146034005248,
+          "elapsed_ns": 598988592,
+          "samples": 2008,
+          "slow_samples": 19,
+          "enqueue_wait_ge_8388608ns_fraction": 0.009462151394422311,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 8.700923745,
+          "now_ns": 3146534006506,
+          "elapsed_ns": 500001258,
+          "samples": 1671,
+          "slow_samples": 20,
+          "enqueue_wait_ge_8388608ns_fraction": 0.011968880909634948,
+          "requested_after_window": 2
+        },
+        {
+          "seconds": 9.300923777,
+          "now_ns": 3147134006538,
+          "elapsed_ns": 600000032,
+          "samples": 1971,
+          "slow_samples": 17,
+          "enqueue_wait_ge_8388608ns_fraction": 0.008625063419583967,
+          "requested_after_window": 2
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": -1,
+          "generation": 0
+        },
+        {
+          "seconds": 0.10031373,
+          "requested": 2,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-unobserved-0-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 0,
+      "telemetry": false,
+      "block": 0,
+      "sampled_seconds": 7.599374308,
+      "enqueue_wait_slow_fraction": null,
+      "wake_wait_slow_fraction": null,
+      "enqueue_completions_per_second": 0.0,
+      "wake_completions_per_second": 0.0,
+      "runnable_callbacks_per_second": 0.0,
+      "charged_cpu_equivalents": 0.0,
+      "requested_time_fractions": {
+        "-1": 0.0,
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.500086085,
+          "now_ns": 2894644153892,
+          "elapsed_ns": 500086085,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.007945878,
+          "now_ns": 2895152013685,
+          "elapsed_ns": 507859793,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.601945411,
+          "now_ns": 2895746013218,
+          "elapsed_ns": 593999533,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.102951192,
+          "now_ns": 2896247018999,
+          "elapsed_ns": 501005781,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.608946289,
+          "now_ns": 2896753014096,
+          "elapsed_ns": 505995097,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.200410497,
+          "now_ns": 2897344478304,
+          "elapsed_ns": 591464208,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.703961185,
+          "now_ns": 2897848028992,
+          "elapsed_ns": 503550688,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.30016625,
+          "now_ns": 2898444234057,
+          "elapsed_ns": 596205065,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.800940003,
+          "now_ns": 2898945007810,
+          "elapsed_ns": 500773753,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.303940538,
+          "now_ns": 2899448008345,
+          "elapsed_ns": 503000535,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.903103517,
+          "now_ns": 2900047171324,
+          "elapsed_ns": 599162979,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.408946065,
+          "now_ns": 2900553013872,
+          "elapsed_ns": 505842548,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.002954065,
+          "now_ns": 2901147021872,
+          "elapsed_ns": 594008000,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.503074894,
+          "now_ns": 2901647142701,
+          "elapsed_ns": 500120829,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.10094087,
+          "now_ns": 2902245008677,
+          "elapsed_ns": 597865976,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.603018635,
+          "now_ns": 2902747086442,
+          "elapsed_ns": 502077765,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.201953335,
+          "now_ns": 2903346021142,
+          "elapsed_ns": 598934700,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-unobserved-1-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 0,
+      "telemetry": false,
+      "block": 1,
+      "sampled_seconds": 7.6973055,
+      "enqueue_wait_slow_fraction": null,
+      "wake_wait_slow_fraction": null,
+      "enqueue_completions_per_second": 0.0,
+      "wake_completions_per_second": 0.0,
+      "runnable_callbacks_per_second": 0.0,
+      "charged_cpu_equivalents": 0.0,
+      "requested_time_fractions": {
+        "-1": 0.0,
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.504925826,
+          "now_ns": 2982594013222,
+          "elapsed_ns": 504925826,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.10272047,
+          "now_ns": 2983191807866,
+          "elapsed_ns": 597794644,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.70191924,
+          "now_ns": 2983791006636,
+          "elapsed_ns": 599198770,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.302975849,
+          "now_ns": 2984392063245,
+          "elapsed_ns": 601056609,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.901919072,
+          "now_ns": 2984991006468,
+          "elapsed_ns": 598943223,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.403920317,
+          "now_ns": 2985493007713,
+          "elapsed_ns": 502001245,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.907919025,
+          "now_ns": 2985997006421,
+          "elapsed_ns": 503998708,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.411923086,
+          "now_ns": 2986501010482,
+          "elapsed_ns": 504004061,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.000238015,
+          "now_ns": 2987089325411,
+          "elapsed_ns": 588314929,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.503191061,
+          "now_ns": 2987592278457,
+          "elapsed_ns": 502953046,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.008925732,
+          "now_ns": 2988098013128,
+          "elapsed_ns": 505734671,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.603949733,
+          "now_ns": 2988693037129,
+          "elapsed_ns": 595024001,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.205931109,
+          "now_ns": 2989295018505,
+          "elapsed_ns": 601981376,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.802928609,
+          "now_ns": 2989892016005,
+          "elapsed_ns": 596997500,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.402928958,
+          "now_ns": 2990492016354,
+          "elapsed_ns": 600000349,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.001929757,
+          "now_ns": 2991091017153,
+          "elapsed_ns": 599000799,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.600919795,
+          "now_ns": 2991690007191,
+          "elapsed_ns": 598990038,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-unobserved-2-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 0,
+      "telemetry": false,
+      "block": 2,
+      "sampled_seconds": 7.790746129,
+      "enqueue_wait_slow_fraction": null,
+      "wake_wait_slow_fraction": null,
+      "enqueue_completions_per_second": 0.0,
+      "wake_completions_per_second": 0.0,
+      "runnable_callbacks_per_second": 0.0,
+      "charged_cpu_equivalents": 0.0,
+      "requested_time_fractions": {
+        "-1": 0.0,
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.500954024,
+          "now_ns": 3067102041426,
+          "elapsed_ns": 500954024,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.003019214,
+          "now_ns": 3067604106616,
+          "elapsed_ns": 502065190,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.50693678,
+          "now_ns": 3068108024182,
+          "elapsed_ns": 503917566,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.013296104,
+          "now_ns": 3068614383506,
+          "elapsed_ns": 506359324,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.603274055,
+          "now_ns": 3069204361457,
+          "elapsed_ns": 589977951,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.106932958,
+          "now_ns": 3069708020360,
+          "elapsed_ns": 503658903,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.610961,
+          "now_ns": 3070212048402,
+          "elapsed_ns": 504028042,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.201931541,
+          "now_ns": 3070803018943,
+          "elapsed_ns": 590970541,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.80792387,
+          "now_ns": 3071409011272,
+          "elapsed_ns": 605992329,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.401918615,
+          "now_ns": 3072003006017,
+          "elapsed_ns": 593994745,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.006936362,
+          "now_ns": 3072608023764,
+          "elapsed_ns": 605017747,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.509934097,
+          "now_ns": 3073111021499,
+          "elapsed_ns": 502997735,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.100919433,
+          "now_ns": 3073702006835,
+          "elapsed_ns": 590985336,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.603929215,
+          "now_ns": 3074205016617,
+          "elapsed_ns": 503009782,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.105934611,
+          "now_ns": 3074707022013,
+          "elapsed_ns": 502005396,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.610928327,
+          "now_ns": 3075212015729,
+          "elapsed_ns": 504993716,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.200929713,
+          "now_ns": 3075802017115,
+          "elapsed_ns": 590001386,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "file": "results/prophet-host-matrix-02/heavy-prophet-unobserved-3-controller.jsonl",
+      "mode": "static",
+      "initial_profile": 0,
+      "telemetry": false,
+      "block": 3,
+      "sampled_seconds": 7.700138903,
+      "enqueue_wait_slow_fraction": null,
+      "wake_wait_slow_fraction": null,
+      "enqueue_completions_per_second": 0.0,
+      "wake_completions_per_second": 0.0,
+      "runnable_callbacks_per_second": 0.0,
+      "charged_cpu_equivalents": 0.0,
+      "requested_time_fractions": {
+        "-1": 0.0,
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "windows": [
+        {
+          "seconds": 0.503937712,
+          "now_ns": 3158688018380,
+          "elapsed_ns": 503937712,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.105087828,
+          "now_ns": 3159289168496,
+          "elapsed_ns": 601150116,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 1.701931331,
+          "now_ns": 3159886011999,
+          "elapsed_ns": 596843503,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.207926643,
+          "now_ns": 3160392007311,
+          "elapsed_ns": 505995312,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 2.805405904,
+          "now_ns": 3160989486572,
+          "elapsed_ns": 597479261,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 3.401936292,
+          "now_ns": 3161586016960,
+          "elapsed_ns": 596530388,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.005934121,
+          "now_ns": 3162190014789,
+          "elapsed_ns": 603997829,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 4.602926535,
+          "now_ns": 3162787007203,
+          "elapsed_ns": 596992414,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.202931083,
+          "now_ns": 3163387011751,
+          "elapsed_ns": 600004548,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 5.800928664,
+          "now_ns": 3163985009332,
+          "elapsed_ns": 597997581,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.302968328,
+          "now_ns": 3164487048996,
+          "elapsed_ns": 502039664,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 6.906961334,
+          "now_ns": 3165091042002,
+          "elapsed_ns": 603993006,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 7.500202305,
+          "now_ns": 3165684282973,
+          "elapsed_ns": 593240971,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.001262884,
+          "now_ns": 3166185343552,
+          "elapsed_ns": 501060579,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 8.511944344,
+          "now_ns": 3166696025012,
+          "elapsed_ns": 510681460,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.10193379,
+          "now_ns": 3167286014458,
+          "elapsed_ns": 589989446,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        },
+        {
+          "seconds": 9.602108375,
+          "now_ns": 3167786189043,
+          "elapsed_ns": 500174585,
+          "samples": 0,
+          "slow_samples": 0,
+          "enqueue_wait_ge_8388608ns_fraction": null,
+          "requested_after_window": 0
+        }
+      ],
+      "transitions": [
+        {
+          "seconds": 0.0,
+          "requested": 0,
+          "generation": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Static profiles are separate runs, not simultaneous counterfactual outcomes.",
+    "Background worker count is fixed, but old client arrivals were completion-relative.",
+    "Runnable/wake counts depend on service and blocking, not just offered demand.",
+    "Requested wall time is not actual CPU residency or enqueue-count occupancy.",
+    "Completed waits miss tasks still waiting; no queue occupancy identity.",
+    "Correct controller replay proves code consistency, not policy benefit.",
+    "No causal estimate of oscillation harm; no stabilization justified from this alone."
+  ]
+}

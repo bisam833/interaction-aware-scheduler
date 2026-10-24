@@ -1,0 +1,191 @@
+{
+  "condition": "bursts",
+  "implementation": "pulse-off",
+  "block": 0,
+  "plan": {
+    "phases": [
+      {
+        "label": "idle",
+        "start_ns": 0,
+        "duration_ns": 4000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-0",
+        "start_ns": 4000000000,
+        "duration_ns": 6000000000,
+        "batch_workers": 32,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-0",
+        "start_ns": 10000000000,
+        "duration_ns": 4000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-1",
+        "start_ns": 14000000000,
+        "duration_ns": 5000000000,
+        "batch_workers": 8,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-1",
+        "start_ns": 19000000000,
+        "duration_ns": 2000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-2",
+        "start_ns": 21000000000,
+        "duration_ns": 6000000000,
+        "batch_workers": 32,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-2",
+        "start_ns": 27000000000,
+        "duration_ns": 2000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-3",
+        "start_ns": 29000000000,
+        "duration_ns": 6000000000,
+        "batch_workers": 8,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-3",
+        "start_ns": 35000000000,
+        "duration_ns": 2000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-4",
+        "start_ns": 37000000000,
+        "duration_ns": 4000000000,
+        "batch_workers": 32,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-4",
+        "start_ns": 41000000000,
+        "duration_ns": 2000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      },
+      {
+        "label": "burst-5",
+        "start_ns": 43000000000,
+        "duration_ns": 5000000000,
+        "batch_workers": 8,
+        "periodic_workers": 0
+      },
+      {
+        "label": "gap-5",
+        "start_ns": 48000000000,
+        "duration_ns": 4000000000,
+        "batch_workers": 0,
+        "periodic_workers": 0
+      }
+    ],
+    "duration_ns": 52000000000,
+    "interval_ms": 500,
+    "first_input_ns": 250000000,
+    "trials": 104,
+    "work_ms": 20,
+    "feedback_timeout_ms": 1000
+  },
+  "before": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "workers": 32,
+  "requested_trials": 104,
+  "work_ms_per_stage": 20,
+  "interval_ms": 500,
+  "trace_delay": false,
+  "input_origin": "synthetic-client-dispatch",
+  "primary_latency_origin": "absolute planned input due time",
+  "command": [
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/prophet-transition-bench",
+    "20",
+    "104",
+    "1000",
+    "250",
+    "dep-off"
+  ],
+  "epoch_ns": 16382689782215,
+  "all_workload_children_usage": {
+    "ru_utime": 387.61961500000007,
+    "ru_stime": 0.8526350000000003,
+    "ru_nvcsw": 5065,
+    "ru_nivcsw": 13472
+  },
+  "returncode": 0,
+  "worker_returncodes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "after": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "elapsed_ns": 54109710359
+}

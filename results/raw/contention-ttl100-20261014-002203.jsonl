@@ -1,0 +1,17 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"scheduler","mode":"pulsesched-ttl","ttl_ms":100,"policy":"SCHED_EXT"}
+{"type":"interaction","interaction_id":1,"input_ns":31196594039725,"work_start_ns":31196594040366,"commit_ns":31196614173164}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":31196594039725,"work_start_ns":31196594040366,"commit_ns":31196614173164,"presentation_ns":31196680763000,"input_to_work_ns":641,"work_to_commit_ns":20132798,"commit_to_presentation_ns":66589836,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":1,"active":0,"end_ns":31196697115653,"termination_reason":2,"boosted_runtime_ns":16700307,"urgent_enqueues":0}
+{"type":"interaction","interaction_id":2,"input_ns":31196798086886,"work_start_ns":31196798087066,"commit_ns":31196818215244}
+{"type":"trial","interaction_id":2,"status":"presented","input_ns":31196798086886,"work_start_ns":31196798087066,"commit_ns":31196818215244,"presentation_ns":31196880779000,"input_to_work_ns":180,"work_to_commit_ns":20128178,"commit_to_presentation_ns":62563756,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":2,"active":0,"end_ns":31196935337501,"termination_reason":2,"boosted_runtime_ns":16414222,"urgent_enqueues":0}
+{"type":"interaction","interaction_id":3,"input_ns":31197010355130,"work_start_ns":31197010355290,"commit_ns":31197030484060}
+{"type":"trial","interaction_id":3,"status":"presented","input_ns":31197010355130,"work_start_ns":31197010355290,"commit_ns":31197030484060,"presentation_ns":31197114132000,"input_to_work_ns":160,"work_to_commit_ns":20128770,"commit_to_presentation_ns":83647940,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":3,"active":0,"end_ns":31197113278447,"termination_reason":2,"boosted_runtime_ns":16052180,"urgent_enqueues":0}
+{"type":"interaction","interaction_id":4,"input_ns":31197242398247,"work_start_ns":31197242398577,"commit_ns":31197262694215}
+{"type":"trial","interaction_id":4,"status":"presented","input_ns":31197242398247,"work_start_ns":31197242398577,"commit_ns":31197262694215,"presentation_ns":31197330817000,"input_to_work_ns":330,"work_to_commit_ns":20295638,"commit_to_presentation_ns":68122785,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":4,"active":0,"end_ns":31197342522671,"termination_reason":2,"boosted_runtime_ns":16544621,"urgent_enqueues":0}
+{"type":"interaction","interaction_id":5,"input_ns":31197538268560,"work_start_ns":31197538268750,"commit_ns":31197558398321}
+{"type":"trial","interaction_id":5,"status":"presented","input_ns":31197538268560,"work_start_ns":31197538268750,"commit_ns":31197558398321,"presentation_ns":31197597504000,"input_to_work_ns":190,"work_to_commit_ns":20129571,"commit_to_presentation_ns":39105679,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":5,"active":0,"end_ns":31197645836728,"termination_reason":2,"boosted_runtime_ns":16960689,"urgent_enqueues":0}

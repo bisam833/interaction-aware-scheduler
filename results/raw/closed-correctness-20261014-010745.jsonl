@@ -1,0 +1,5 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"scheduler","mode":"pulsesched-closed-loop","ttl_ms":100,"policy":"SCHED_EXT"}
+{"type":"interaction","interaction_id":1,"input_ns":33936764183598,"work_start_ns":33936764183658,"commit_ns":33936784271607}
+{"type":"scheduler_epoch","interaction_id":1,"active":0,"end_ns":33936810776498,"termination_reason":1,"termination_reason_name":"PRESENTATION_FEEDBACK","boosted_runtime_ns":20034318,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":33936764183598,"work_start_ns":33936764183658,"commit_ns":33936784271607,"presentation_ns":33936809433000,"input_to_work_ns":60,"work_to_commit_ns":20087949,"commit_to_presentation_ns":25161393,"presentation_clock_id":1,"presentation_flags":7,"epoch_start_ns":33936764183598,"epoch_termination_ns":33936810776498,"termination_reason":1,"termination_reason_name":"PRESENTATION_FEEDBACK","maximum_ttl_ms":100,"boosted_runtime_ns":20034318,"normal_enqueues":0,"urgent_enqueues":0}

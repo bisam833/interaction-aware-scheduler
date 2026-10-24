@@ -1,0 +1,32 @@
+{
+  "purpose": "generator validation only; no Wayland/scheduler comparison",
+  "runs": [
+    {
+      "scenario": "steps",
+      "epoch_ns": 14024628824893,
+      "workers": 2,
+      "cpu": 15,
+      "max_activation_lag_ms": 3.742732,
+      "max_continuous_worker_batch_gap_ms": 8.157956,
+      "status": "PASS"
+    },
+    {
+      "scenario": "irregular",
+      "epoch_ns": 14029888605967,
+      "workers": 2,
+      "cpu": 15,
+      "max_activation_lag_ms": 0.445232,
+      "max_continuous_worker_batch_gap_ms": 6.401355,
+      "status": "PASS"
+    },
+    {
+      "scenario": "mixed",
+      "epoch_ns": 14037113028636,
+      "workers": 3,
+      "cpu": 15,
+      "max_activation_lag_ms": 7.520476,
+      "max_continuous_worker_batch_gap_ms": 12.701534,
+      "status": "PASS"
+    }
+  ]
+}

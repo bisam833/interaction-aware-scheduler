@@ -1,0 +1,14 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"scheduler","mode":"pulsesched-ttl","ttl_ms":100,"policy":"SCHED_EXT"}
+{"type":"interaction","interaction_id":1,"input_ns":33369646018013,"work_start_ns":33369646018394,"commit_ns":33369666154848}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":33369646018013,"work_start_ns":33369646018394,"commit_ns":33369666154848,"presentation_ns":33369686113000,"input_to_work_ns":381,"work_to_commit_ns":20136454,"commit_to_presentation_ns":19958152,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":1,"active":0,"end_ns":33369746697970,"termination_reason":2,"boosted_runtime_ns":20589474,"urgent_enqueues":0}
+{"type":"interaction","interaction_id":2,"input_ns":33369822069816,"work_start_ns":33369822069976,"commit_ns":33369842202483}
+{"type":"trial","interaction_id":2,"status":"presented","input_ns":33369822069816,"work_start_ns":33369822069976,"commit_ns":33369842202483,"presentation_ns":33369861108000,"input_to_work_ns":160,"work_to_commit_ns":20132507,"commit_to_presentation_ns":18905517,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":2,"active":0,"end_ns":33369927860275,"termination_reason":2,"boosted_runtime_ns":20562061,"urgent_enqueues":1}
+{"type":"interaction","interaction_id":3,"input_ns":33369998135524,"work_start_ns":33369998135965,"commit_ns":33370018270335}
+{"type":"trial","interaction_id":3,"status":"presented","input_ns":33369998135524,"work_start_ns":33369998135965,"commit_ns":33370018270335,"presentation_ns":33370036104000,"input_to_work_ns":441,"work_to_commit_ns":20134370,"commit_to_presentation_ns":17833665,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"scheduler_epoch","interaction_id":3,"active":0,"end_ns":33370106985971,"termination_reason":2,"boosted_runtime_ns":20494688,"urgent_enqueues":8}
+{"type":"interaction","interaction_id":4,"input_ns":33370136374072,"work_start_ns":33370136374223,"commit_ns":33370533902735}
+{"type":"input-ignored","detail":"feedback-still-pending"}
+{"type":"input-ignored","detail":"feedback-still-pending"}

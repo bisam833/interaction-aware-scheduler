@@ -1,0 +1,18 @@
+{
+  "unchanged": {
+    "src/pulsesched/pulsesched.bpf.c": true,
+    "src/pulsesched/pulsesched.c": true,
+    "src/pulsesched/pulsesched_ctl.c": true,
+    "src/pulsesched/pulse_policy.h": true,
+    "src/pulsesched/Makefile": true,
+    "src/pulsesched/build/pulsesched": true,
+    "benchmarks/wayland_interaction/build/pulsesched-wayland-bench": true,
+    "benchmarks/wayland_interaction/build/pulse-load": true
+  },
+  "intentional_source_extensions": [
+    "benchmarks/wayland_interaction/benchmark.c",
+    "benchmarks/wayland_interaction/Makefile",
+    "scripts/audit_latency.py"
+  ],
+  "host_verified_scheduler_binary_unchanged": true
+}

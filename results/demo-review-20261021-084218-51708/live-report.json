@@ -1,0 +1,160 @@
+{
+  "arms": [
+    {
+      "mode": "linux",
+      "label": "Linux",
+      "status": "PASS",
+      "reason": "All trials and worker/lifecycle checks passed",
+      "valid": 32,
+      "expected": 32,
+      "counts": {
+        "presented": 32,
+        "discarded": 0,
+        "timeout": 0
+      },
+      "missing": 0,
+      "invalid": 0,
+      "protocol_errors": 0,
+      "latency": {
+        "n": 32,
+        "p50": 222.0582865,
+        "p95": 259.72196594999997,
+        "p99": 296.07616012000005
+      },
+      "stages": {
+        "work_to_commit_ms": 185.76521728125,
+        "commit_to_presentation_ms": 40.5593385
+      },
+      "throughput": 5.923132090261858,
+      "duration_s": 13.579920706
+    },
+    {
+      "mode": "lavd",
+      "label": "LAVD",
+      "status": "PASS",
+      "reason": "All trials and worker/lifecycle checks passed",
+      "valid": 32,
+      "expected": 32,
+      "counts": {
+        "presented": 32,
+        "discarded": 0,
+        "timeout": 0
+      },
+      "missing": 0,
+      "invalid": 0,
+      "protocol_errors": 0,
+      "latency": {
+        "n": 32,
+        "p50": 126.0116635,
+        "p95": 132.82127935,
+        "p99": 140.98770899000002
+      },
+      "stages": {
+        "work_to_commit_ms": 84.77902990625,
+        "commit_to_presentation_ms": 39.39785953125
+      },
+      "throughput": 5.572417077071342,
+      "duration_s": 18.103068765
+    },
+    {
+      "mode": "pulse-off",
+      "label": "PulseSched",
+      "status": "PASS",
+      "reason": "All trials and worker/lifecycle checks passed",
+      "valid": 32,
+      "expected": 32,
+      "counts": {
+        "presented": 32,
+        "discarded": 0,
+        "timeout": 0
+      },
+      "missing": 0,
+      "invalid": 0,
+      "protocol_errors": 0,
+      "latency": {
+        "n": 32,
+        "p50": 121.558389,
+        "p95": 134.12488864999997,
+        "p99": 145.65089289000002
+      },
+      "stages": {
+        "work_to_commit_ms": 80.47003659375,
+        "commit_to_presentation_ms": 41.76650115625
+      },
+      "throughput": 5.5782403094636,
+      "duration_s": 10.454886558
+    },
+    {
+      "mode": "prophet-static-2",
+      "label": "Prophet \u00b7 5 ms",
+      "status": "PASS",
+      "reason": "All trials and worker/lifecycle checks passed",
+      "valid": 32,
+      "expected": 32,
+      "counts": {
+        "presented": 32,
+        "discarded": 0,
+        "timeout": 0
+      },
+      "missing": 0,
+      "invalid": 0,
+      "protocol_errors": 0,
+      "latency": {
+        "n": 32,
+        "p50": 131.270174,
+        "p95": 142.69153555,
+        "p99": 156.29659676000003
+      },
+      "stages": {
+        "work_to_commit_ms": 91.58768796875,
+        "commit_to_presentation_ms": 40.711706625
+      },
+      "throughput": 5.582441212068632,
+      "duration_s": 10.742505846
+    },
+    {
+      "mode": "prophet-adaptive",
+      "label": "Prophet \u00b7 adaptive",
+      "status": "PASS",
+      "reason": "All trials and worker/lifecycle checks passed",
+      "valid": 32,
+      "expected": 32,
+      "counts": {
+        "presented": 32,
+        "discarded": 0,
+        "timeout": 0
+      },
+      "missing": 0,
+      "invalid": 0,
+      "protocol_errors": 0,
+      "latency": {
+        "n": 32,
+        "p50": 133.475619,
+        "p95": 144.49834495,
+        "p99": 157.11662551
+      },
+      "stages": {
+        "work_to_commit_ms": 86.4912298125,
+        "commit_to_presentation_ms": 45.05083125
+      },
+      "throughput": 5.554210994801205,
+      "duration_s": 10.637931427
+    }
+  ],
+  "cleanup": true,
+  "workers": 32,
+  "cpus": 16,
+  "trials": 32,
+  "work": "4 \u00d7 20 ms thread-CPU stages; 200 ms completion-relative interval",
+  "warmup": "1 second background warmup; all 32 trials retained",
+  "initial": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "final": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "measurement_s": 63.55628888000501,
+  "interrupted": false
+}

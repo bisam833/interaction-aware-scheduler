@@ -1,0 +1,148 @@
+{
+  "file": "results/prophet-host-matrix-01/heavy-prophet-unobserved-0-controller.jsonl",
+  "attached": {
+    "type": "attached",
+    "mode": "static",
+    "profile": 0,
+    "telemetry": false,
+    "propagation": false,
+    "poll_ms": 100,
+    "possible_cpus": 16,
+    "telemetry_map_id": 314,
+    "task_map_id": 316,
+    "metrics_map_id": 317,
+    "abi": 1
+  },
+  "exit": {
+    "type": "exit",
+    "process_cpu_ns": 50008163,
+    "uei_code": 0
+  },
+  "complete": true,
+  "polls": 98,
+  "invalid_polls_including_initial_baseline": 0,
+  "enqueue_to_run": {
+    "samples": 0,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": false,
+        "minimum_samples": 40
+      },
+      "p95": {
+        "supported": false,
+        "minimum_samples": 400
+      },
+      "p99": {
+        "supported": false,
+        "minimum_samples": 2000
+      },
+      "p999": {
+        "supported": false,
+        "minimum_samples": 20000
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "runnable_to_first_run": {
+    "samples": 0,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": false,
+        "minimum_samples": 40
+      },
+      "p95": {
+        "supported": false,
+        "minimum_samples": 400
+      },
+      "p99": {
+        "supported": false,
+        "minimum_samples": 2000
+      },
+      "p999": {
+        "supported": false,
+        "minimum_samples": 20000
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "profile_enqueues": [
+    0,
+    0,
+    0
+  ],
+  "fallback_enqueues": 0,
+  "local_enqueues": 0,
+  "shared_enqueues": 0,
+  "completed_running_interval_ns": 0,
+  "runnable_events": 0,
+  "quiescent_events": 0,
+  "caveat": "Completed intervals only; approximate asynchronous CPU reads; no per-task/compositor attribution."
+}

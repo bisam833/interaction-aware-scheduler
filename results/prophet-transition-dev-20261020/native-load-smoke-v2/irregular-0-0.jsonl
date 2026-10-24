@@ -1,0 +1,15 @@
+{"type":"load_ready","index":0,"periodic":0,"pid":6}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14332592222835,"planned_end_ns":14333592222835,"observed_start_ns":14332592327750,"observed_end_ns":14333592341376,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":1,"active":true,"planned_start_ns":14333592222835,"planned_end_ns":14335592222835,"observed_start_ns":14333592347067,"observed_end_ns":14335593056624,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":2,"active":false,"planned_start_ns":14335592222835,"planned_end_ns":14336592222835,"observed_start_ns":14335593059570,"observed_end_ns":14336592317180,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":3,"active":true,"planned_start_ns":14336592222835,"planned_end_ns":14337592222835,"observed_start_ns":14336592320406,"observed_end_ns":14337592709275,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14337592222835,"planned_end_ns":14339592222835,"observed_start_ns":14337592711689,"observed_end_ns":14339592620617,"offered_periodic_windows":0,"periodic_windows_with_progress":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":0,"start_ns":14332592222835,"end_ns":14333592222835,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":1,"start_ns":14333592222835,"end_ns":14334592222835,"iterations":245000000,"cpu_ns":498168886,"max_progress_gap_ns":6165957,"first_ns":14333592347107,"last_ns":14334592538500}
+{"type":"load_bin","index":0,"periodic":0,"phase":1,"start_ns":14334592222835,"end_ns":14335592222835,"iterations":231000000,"cpu_ns":498863965,"max_progress_gap_ns":6492227,"first_ns":14334592539262,"last_ns":14335593055041}
+{"type":"load_bin","index":0,"periodic":0,"phase":2,"start_ns":14335592222835,"end_ns":14336592222835,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":3,"start_ns":14336592222835,"end_ns":14337592222835,"iterations":484000000,"cpu_ns":997721485,"max_progress_gap_ns":3709062,"first_ns":14336592320447,"last_ns":14337592693204}
+{"type":"load_bin","index":0,"periodic":0,"phase":4,"start_ns":14337592222835,"end_ns":14338592222835,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":0,"phase":4,"start_ns":14338592222835,"end_ns":14339592222835,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":960000000,"wall_ns":7000403994,"cpu_ns":1996298130,"max_batch_gap_ns":6492227}
+{"type":"load_exit","complete":true,"process_cpu_ns":1996300715}

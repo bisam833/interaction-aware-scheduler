@@ -1,0 +1,13 @@
+{"type":"load_ready","index":0,"periodic":1,"pid":10}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14037113028636,"planned_end_ns":14038113028636,"observed_start_ns":14037113379128,"observed_end_ns":14038114712400}
+{"type":"load_phase","phase":1,"active":false,"planned_start_ns":14038113028636,"planned_end_ns":14039113028636,"observed_start_ns":14038114715065,"observed_end_ns":14039114693263}
+{"type":"load_phase","phase":2,"active":true,"planned_start_ns":14039113028636,"planned_end_ns":14040113028636,"observed_start_ns":14039114696690,"observed_end_ns":14040115318370}
+{"type":"load_phase","phase":3,"active":true,"planned_start_ns":14040113028636,"planned_end_ns":14041113028636,"observed_start_ns":14040115319503,"observed_end_ns":14041113097353}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14041113028636,"planned_end_ns":14042113028636,"observed_start_ns":14041113099818,"observed_end_ns":14042113402093}
+{"type":"load_bin","index":0,"periodic":1,"phase":0,"start_ns":14037113028636,"end_ns":14038113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":1,"phase":1,"start_ns":14038113028636,"end_ns":14039113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":0,"periodic":1,"phase":2,"start_ns":14039113028636,"end_ns":14040113028636,"iterations":40000000,"cpu_ns":78898689,"max_progress_gap_ns":8867948,"first_ns":14039114696710,"last_ns":14040035095449}
+{"type":"load_bin","index":0,"periodic":1,"phase":3,"start_ns":14040113028636,"end_ns":14041113028636,"iterations":51000000,"cpu_ns":106908907,"max_progress_gap_ns":6127945,"first_ns":14040115319513,"last_ns":14041035710256}
+{"type":"load_bin","index":0,"periodic":1,"phase":4,"start_ns":14041113028636,"end_ns":14042113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":91000000,"wall_ns":5000381332,"cpu_ns":186419783,"max_batch_gap_ns":8867948}
+{"type":"load_exit","complete":true,"process_cpu_ns":186422509}

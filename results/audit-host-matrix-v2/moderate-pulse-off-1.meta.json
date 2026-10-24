@@ -1,0 +1,56 @@
+{
+  "condition": "moderate",
+  "workers": 8,
+  "implementation": "pulse-off",
+  "block": 1,
+  "command": [
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/pulsesched-wayland-bench",
+    "20",
+    "30",
+    "1000",
+    "250",
+    "dep-off"
+  ],
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "before": {
+    "state": "disabled",
+    "rejected": 0
+  },
+  "trace_delay": false,
+  "workload_version": 2,
+  "requested_trials": 30,
+  "work_ms_per_stage": 20,
+  "input_origin": "synthetic-client-dispatch",
+  "interval_ms": 200,
+  "returncode": 0,
+  "benchmark_usage": {
+    "ru_utime": 2.240131999999903,
+    "ru_stime": 0.21681799999999996,
+    "ru_nvcsw": 844,
+    "ru_nivcsw": 140
+  },
+  "sched_schedstats": "0",
+  "elapsed_ns": 9529019377,
+  "after": {
+    "state": "disabled",
+    "rejected": 0
+  }
+}

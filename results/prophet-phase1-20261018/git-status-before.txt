@@ -1,0 +1,26 @@
+ M README.md
+ M benchmarks/wayland_interaction/Makefile
+ M benchmarks/wayland_interaction/benchmark.c
+ M scripts/run_phase6_correctness.fish
+ M src/pulsesched/Makefile
+ M src/pulsesched/pulsesched.bpf.c
+ M src/pulsesched/pulsesched.c
+ M src/pulsesched/pulsesched_ctl.c
+?? benchmarks/wayland_interaction/load.c
+?? docs/host-matrix-v2-analysis.md
+?? docs/latency-repair-audit.md
+?? docs/propagation-verifier-fix.md
+?? external/
+?? pulsesched-results.tar.gz
+?? results/
+?? results_dump.txt
+?? scripts/__pycache__/
+?? scripts/audit_latency.py
+?? scripts/demo_phase6.fish
+?? scripts/make_phase6_observation_table.py
+?? scripts/master_linux_vs_pulsesched.fish
+?? scripts/run_linux_vs_pulsesched.fish
+?? scripts/summarize_latency_audit.py
+?? scripts/visualize_linux_vs_pulsesched.py
+?? src/pulsesched/pulse_policy.h
+?? tests/

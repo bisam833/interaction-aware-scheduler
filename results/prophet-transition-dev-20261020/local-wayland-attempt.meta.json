@@ -1,0 +1,4 @@
+{
+  "returncode": 3,
+  "purpose": "unprivileged Linux-only access probe; no scheduler attached"
+}

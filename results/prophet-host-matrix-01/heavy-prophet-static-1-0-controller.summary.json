@@ -1,0 +1,155 @@
+{
+  "file": "results/prophet-host-matrix-01/heavy-prophet-static-1-0-controller.jsonl",
+  "attached": {
+    "type": "attached",
+    "mode": "static",
+    "profile": 1,
+    "telemetry": true,
+    "propagation": false,
+    "poll_ms": 100,
+    "possible_cpus": 16,
+    "telemetry_map_id": 272,
+    "task_map_id": 274,
+    "metrics_map_id": 275,
+    "abi": 1
+  },
+  "exit": {
+    "type": "exit",
+    "process_cpu_ns": 52224203,
+    "uei_code": 0
+  },
+  "complete": true,
+  "polls": 97,
+  "invalid_polls_including_initial_baseline": 1,
+  "enqueue_to_run": {
+    "samples": 25991,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      1400,
+      1787,
+      977,
+      1165,
+      1387,
+      820,
+      834,
+      643,
+      1902,
+      788,
+      390,
+      356,
+      13363,
+      168,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": true,
+        "lower_ns": 8388608,
+        "upper_exclusive_ns": 16777216
+      },
+      "p95": {
+        "supported": true,
+        "lower_ns": 8388608,
+        "upper_exclusive_ns": 16777216
+      },
+      "p99": {
+        "supported": true,
+        "lower_ns": 8388608,
+        "upper_exclusive_ns": 16777216
+      },
+      "p999": {
+        "supported": true,
+        "lower_ns": 16777216,
+        "upper_exclusive_ns": 33554432
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "runnable_to_first_run": {
+    "samples": 12313,
+    "bins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      16,
+      0,
+      4,
+      1366,
+      1759,
+      1016,
+      1154,
+      1391,
+      815,
+      835,
+      644,
+      1821,
+      748,
+      365,
+      259,
+      93,
+      12,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quantiles": {
+      "p50": {
+        "supported": true,
+        "lower_ns": 32768,
+        "upper_exclusive_ns": 65536
+      },
+      "p95": {
+        "supported": true,
+        "lower_ns": 2097152,
+        "upper_exclusive_ns": 4194304
+      },
+      "p99": {
+        "supported": true,
+        "lower_ns": 4194304,
+        "upper_exclusive_ns": 8388608
+      },
+      "p999": {
+        "supported": false,
+        "minimum_samples": 20000
+      }
+    },
+    "support_rule": "at least 20 observations in each tail; not a confidence interval"
+  },
+  "profile_enqueues": [
+    247,
+    25766,
+    0
+  ],
+  "fallback_enqueues": 247,
+  "local_enqueues": 17,
+  "shared_enqueues": 25996,
+  "completed_running_interval_ns": 153600748303,
+  "runnable_events": 12320,
+  "quiescent_events": 12282,
+  "caveat": "Completed intervals only; approximate asynchronous CPU reads; no per-task/compositor attribution."
+}

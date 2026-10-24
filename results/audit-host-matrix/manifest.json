@@ -1,0 +1,45 @@
+{
+  "kernel": {
+    "system": "Linux",
+    "node": "cachyos-x8664",
+    "release": "7.2.10-1-cachyos",
+    "version": "#1 SMP PREEMPT_DYNAMIC Wed, 14 Oct 2026 07:02:02 +0000",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "clock_ticks": 100,
+  "binaries_sha256": {
+    "benchmarks/wayland_interaction/build/pulsesched-wayland-bench": "b83e3dfa52578af05fcbecd32bbbfce4da1c26c83132280b1414905db2449bb8",
+    "benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0",
+    "src/pulsesched/build/pulsesched": "69ba2a68d9da094f8730c15f9d5f66f54e7142a4d0c7010d5dc4d4fe93d6a589"
+  },
+  "arguments": {
+    "smoke": false,
+    "trials": 30,
+    "blocks": 4,
+    "work_ms": 20,
+    "interval_ms": 200,
+    "timeout": 180,
+    "trace_delay": false,
+    "partial_ablation": false,
+    "output": "results/audit-host-matrix"
+  }
+}

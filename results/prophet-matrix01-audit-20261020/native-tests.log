@@ -1,0 +1,407 @@
+make: Entering directory '/home/bisam/osproject/benchmarks/wayland_interaction'
+make -C ../../src/pulsesched build/pulsesched.bpf.skel.h
+make[1]: Entering directory '/home/bisam/osproject/src/pulsesched'
+make[1]: 'build/pulsesched.bpf.skel.h' is up to date.
+make[1]: Leaving directory '/home/bisam/osproject/src/pulsesched'
+cc -std=gnu11 -Wall -Wextra -Wpedantic -O2 -g  -I../../src/pulsesched -I../../src/pulsesched/build -I../../external/scx-c-examples/scheds/include -I../../external/scx-c-examples/scheds/vmlinux -I../../external/scx-c-examples/scheds/vmlinux/arch/x86 -DWITH_GZFILEOP -DPULSE_EXTERNAL_BACKEND -Ibuild benchmark.c \
+	build/presentation-time-protocol.c build/xdg-shell-protocol.c \
+	-o build/prophet-wayland-bench -lwayland-client -lm -lbpf -lelf -lz -lzstd -lpthread
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:73,
+                 from benchmark.c:32:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:52:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   52 |         SCX_ECODE_RSN_HOTPLUG           = 1LLU << 32,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:55:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   55 |         SCX_ECODE_ACT_RESTART           = 1LLU << 48,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:59:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   59 |         UEI_ECODE_USER_MASK             = ((1LLU << 32) - 1),
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:60:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   60 |         UEI_ECODE_SYS_RSN_MASK          = ((1LLU << 16) - 1) << 32,
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:61:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   61 |         UEI_ECODE_SYS_ACT_MASK          = ((1LLU << 16) - 1) << 48,
+      |                                           ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:74:
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_read_enum’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:44:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   44 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:55:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   55 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_struct_has_field’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:99:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   99 |         for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                       ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:79:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_alloc_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:57: warning: unused parameter ‘map’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                   ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:68: warning: unused parameter ‘addr’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                              ~~~~~~^~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:80: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                                          ~~~~~~^~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:55: warning: unused parameter ‘node_id’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                   ~~~~^~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:70: warning: unused parameter ‘flags’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                                ~~~~~~^~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_free_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:47: warning: unused parameter ‘map’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                         ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:66: warning: unused parameter ‘ptr’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                    ~~~~~~~~~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:77: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                                       ~~~~~~^~~~~~~~
+In file included from benchmark.c:35:
+../../src/pulsesched/build/pulsesched.bpf.skel.h: In function ‘pulsesched__elf_bytes’:
+../../src/pulsesched/build/pulsesched.bpf.skel.h:383:9: warning: string length ‘768976’ is greater than the length ‘4095’ ISO C99 compilers are required to support [-Woverlength-strings]
+  383 |         static const char data[] __attribute__((__aligned__(8))) = "\
+      |         ^~~~~~
+benchmark.c: In function ‘pulse_exited’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:25:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   25 | #define UEI_EXITED(__skel, __uei_name) ({                                       \
+      |                                        ^
+benchmark.c:172:16: note: in expansion of macro ‘UEI_EXITED’
+  172 |         return UEI_EXITED(app->pulse.skel, uei);
+      |                ^~~~~~~~~~
+benchmark.c: In function ‘pulse_init’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:155:46: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  155 | #define SCX_OPS_OPEN(__ops_name, __scx_name) ({                                 \
+      |                                              ^
+benchmark.c:380:27: note: in expansion of macro ‘SCX_OPS_OPEN’
+  380 |         app->pulse.skel = SCX_OPS_OPEN(pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:69:1: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   69 | ({                                                                              \
+      | ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:109:28: note: in expansion of macro ‘__COMPAT_ENUM_OR_ZERO’
+  109 | #define SCX_OPS_FLAG(name) __COMPAT_ENUM_OR_ZERO("scx_ops_flags", #name)
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:114:32: note: in expansion of macro ‘SCX_OPS_FLAG’
+  114 | #define SCX_OPS_SWITCH_PARTIAL SCX_OPS_FLAG(SCX_OPS_SWITCH_PARTIAL)
+      |                                ^~~~~~~~~~~~
+benchmark.c:387:70: note: in expansion of macro ‘SCX_OPS_SWITCH_PARTIAL’
+  387 |                 app->pulse.skel->struct_ops.pulsesched_ops->flags |= SCX_OPS_SWITCH_PARTIAL;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:20:69: warning: ISO C forbids omitting the middle term of a ‘?:’ expression [-Wpedantic]
+   20 |         u32 __len = (__skel)->struct_ops.__ops_name->exit_dump_len ?: UEI_DUMP_DFL_LEN; \
+      |                                                                     ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:19:54: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define UEI_SET_SIZE(__skel, __ops_name, __uei_name) ({                                 \
+      |                                                      ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:168:66: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  168 | #define SCX_OPS_LOAD(__skel, __ops_name, __scx_name, __uei_name) ({             \
+      |                                                                  ^
+benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:190:56: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  190 | #define SCX_OPS_ATTACH(__skel, __ops_name, __scx_name) ({                       \
+      |                                                        ^
+benchmark.c:389:27: note: in expansion of macro ‘SCX_OPS_ATTACH’
+  389 |         app->pulse.link = SCX_OPS_ATTACH(app->pulse.skel, pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~~~
+benchmark.c: In function ‘pulse_cleanup’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:30:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   30 | #define UEI_REPORT(__skel, __uei_name) ({                                       \
+      |                                        ^
+benchmark.c:443:23: note: in expansion of macro ‘UEI_REPORT’
+  443 |         __u64 ecode = UEI_REPORT(app->pulse.skel, uei);
+      |                       ^~~~~~~~~~
+cc -std=gnu11 -Wall -Wextra -Wpedantic -O2 -g  -I../../src/pulsesched -I../../src/pulsesched/build -I../../external/scx-c-examples/scheds/include -I../../external/scx-c-examples/scheds/vmlinux -I../../external/scx-c-examples/scheds/vmlinux/arch/x86 -DWITH_GZFILEOP -Ibuild -fsanitize=address,undefined ../../tests/prophet_backend_test.c \
+	build/presentation-time-protocol.c build/xdg-shell-protocol.c \
+	-o build/prophet-backend-test -lwayland-client -lm -lbpf -lelf -lz -lzstd -lpthread
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:73,
+                 from ../../tests/../benchmarks/wayland_interaction/benchmark.c:32,
+                 from ../../tests/prophet_backend_test.c:5:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:52:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   52 |         SCX_ECODE_RSN_HOTPLUG           = 1LLU << 32,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:55:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   55 |         SCX_ECODE_ACT_RESTART           = 1LLU << 48,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:59:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   59 |         UEI_ECODE_USER_MASK             = ((1LLU << 32) - 1),
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:60:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   60 |         UEI_ECODE_SYS_RSN_MASK          = ((1LLU << 16) - 1) << 32,
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:61:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   61 |         UEI_ECODE_SYS_ACT_MASK          = ((1LLU << 16) - 1) << 48,
+      |                                           ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:74:
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_read_enum’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:44:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   44 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:55:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   55 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_struct_has_field’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:99:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   99 |         for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                       ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:79:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_alloc_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:57: warning: unused parameter ‘map’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                   ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:68: warning: unused parameter ‘addr’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                              ~~~~~~^~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:80: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                                          ~~~~~~^~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:55: warning: unused parameter ‘node_id’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                   ~~~~^~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:70: warning: unused parameter ‘flags’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                                ~~~~~~^~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_free_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:47: warning: unused parameter ‘map’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                         ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:66: warning: unused parameter ‘ptr’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                    ~~~~~~~~~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:77: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                                       ~~~~~~^~~~~~~~
+In file included from ../../tests/../benchmarks/wayland_interaction/benchmark.c:35:
+../../src/pulsesched/build/pulsesched.bpf.skel.h: In function ‘pulsesched__elf_bytes’:
+../../src/pulsesched/build/pulsesched.bpf.skel.h:383:9: warning: string length ‘768976’ is greater than the length ‘4095’ ISO C99 compilers are required to support [-Woverlength-strings]
+  383 |         static const char data[] __attribute__((__aligned__(8))) = "\
+      |         ^~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_exited’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:25:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   25 | #define UEI_EXITED(__skel, __uei_name) ({                                       \
+      |                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:172:16: note: in expansion of macro ‘UEI_EXITED’
+  172 |         return UEI_EXITED(app->pulse.skel, uei);
+      |                ^~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_init’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:155:46: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  155 | #define SCX_OPS_OPEN(__ops_name, __scx_name) ({                                 \
+      |                                              ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:380:27: note: in expansion of macro ‘SCX_OPS_OPEN’
+  380 |         app->pulse.skel = SCX_OPS_OPEN(pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:69:1: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   69 | ({                                                                              \
+      | ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:109:28: note: in expansion of macro ‘__COMPAT_ENUM_OR_ZERO’
+  109 | #define SCX_OPS_FLAG(name) __COMPAT_ENUM_OR_ZERO("scx_ops_flags", #name)
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:114:32: note: in expansion of macro ‘SCX_OPS_FLAG’
+  114 | #define SCX_OPS_SWITCH_PARTIAL SCX_OPS_FLAG(SCX_OPS_SWITCH_PARTIAL)
+      |                                ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:387:70: note: in expansion of macro ‘SCX_OPS_SWITCH_PARTIAL’
+  387 |                 app->pulse.skel->struct_ops.pulsesched_ops->flags |= SCX_OPS_SWITCH_PARTIAL;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:20:69: warning: ISO C forbids omitting the middle term of a ‘?:’ expression [-Wpedantic]
+   20 |         u32 __len = (__skel)->struct_ops.__ops_name->exit_dump_len ?: UEI_DUMP_DFL_LEN; \
+      |                                                                     ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:19:54: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define UEI_SET_SIZE(__skel, __ops_name, __uei_name) ({                                 \
+      |                                                      ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:168:66: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  168 | #define SCX_OPS_LOAD(__skel, __ops_name, __scx_name, __uei_name) ({             \
+      |                                                                  ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:190:56: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  190 | #define SCX_OPS_ATTACH(__skel, __ops_name, __scx_name) ({                       \
+      |                                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:389:27: note: in expansion of macro ‘SCX_OPS_ATTACH’
+  389 |         app->pulse.link = SCX_OPS_ATTACH(app->pulse.skel, pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_cleanup’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:30:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   30 | #define UEI_REPORT(__skel, __uei_name) ({                                       \
+      |                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:443:23: note: in expansion of macro ‘UEI_REPORT’
+  443 |         __u64 ecode = UEI_REPORT(app->pulse.skel, uei);
+      |                       ^~~~~~~~~~
+cc -std=gnu11 -Wall -Wextra -Wpedantic -O2 -g  -I../../src/pulsesched -I../../src/pulsesched/build -I../../external/scx-c-examples/scheds/include -I../../external/scx-c-examples/scheds/vmlinux -I../../external/scx-c-examples/scheds/vmlinux/arch/x86 -DWITH_GZFILEOP -Ibuild -fsanitize=address,undefined ../../tests/feedback_lifecycle_test.c \
+	build/presentation-time-protocol.c build/xdg-shell-protocol.c \
+	-o build/prophet-feedback-test -lwayland-client -lm -lbpf -lelf -lz -lzstd -lpthread
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:73,
+                 from ../../tests/../benchmarks/wayland_interaction/benchmark.c:32,
+                 from ../../tests/feedback_lifecycle_test.c:3:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:52:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   52 |         SCX_ECODE_RSN_HOTPLUG           = 1LLU << 32,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:55:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   55 |         SCX_ECODE_ACT_RESTART           = 1LLU << 48,
+      |                                           ^~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:59:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   59 |         UEI_ECODE_USER_MASK             = ((1LLU << 32) - 1),
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:60:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   60 |         UEI_ECODE_SYS_RSN_MASK          = ((1LLU << 16) - 1) << 32,
+      |                                           ^
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:61:43: warning: ISO C restricts enumerator values to range of ‘int’ before C23 [-Wpedantic]
+   61 |         UEI_ECODE_SYS_ACT_MASK          = ((1LLU << 16) - 1) << 48,
+      |                                           ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:74:
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_read_enum’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:44:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   44 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:55:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   55 |                 for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                               ^
+../../external/scx-c-examples/scheds/include/scx/compat.h: In function ‘__COMPAT_struct_has_field’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:99:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__u32’ {aka ‘unsigned int’} [-Wsign-compare]
+   99 |         for (i = 0; i < BTF_INFO_VLEN(t->info); i++) {
+      |                       ^
+In file included from ../../external/scx-c-examples/scheds/include/scx/common.h:79:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_alloc_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:57: warning: unused parameter ‘map’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                   ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:68: warning: unused parameter ‘addr’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                              ~~~~~~^~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:26:80: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   26 | static inline void __arena* bpf_arena_alloc_pages(void *map, void *addr, __u32 page_cnt,
+      |                                                                          ~~~~~~^~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:55: warning: unused parameter ‘node_id’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                   ~~~~^~~~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:27:70: warning: unused parameter ‘flags’ [-Wunused-parameter]
+   27 |                                                   int node_id, __u64 flags)
+      |                                                                ~~~~~~^~~~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h: In function ‘bpf_arena_free_pages’:
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:47: warning: unused parameter ‘map’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                         ~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:66: warning: unused parameter ‘ptr’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                    ~~~~~~~~~~~~~~^~~
+../../external/scx-c-examples/scheds/include/scx/bpf_arena_common.h:31:77: warning: unused parameter ‘page_cnt’ [-Wunused-parameter]
+   31 | static inline void bpf_arena_free_pages(void *map, void __arena *ptr, __u32 page_cnt)
+      |                                                                       ~~~~~~^~~~~~~~
+In file included from ../../tests/../benchmarks/wayland_interaction/benchmark.c:35:
+../../src/pulsesched/build/pulsesched.bpf.skel.h: In function ‘pulsesched__elf_bytes’:
+../../src/pulsesched/build/pulsesched.bpf.skel.h:383:9: warning: string length ‘768976’ is greater than the length ‘4095’ ISO C99 compilers are required to support [-Woverlength-strings]
+  383 |         static const char data[] __attribute__((__aligned__(8))) = "\
+      |         ^~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_exited’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:25:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   25 | #define UEI_EXITED(__skel, __uei_name) ({                                       \
+      |                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:172:16: note: in expansion of macro ‘UEI_EXITED’
+  172 |         return UEI_EXITED(app->pulse.skel, uei);
+      |                ^~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_init’:
+../../external/scx-c-examples/scheds/include/scx/compat.h:155:46: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  155 | #define SCX_OPS_OPEN(__ops_name, __scx_name) ({                                 \
+      |                                              ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:380:27: note: in expansion of macro ‘SCX_OPS_OPEN’
+  380 |         app->pulse.skel = SCX_OPS_OPEN(pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:69:1: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   69 | ({                                                                              \
+      | ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:109:28: note: in expansion of macro ‘__COMPAT_ENUM_OR_ZERO’
+  109 | #define SCX_OPS_FLAG(name) __COMPAT_ENUM_OR_ZERO("scx_ops_flags", #name)
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:114:32: note: in expansion of macro ‘SCX_OPS_FLAG’
+  114 | #define SCX_OPS_SWITCH_PARTIAL SCX_OPS_FLAG(SCX_OPS_SWITCH_PARTIAL)
+      |                                ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:387:70: note: in expansion of macro ‘SCX_OPS_SWITCH_PARTIAL’
+  387 |                 app->pulse.skel->struct_ops.pulsesched_ops->flags |= SCX_OPS_SWITCH_PARTIAL;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:20:69: warning: ISO C forbids omitting the middle term of a ‘?:’ expression [-Wpedantic]
+   20 |         u32 __len = (__skel)->struct_ops.__ops_name->exit_dump_len ?: UEI_DUMP_DFL_LEN; \
+      |                                                                     ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:19:54: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   19 | #define UEI_SET_SIZE(__skel, __ops_name, __uei_name) ({                                 \
+      |                                                      ^
+../../external/scx-c-examples/scheds/include/scx/compat.h:169:9: note: in expansion of macro ‘UEI_SET_SIZE’
+  169 |         UEI_SET_SIZE(__skel, __ops_name, __uei_name);                           \
+      |         ^~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:168:66: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  168 | #define SCX_OPS_LOAD(__skel, __ops_name, __scx_name, __uei_name) ({             \
+      |                                                                  ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:388:9: note: in expansion of macro ‘SCX_OPS_LOAD’
+  388 |         SCX_OPS_LOAD(app->pulse.skel, pulsesched_ops, pulsesched, uei);
+      |         ^~~~~~~~~~~~
+../../external/scx-c-examples/scheds/include/scx/compat.h:190:56: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  190 | #define SCX_OPS_ATTACH(__skel, __ops_name, __scx_name) ({                       \
+      |                                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:389:27: note: in expansion of macro ‘SCX_OPS_ATTACH’
+  389 |         app->pulse.link = SCX_OPS_ATTACH(app->pulse.skel, pulsesched_ops, pulsesched);
+      |                           ^~~~~~~~~~~~~~
+../../tests/../benchmarks/wayland_interaction/benchmark.c: In function ‘pulse_cleanup’:
+../../external/scx-c-examples/scheds/include/scx/user_exit_info.h:30:40: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   30 | #define UEI_REPORT(__skel, __uei_name) ({                                       \
+      |                                        ^
+../../tests/../benchmarks/wayland_interaction/benchmark.c:443:23: note: in expansion of macro ‘UEI_REPORT’
+  443 |         __u64 ecode = UEI_REPORT(app->pulse.skel, uei);
+      |                       ^~~~~~~~~~
+ASAN_OPTIONS=detect_leaks=0 build/prophet-backend-test
+{"type":"scheduler","mode":"scx-prophet-external","ttl_ms":250,"policy":"SCHED_EXT","propagation_enabled":false,"max_propagation_depth":2}
+PASS: external fd/ABI validation, epoch closure, owner death, cleanup; map syscalls mocked
+ASAN_OPTIONS=detect_leaks=0 build/prophet-feedback-test
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":2628818529827,"work_start_ns":2628818529827,"commit_ns":2628818529827,"presentation_ns":2628828530217,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":10000390,"presentation_clock_id":0,"presentation_flags":7,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":2628828530608,"refresh_ns":16666666}
+{"type":"trial","interaction_id":1,"status":"discarded","input_ns":2628818730553,"work_start_ns":2628818730553,"commit_ns":2628818730553,"presentation_ns":0,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":0,"presentation_clock_id":0,"presentation_flags":0,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":2628828730964,"refresh_ns":0}
+{"type":"surface_state","received_ns":2628828747607,"interaction_id":0,"xdg_version":6,"width":400,"height":300,"activated":true,"suspended":true}
+{"type":"feedback_timeout_diagnostic","interaction_id":1,"observed_ns":2628828763028,"commit_ns":2628818762668,"wait_ns":10000360,"limit_ms":1,"surface_state_received_ns":2628828747607,"xdg_version":6,"suspended":true,"buffers_busy":[0,0]}
+{"type":"trial","interaction_id":1,"status":"timeout","input_ns":2628818762668,"work_start_ns":2628818762668,"commit_ns":2628818762668,"presentation_ns":0,"input_to_work_ns":0,"work_to_commit_ns":0,"commit_to_presentation_ns":0,"presentation_clock_id":0,"presentation_flags":0,"scheduler_mode":"normal","feedback_request_ns":0,"epoch_register_ns":0,"epoch_start_ns":0,"epoch_termination_ns":0,"termination_reason":0,"termination_reason_name":"NONE","maximum_ttl_ms":0,"boosted_runtime_ns":0,"normal_enqueues":0,"urgent_enqueues":0}
+{"type":"feedback_timing","interaction_id":1,"feedback_received_ns":0,"refresh_ns":0}
+{"type":"surface_state","received_ns":2628828771029,"interaction_id":0,"xdg_version":5,"width":400,"height":300,"activated":false,"suspended":null}
+{"type":"protocol-error","detail":"epoch-observation-failed"}
+feedback lifecycle tests passed: presented, discarded, timeout, observation error, buffer release
+build/prophet-wayland-bench --selftest-workers
+{"type":"dependency_chain","root_pid":41,"root_policy":0,"worker_pids":[42,43,44,45],"worker_policies":[0,0,0,0],"edges":[[0,1],[1,2],[2,3]]}
+worker selftest passed: five equal-work chains and clean teardown
+make: Leaving directory '/home/bisam/osproject/benchmarks/wayland_interaction'

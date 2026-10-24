@@ -1,0 +1,301 @@
+{
+  "kernel": "7.2.10-1-cachyos",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "modes": [
+    "linux",
+    "lavd",
+    "rusty",
+    "pulse-off",
+    "prophet-observe",
+    "prophet-static-1",
+    "prophet-static-2",
+    "prophet-adaptive",
+    "prophet-unobserved"
+  ],
+  "conditions": [
+    "heavy"
+  ],
+  "workers": {
+    "idle": 0,
+    "moderate": 8,
+    "heavy": 32
+  },
+  "blocks": 4,
+  "trials": 30,
+  "work_ms_per_stage": 20,
+  "stages": 4,
+  "interval_ms": 200,
+  "prophet_arguments": {
+    "prophet-observe": [],
+    "prophet-static-1": [
+      "--mode",
+      "static",
+      "--profile",
+      "1"
+    ],
+    "prophet-static-2": [
+      "--mode",
+      "static",
+      "--profile",
+      "2"
+    ],
+    "prophet-adaptive": [
+      "--mode",
+      "adaptive"
+    ],
+    "prophet-unobserved": [
+      "--mode",
+      "static",
+      "--no-telemetry"
+    ]
+  },
+  "smoke_manifest": {
+    "kernel": "7.2.10-1-cachyos",
+    "before": {
+      "state": "disabled",
+      "rejected": 0
+    },
+    "cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "epoch_abi_bytes": 104,
+    "sha256": {
+      "src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+      "benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0"
+    }
+  },
+  "sha256": {
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/prophet-wayland-bench": "16062e1adc2a3d5abb9c09767ad7e729b2d4b8d870695c5e4359d220471bc160",
+    "/home/bisam/osproject/src/scx_prophet/build/scx_prophet": "bcca58bcf5b24035b7c67e5ae02ed39f4e1b876d39dde646fbf85ea7d020571c",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/build/pulse-load": "f818ea0a006c8b3ef8bae963970853652a89699fef93f767800473a0ee2b6fe0",
+    "/home/bisam/osproject/src/pulsesched/build/pulsesched": "665287720f9a8d65c520a374b876910ec50000fd21792b8028ea3ad115f594bf",
+    "/usr/bin/scx_lavd": "e6d54eebde3d59c198be75548b51c673012e3b5499b4414886b88beb2526a954",
+    "/usr/bin/scx_rusty": "0f8f76dcd9d1a94cfdf9e9e541a6959f132090d78c2c9c78f80f3939b2c22872",
+    "/home/bisam/osproject/scripts/prophet_matrix.py": "cc233ee0982c3521eed405227a69a0864644256852e5940767517eff24ad3102",
+    "/home/bisam/osproject/scripts/audit_latency.py": "5663370d9b2ba3d0914713dc787fa528ded0e03ccba9f2519d2a0159d0a4a665",
+    "/home/bisam/osproject/scripts/prophet_smoke.py": "3029efe421660b4df62e4890060a03e182a3cdd56f4f191916a55b9971d4f14c",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/benchmark.c": "4b204a7212609a8c93289e4e24e010f79b774c50caa7d2b0fa325f186e33af8e",
+    "/home/bisam/osproject/benchmarks/wayland_interaction/external_scheduler.h": "a59785629187f7e78a70a052bb7f67e551bbf09542122f8385abbd7aa2eef57b"
+  },
+  "analysis": "Exploratory matched steady-load comparison. No prediction. Preserve failures; compare paired block tails, throughput and progress. No P99.9 claims.",
+  "candidate_screen": {
+    "paired_p95_reduction_fraction": 0.05,
+    "maximum_background_throughput_loss_fraction": 0.03,
+    "progress_gap_limit": "max(100ms, 2x paired observe gap)",
+    "meaning": "screen for further replication, not significance or proof"
+  },
+  "schedule": [
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "linux"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "lavd"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "rusty"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 0,
+      "condition": "heavy",
+      "mode": "prophet-unobserved"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "lavd"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "rusty"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "prophet-unobserved"
+    },
+    {
+      "block": 1,
+      "condition": "heavy",
+      "mode": "linux"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "rusty"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "prophet-unobserved"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "linux"
+    },
+    {
+      "block": 2,
+      "condition": "heavy",
+      "mode": "lavd"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "pulse-off"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "prophet-observe"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "prophet-static-1"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "prophet-static-2"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "prophet-adaptive"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "prophet-unobserved"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "linux"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "lavd"
+    },
+    {
+      "block": 3,
+      "condition": "heavy",
+      "mode": "rusty"
+    }
+  ]
+}

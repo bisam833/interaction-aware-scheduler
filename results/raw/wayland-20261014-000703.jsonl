@@ -1,0 +1,7 @@
+{"type":"capability","protocol":"wp_presentation","version":2,"clock_id":1,"clock_name":"CLOCK_MONOTONIC"}
+{"type":"interaction","interaction_id":1,"input_ns":30292980310601,"work_start_ns":30292980310701,"commit_ns":30293000408016}
+{"type":"trial","interaction_id":1,"status":"presented","input_ns":30292980310601,"work_start_ns":30292980310701,"commit_ns":30293000408016,"presentation_ns":30293021484000,"input_to_work_ns":100,"work_to_commit_ns":20097315,"commit_to_presentation_ns":21075984,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":2,"input_ns":30293763639100,"work_start_ns":30293763639151,"commit_ns":30293783734108}
+{"type":"trial","interaction_id":2,"status":"presented","input_ns":30293763639100,"work_start_ns":30293763639151,"commit_ns":30293783734108,"presentation_ns":30293804863000,"input_to_work_ns":51,"work_to_commit_ns":20094957,"commit_to_presentation_ns":21128892,"presentation_clock_id":1,"presentation_flags":7}
+{"type":"interaction","interaction_id":3,"input_ns":30294635944373,"work_start_ns":30294635944413,"commit_ns":30294656031581}
+{"type":"trial","interaction_id":3,"status":"presented","input_ns":30294635944373,"work_start_ns":30294635944413,"commit_ns":30294656031581,"presentation_ns":30294679908000,"input_to_work_ns":40,"work_to_commit_ns":20087168,"commit_to_presentation_ns":23876419,"presentation_clock_id":1,"presentation_flags":7}

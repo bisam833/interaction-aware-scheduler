@@ -1,0 +1,11 @@
+/src/pulsesched/build/
+/benchmarks/wayland_interaction/build/
+target/
+build/
+__pycache__/
+*.pyc
+*.o
+*.so
+.venv/
+core
+.git-repo/

@@ -1,0 +1,14 @@
+{
+  "raw_directory_unchanged": true,
+  "manifest_files_match": true,
+  "measured_blocks": 36,
+  "measured_presented_trials": 1080,
+  "preflight_blocks": 9,
+  "preflight_presented_trials": 27,
+  "python_tests_passed": 18,
+  "native_policy_decisions_replayed": 68,
+  "native_replay_sanitizers": "address,undefined",
+  "scheduler_binary_modified": false,
+  "new_privileged_run": "none; analyzed user-executed host run",
+  "snapshot_sha256": "69231797f89ad29ab4baffed4474a0acb25e3ef7722aebb8760e4e1e92be2f91"
+}

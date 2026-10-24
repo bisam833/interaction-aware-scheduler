@@ -1,0 +1,75 @@
+[2m2026-10-20T15:48:04.310077Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m354:[0m Autopilot mode is enabled.
+[2m2026-10-20T15:48:04.310327Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m396:[0m Energy model won't be used for CPU preference order.
+[2m2026-10-20T15:48:04.310339Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m409:[0m Pinned task slice mode is enabled (5000 us). Pinned tasks will use per-CPU DSQs.
+[2m2026-10-20T15:48:04.310343Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m1132:[0m Opts {
+    verbose: 0,
+    autopilot: true,
+    autopower: false,
+    performance: false,
+    powersave: false,
+    balanced: false,
+    slice_max_us: 5000,
+    slice_min_us: 500,
+    lat_load_target_pct: 100,
+    mig_delta_pct: 0,
+    warm_cpu_us: 0,
+    lb_low_util_pct: 25,
+    lb_local_dsq_util_pct: 10,
+    pinned_slice_us: Some(
+        5000,
+    ),
+    preempt_shift: 6,
+    cpu_pref_order: "",
+    no_use_em: true,
+    no_futex_boost: false,
+    no_fast_lb: false,
+    no_preemption: false,
+    no_wake_sync: false,
+    no_slice_boost: false,
+    per_cpu_dsq: false,
+    enable_cpu_bw: false,
+    partial: false,
+    no_core_compaction: false,
+    no_freq_scaling: false,
+    stats: None,
+    monitor: None,
+    monitor_sched_samples: None,
+    log_level: "info",
+    exit_dump_len: 262144,
+    version: false,
+    run_id: None,
+    help_stats: false,
+    libbpf: LibbpfOpts {
+        relaxed_maps: None,
+        pin_root_path: None,
+        kconfig: None,
+        btf_custom_path: None,
+        bpf_token_path: None,
+    },
+    topology: None,
+}
+[2m2026-10-20T15:48:04.360896Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m618:[0m capacity bound:  1024 (6.7068377%)
+  primary CPUs:  [6]
+  overflow CPUs: [7, 10, 11, 12, 13, 14, 15, 8, 9, 4, 5, 2, 3, 0, 1]
+[2m2026-10-20T15:48:04.360920Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m618:[0m capacity bound:  15268 (100%)
+  primary CPUs:  [6]
+  overflow CPUs: [10, 12, 14, 8, 4, 2, 0, 7, 11, 13, 15, 9, 5, 3, 1]
+[2m2026-10-20T15:48:04.391979Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member sub_caps_updated not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:04.392006Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member sub_ecaps_updated not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:04.392013Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member init_cids not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:04.392021Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member cid_shard_size not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:04.392024Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member rescue_bandwidth_ppt not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:04.392028Z[0m [32m INFO[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m11:[0m libbpf: struct_ops lavd_ops: member rescue_quantum_us not found in kernel, skipping it as it's set to zero
+
+[2m2026-10-20T15:48:06.180923Z[0m [33m WARN[0m ThreadId(01) [2mscx_utils::libbpf_logger[0m[2m:[0m [2mrust/scx_utils/src/libbpf_logger.rs[0m[2m:[0m[2m12:[0m libbpf: map 'lavd_ops': BPF map skeleton link is uninitialized
+
+[2m2026-10-20T15:48:06.207011Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m1165:[0m scx_lavd scheduler is initialized (build ID: 1.1.3 x86_64-unknown-linux-gnu)
+[2m2026-10-20T15:48:06.207049Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m1169:[0m scx_lavd scheduler starts running.
+BPF stream dump unavailable (requires kernel/libbpf support for BPF streams)
+EXIT: unregistered from user space
+[2m2026-10-20T15:49:00.342986Z[0m [32m INFO[0m ThreadId(01) [2mscx_lavd[0m[2m:[0m [2mscheds/rust/scx_lavd/src/main.rs[0m[2m:[0m[2m1049:[0m Unregister scx_lavd scheduler

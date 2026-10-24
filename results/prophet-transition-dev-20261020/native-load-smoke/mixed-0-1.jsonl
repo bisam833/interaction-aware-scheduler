@@ -1,0 +1,13 @@
+{"type":"load_ready","index":1,"periodic":0,"pid":9}
+{"type":"load_phase","phase":0,"active":false,"planned_start_ns":14037113028636,"planned_end_ns":14038113028636,"observed_start_ns":14037113407162,"observed_end_ns":14038114721667}
+{"type":"load_phase","phase":1,"active":false,"planned_start_ns":14038113028636,"planned_end_ns":14039113028636,"observed_start_ns":14038114723851,"observed_end_ns":14039113086302}
+{"type":"load_phase","phase":2,"active":true,"planned_start_ns":14039113028636,"planned_end_ns":14040113028636,"observed_start_ns":14039113088516,"observed_end_ns":14040115314844}
+{"type":"load_phase","phase":3,"active":false,"planned_start_ns":14040113028636,"planned_end_ns":14041113028636,"observed_start_ns":14040115316337,"observed_end_ns":14041113086633}
+{"type":"load_phase","phase":4,"active":false,"planned_start_ns":14041113028636,"planned_end_ns":14042113028636,"observed_start_ns":14041113091482,"observed_end_ns":14042113798385}
+{"type":"load_bin","index":1,"periodic":0,"phase":0,"start_ns":14037113028636,"end_ns":14038113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":1,"start_ns":14038113028636,"end_ns":14039113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":2,"start_ns":14039113028636,"end_ns":14040113028636,"iterations":234000000,"cpu_ns":461413871,"max_progress_gap_ns":10025085,"first_ns":14039113088556,"last_ns":14040113700408}
+{"type":"load_bin","index":1,"periodic":0,"phase":3,"start_ns":14040113028636,"end_ns":14041113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"load_bin","index":1,"periodic":0,"phase":4,"start_ns":14041113028636,"end_ns":14042113028636,"iterations":0,"cpu_ns":0,"max_progress_gap_ns":0,"first_ns":0,"last_ns":0}
+{"type":"background","iterations":234000000,"wall_ns":5000773737,"cpu_ns":462034861,"max_batch_gap_ns":10025085}
+{"type":"load_exit","complete":true,"process_cpu_ns":462036925}
